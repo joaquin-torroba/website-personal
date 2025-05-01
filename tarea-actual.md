@@ -1,34 +1,45 @@
-# Tarea Actual
+# Tarea Actual: Hero Section.
 
 ## Crear página de inicio con componentes de Shadcn
 
-### Objetivos
-- Diseñar una página de inicio atractiva
-- Implementar componentes básicos de Shadcn
-- Crear un diseño responsive
+### Plan Detallado - Sección Hero
 
-### Componentes a implementar
-1. Barra de navegación
-2. Sección de héroe (hero section)
-3. Sección de características
-4. Formulario de contacto
-5. Pie de página
+1. **Implementar `ModeToggle`:**
 
-### Pasos
-1. Agregar componentes necesarios de Shadcn:
-   ```
-   npx shadcn-ui@latest add button
-   npx shadcn-ui@latest add card
-   npx shadcn-ui@latest add form
-   ```
+* Instalar `next-themes`.
 
-2. Modificar app/page.tsx para incorporar estos componentes
+* Crear componente `mode-toggle.tsx`.
 
-3. Crear archivos de componentes en /components
+* Añadir iconos de sol/luna (usando `lucide-react`).
 
-4. Estilizar componentes con Tailwind CSS
+* Reemplazar placeholder en `hero-section.tsx`.
 
-### Notas
-- Usar el sistema de diseño y colores definidos por Shadcn
-- Mantener el código limpio y modular
-- Seguir las mejores prácticas de Next.js y React 
+2. **Implementar `LangSwitch` (Selector de Idioma):**
+
+* Instalar `next-intl`.
+
+* Configurar `next-intl` (middleware, archivos de traducción).
+
+* Ajustar el botón `LangSwitch`.
+
+* Preparar textos para traducción (tagline, aria-labels).
+
+3. **Añadir Imagen Real:**
+
+* Obtener archivo de imagen.
+
+* Reemplazar placeholder `<div>Foto</div>` con `<Image>`.
+
+* Ajustar tamaños y `alt` text según PRD.
+
+4. **Añadir Animación:**
+
+* Instalar `framer-motion`.
+
+* Aplicar animación `fade-inslide-up` al contenedor principal de la sección.
+
+5. **Ajustes Finales y Verificación:**
+
+* Revisar responsividad (móvil/escritorio).
+
+* Verificar criterios de aceptación del PRD (accesibilidad, LCP, etc.).

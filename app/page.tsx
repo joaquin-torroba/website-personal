@@ -2,6 +2,7 @@
 
 import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about-section";
+import RecorridoSection from "@/components/recorrido-section";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
 
       <HeroSection />
       <AboutSection />
+      <RecorridoSection />
     </main>
   );
 }

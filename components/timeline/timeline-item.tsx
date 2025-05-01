@@ -23,23 +23,16 @@ export function TimelineItem({
 }: TimelineItemProps) {
   // Mapeo de colores según el tipo
   const colorMap = {
-    slate: 'border-slate-500 text-slate-500',
-    sky: 'border-sky-500 text-sky-500',
-    purple: 'border-purple-500 text-purple-500',
-  };
-
-  const borderColorMap = {
-    slate: 'border-l-slate-500',
-    sky: 'border-l-sky-500',
-    purple: 'border-l-purple-500',
+    slate: 'border-slate-500 text-slate-500 bg-slate-100 dark:bg-slate-900/30',
+    sky: 'border-sky-500 text-sky-500 bg-sky-100 dark:bg-sky-900/30',
+    purple: 'border-purple-500 text-purple-500 bg-purple-100 dark:bg-purple-900/30',
   };
 
   return (
     <motion.div
       role="listitem"
       className={cn(
-        "relative flex flex-col items-start md:flex-1",
-        active ? "opacity-100" : "opacity-90",
+        "relative",
         className
       )}
       initial={{ opacity: 0, y: 20 }}
@@ -49,23 +42,25 @@ export function TimelineItem({
       {...props}
     >
       {/* Punto de conexión en la línea de tiempo */}
-      <div 
-        className={cn(
-          "absolute left-0 top-0 h-8 w-8 rounded-full border-2 bg-background flex items-center justify-center",
-          colorMap[color]
-        )}
-      >
-        {icon}
+      <div className="absolute left-16 -ml-3">
+        <div 
+          className={cn(
+            "h-6 w-6 rounded-full border-2 bg-background flex items-center justify-center z-10",
+            colorMap[color]
+          )}
+        >
+          {icon}
+        </div>
       </div>
 
       {/* Contenido del timeline item */}
-      <div className="ml-12 md:ml-0 md:mt-12 w-full">
+      <div className="pl-28 pr-8">
         <Card className={cn(
-          "overflow-hidden transition-all hover:shadow-md",
+          "overflow-hidden transition-all hover:shadow-md w-full",
           active ? "border-l-4" : "border",
-          active && borderColorMap[color]
+          active && `border-${color}-500`
         )}>
-          <div className="p-4">
+          <div className="p-6">
             {children}
           </div>
         </Card>

@@ -1,15 +1,19 @@
 'use client'; // Añadimos por si acaso para futuros hooks
 
 import Image from 'next/image'; // Importar Image
+import { motion } from "framer-motion"; // Importar motion
 
 // import { ModeToggle } from "@/components/mode-toggle"; // No se usa aquí
 // import { Button } from "@/components/ui/button"; // No se usa aquí
 
 export default function HeroSection() {
   return (
-    <section className="w-full flex flex-col items-center gap-4 pt-16"> 
-      {/* Controles eliminados de aquí */}
-
+    <motion.section 
+      className="w-full flex flex-col items-center gap-4 pt-16"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+    >
       {/* Imagen Real */}
       <Image
         src="/PLYO_FOTO.png" // Ruta desde la carpeta public
@@ -30,6 +34,6 @@ export default function HeroSection() {
 
       {/* Placeholder para CTA */}
       <div className="sr-only" aria-label="CTA próximamente"></div>
-    </section>
+    </motion.section>
   );
 } 

@@ -86,9 +86,9 @@ export default function RecorridoSection() {
         
         <TimelineItem icon={<Sparkles size={24} />} color="indigo" active>
           <TimelineCard
-            title="Inteligencia Artificial (Remoto Internacional)"
+            title="Etapa Inteligencia Artificial (Remoto Global)"
             period="2023–2025"
-            tags={["Ingeniería de IA", "Desarrollo de Apps con IA", "Diseño Web con IA", "Automatizaciones con IA"]}
+            tags={["Ingeniería de IA", "Trabajo con Agentes", "Desarrollo de Apps (IA)", "Diseño Web con IA (IA)", "Automatizaciones (IA)"]}
             description="Productos IA full-stack: Video Insight Pro, Framesynth. Actualmente lidero Mis Copilotos, asesoro con IA en Launchable y desarrollo productos que aprovechan el potencial de la inteligencia artificial para resolver problemas reales."
             logos={[
               {

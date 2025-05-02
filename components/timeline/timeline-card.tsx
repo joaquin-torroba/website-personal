@@ -68,7 +68,7 @@ export function TimelineCard({
         {title.includes('(') && title.includes(')') ? (
           <>
             {title.substring(0, title.indexOf('(')).trim()} {/* Parte antes del paréntesis */}
-            <span className="text-sm text-muted-foreground ml-1 font-light"> {/* Parte dentro del paréntesis */} 
+            <span className="text-sm text-muted-foreground ml-1"> {/* Eliminado font-light */} 
               {title.substring(title.indexOf('('), title.indexOf(')') + 1)}
             </span>
           </>

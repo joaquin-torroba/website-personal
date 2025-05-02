@@ -34,4 +34,4 @@ export default function AboutSection() {
       </div>
     </motion.section>
   );
-} 
+}   

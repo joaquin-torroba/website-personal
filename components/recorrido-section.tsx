@@ -4,75 +4,118 @@ import React from 'react';
 import { Timeline } from './timeline/timeline';
 import { TimelineItem } from './timeline/timeline-item';
 import { TimelineCard } from './timeline/timeline-card';
-import { Target, Rocket, Bot } from 'lucide-react';
+import { TrendingUp, Rocket, Sparkles } from 'lucide-react';
 
 export default function RecorridoSection() {
   return (
     <section className="w-full mt-12 py-16">
       <h2 className="text-2xl font-bold text-center mb-12">Mi Recorrido Profesional</h2>
       <Timeline>
-        <TimelineItem icon={<Target size={16} />} color="slate" active>
+        <TimelineItem icon={<TrendingUp size={24} />} color="slate" active>
           <TimelineCard
-            title="Corporativo"
-            period="2010–2018"
-            status="Finalizado"
-            description="Auditoría, revenue management y BI. Consolidado experiencia en empresas multinacionales como PwC, Sinopec y Bacardí, desarrollando habilidades en finanzas y business intelligence."
+            title="Etapa Corporativa (Latinoamérica)"
+            period="2012–2020"
+            tags={["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"]}
+            description="A los 20 años comencé mi camino profesional en PWC en el área de <i>capital markets</i> y <i>auditoría</i>. Luego un breve paso por Sinopec en <i>finanzas</i>. Y finalmente, 5 hermosos años trabajando en Grupo Cepas (Bacardi) en core áreas como <i>revenue management</i>, <i>marketing</i>, <i>ventas</i> y <i>BI</i>."
             logos={[
               {
-                src: "/placeholder-logo.svg",
-                alt: "PwC"
+                src: "/logos/pwc_logo_new.svg",
+                alt: "PwC",
+                href: "https://www.linkedin.com/company/price-waterhouse-cooper-pwc/"
               },
               {
-                src: "/placeholder-logo.svg",
-                alt: "Sinopec"
+                src: "/logos/sinopec_logo_new.png",
+                alt: "Sinopec",
+                href: "https://www.linkedin.com/company/sinopec-international-petroleum-service-corporation/"
               },
               {
-                src: "/placeholder-logo.svg",
-                alt: "Bacardí"
+                src: "/logos/logo_bacardi_new_2.svg",
+                alt: "Bacardí",
+                href: "https://www.linkedin.com/company/bacardi/"
+              },
+              {
+                src: "/logos/grupocepas_logo_new.svg",
+                alt: "Grupo Cepas",
+                href: "https://www.linkedin.com/company/cepas-argentinas/posts/?feedView=all"
               }
             ]}
+            flags={[
+              { src: "/banderas/Flag_of_Argentina.svg", alt: "Bandera Argentina" },
+              { src: "/banderas/Flag_of_Chile.svg", alt: "Bandera Chile" },
+              { src: "/banderas/Flag_of_Uruguay.svg", alt: "Bandera Uruguay" },
+            ]}
+            color="slate"
           />
         </TimelineItem>
         
-        <TimelineItem icon={<Rocket size={16} />} color="sky">
+        <TimelineItem icon={<Rocket size={24} />} color="teal" active>
           <TimelineCard
-            title="Europa & Startups"
+            title="Etapa Startups (Europa)"
             period="2020–2023"
-            status="Finalizado"
-            description="Growth, e-commerce y automatizaciones. Tras 5 años en Europa (Dinamarca, Italia, España) me sumergí en el ecosistema startup, enfocándome en growth, marketing digital y optimización de procesos de e-commerce."
+            tags={["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"]}
+            description="A los 28 años me mudé a Europa y conocí el mundo digital trabajando en un <i>growth studio</i> danés llamado Plyo Labs. Durante 3 años participé de múltiples proyectos remotos en distintas startups (destaco Dimexon, Once y Cultions). Comencé como especialista en <i>marketing digital</i> y luego incorporando más herramientas digital-native como <i>diseño web</i>, <i>automatizaciones</i>, <i>e-commerce</i> y <i>growth hacking</i>."
             logos={[
               {
-                src: "/placeholder-logo.svg",
-                alt: "PLYO"
+                src: "/logos/plyo_lab_logo.jpeg",
+                alt: "PLYO",
+                href: "https://www.plyolab.com/"
               },
               {
-                src: "/placeholder-logo.svg",
+                src: "/logos/dimexon_logo.jpeg",
+                alt: "DIMEXON",
+                href: "https://dimexon.com/"
+              },
+              {
+                src: "/logos/cultions_logo.jpeg",
+                alt: "Cultions",
+                href: "https://www.linkedin.com/company/cultions/"
+              },
+              {
+                src: "/logos/once_logo.png",
                 alt: "ONCE"
-              },
-              {
-                src: "/placeholder-logo.svg",
-                alt: "DIMEXON"
               }
             ]}
+            flags={[
+              { src: "/banderas/Flag_of_Denmark.svg", alt: "Bandera Dinamarca" },
+              { src: "/banderas/Flag_of_Italy.svg", alt: "Bandera Italia" },
+              { src: "/banderas/Flag_of_Spain.svg", alt: "Bandera España" },
+            ]}
+            color="teal"
           />
         </TimelineItem>
         
-        <TimelineItem icon={<Bot size={16} />} color="purple">
+        <TimelineItem icon={<Sparkles size={24} />} color="indigo" active>
           <TimelineCard
-            title="AI Builder"
+            title="Inteligencia Artificial (Remoto Internacional)"
             period="2023–2025"
-            status="En curso"
+            tags={["Ingeniería de IA", "Desarrollo de Apps con IA", "Diseño Web con IA", "Automatizaciones con IA"]}
             description="Productos IA full-stack: Video Insight Pro, Framesynth. Actualmente lidero Mis Copilotos, asesoro con IA en Launchable y desarrollo productos que aprovechan el potencial de la inteligencia artificial para resolver problemas reales."
             logos={[
               {
-                src: "/placeholder-logo.svg", 
-                alt: "Mis Copilotos"
+                src: "/logos/launchable_logo_new.svg",
+                alt: "Launchable",
+                href: "https://launchable.ai/"
               },
               {
-                src: "/placeholder-logo.svg", 
-                alt: "Launchable"
+                src: "/logos/graymatterhq_logo.jpeg",
+                alt: "Gray Matter",
+                href: "https://www.linkedin.com/company/graymatterhq/posts/?feedView=all"
+              },
+              {
+                src: "/logos/miscopilotos_logo_new.svg",
+                alt: "Mis Copilotos",
+                href: "https://miscopilotos.com/"
+              },
+              {
+                src: "/logos/almendra_logo_new.svg",
+                alt: "Almendra",
+                href: "http://almendra.ai/"
               }
             ]}
+            flags={[
+              { src: "/banderas/Flag_internacional.svg", alt: "Bandera Internacional" },
+            ]}
+            color="indigo"
           />
         </TimelineItem>
       </Timeline>

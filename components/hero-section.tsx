@@ -27,10 +27,11 @@ export default function HeroSection() {
       {/* Nombre */}
       <h1 className="text-4xl sm:text-5xl font-bold text-center">Joaquín Torroba</h1>
 
-      {/* Tagline */}
-      <p className="text-lg text-muted-foreground text-center max-w-md"> {/* Añadido max-w para mejor lectura */}
-        Desde 2022 vivo IA, uniendo enterprise y startups.
-      </p>
+      {/* Tagline en dos líneas */}
+      <div className="text-lg text-muted-foreground text-center max-w-md">
+        <p>AI Freelancer.</p>
+        <p>Enfocado en Startups y Empresas.</p>
+      </div>
 
       {/* Placeholder para CTA */}
       <div className="sr-only" aria-label="CTA próximamente"></div>

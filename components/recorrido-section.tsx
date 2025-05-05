@@ -40,15 +40,15 @@ export default function RecorridoSection() {
               }
             ]}
             flags={[
-              { src: "/banderas/Flag_of_Argentina.svg", alt: "Bandera Argentina" },
-              { src: "/banderas/Flag_of_Chile.svg", alt: "Bandera Chile" },
-              { src: "/banderas/Flag_of_Uruguay.svg", alt: "Bandera Uruguay" },
+              { src: "/banderas/NEW_Flag_of_Argentina.svg", alt: "Bandera Argentina" },
+              { src: "/banderas/NEW_Flag_of_Chile.svg", alt: "Bandera Chile" },
+              { src: "/banderas/New_Flag_of_Uruguay1.svg", alt: "Bandera Uruguay" },
             ]}
             color="slate"
           />
         </TimelineItem>
         
-        <TimelineItem icon={<Rocket size={24} />} color="teal" active>
+        <TimelineItem icon={<Rocket size={24} />} color="slate" active>
           <TimelineCard
             title="Etapa Startups (Europa)"
             period="2020–2023"
@@ -76,15 +76,15 @@ export default function RecorridoSection() {
               }
             ]}
             flags={[
-              { src: "/banderas/Flag_of_Denmark.svg", alt: "Bandera Dinamarca" },
-              { src: "/banderas/Flag_of_Italy.svg", alt: "Bandera Italia" },
-              { src: "/banderas/Flag_of_Spain.svg", alt: "Bandera España" },
+              { src: "/banderas/NEW_Flag_of_Denmark.svg", alt: "Bandera Dinamarca" },
+              { src: "/banderas/NEW_Flag_of_Italy.svg", alt: "Bandera Italia" },
+              { src: "/banderas/NEW_Flag_of_Spain.svg", alt: "Bandera España" },
             ]}
-            color="teal"
+            color="slate"
           />
         </TimelineItem>
         
-        <TimelineItem icon={<Sparkles size={24} />} color="indigo" active>
+        <TimelineItem icon={<Sparkles size={24} />} color="slate" active>
           <TimelineCard
             title="Etapa Inteligencia Artificial (Remoto Global)"
             period="2023–2025"
@@ -113,9 +113,9 @@ export default function RecorridoSection() {
               }
             ]}
             flags={[
-              { src: "/banderas/Flag_internacional.svg", alt: "Bandera Internacional" },
+              { src: "/banderas/NEW_Flag_internacional.svg", alt: "Bandera Internacional" },
             ]}
-            color="indigo"
+            color="slate"
           />
         </TimelineItem>
       </Timeline>

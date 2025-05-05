@@ -4,7 +4,7 @@
 
 **Audiencia:** C-levels enterprise · Startup founders · Recruiters top-tier · Middle managers
 
-**Tono:** auténtico, directo, “voz Joaco”, sin autobombo
+**Tono:** auténtico, directo, "voz Joaco", sin autobombo
 
 ---
 
@@ -38,7 +38,7 @@ En ≤3 s debe quedar claro quién soy, qué hago y por qué importa.
 
 | **Nombre** | `<h1 class="text-4xl sm:text-5xl font-bold">Joaquín Torroba</h1>` |
 
-| **Tagline** | ≤ 90 car.: *“Desde 2022 vivo IA, uniendo enterprise y startups.”* |
+| **Tagline** | ≤ 90 car.: *"Desde 2022 vivo IA, uniendo enterprise y startups."* |
 
 | **Controles** | `ModeToggle` + `LangSwitch` (icon-only, `aria-label="Cambiar idioma"`) alineados derecha |
 
@@ -168,91 +168,72 @@ Componente: `Timeline` de shadcn (vertical en xs, horizontal en md+). Cada `Time
 
 ## 4. Habilidades 🛠️
 
-**Objetivo:** Mostrar mis skills clave con logos y nivel de dominio.
+**Objetivo:** Mostrar mis skills clave con logos, agrupadas por categoría.
 
-### Skills Hard
+### Contenido por Categorías
 
-| Logo (32×32) | Habilidad | Nivel |
+*Nota: Esta estructura reemplaza las tablas originales de Hard/Soft skills y refleja la implementación actual.* 
 
-|--------------|--------------------------|------------|
+**1. Daily AI Tools**
+- ChatGPT
+- Claude
+- Midjourney
+- Gamma
+- Perplexity
 
-| ![Excel](./logos/excel.svg) | Excel | Avanzado |
+**2. Marketing Digital & Analytics**
+- Google Ads
+- Facebook Ads
+- Email Marketing
+- Google Analytics
+- Mixpanel
 
-| ![Google Ads](./logos/google-ads.svg) | Google Ads | Experto |
+**3. BI & Data / Herramientas Corporativas**
+- Excel
+- PowerPoint
 
-| ![Meta Ads](./logos/meta-ads.svg) | Meta Ads | Avanzado |
+**4. Web Design and Development**
+- Webflow
+- WordPress
+- Shopify
+- Bubble
+- v0
+- Cursor
+- Lovable
+- Windsurf
 
-| ![Email](./logos/email-marketing.svg) | Email Marketing | Intermedio |
+**5. Automatización y Cloud**
+- Zapier
+- Flowise (langgraph)
+- Cloudflare Workers
 
-| ![Webflow](./logos/webflow.svg) | Webflow | Avanzado |
-
-| ![WordPress](./logos/wordpress.svg) | WordPress | Intermedio |
-
-| ![Shopify](./logos/shopify.svg) | Shopify | Avanzado |
-
-| ![Bubble](./logos/bubble.svg) | Bubble | Intermedio |
-
-| ![Zapier](./logos/zapier.svg) | Zapier | Avanzado |
-
-| ![Vercel](./logos/vercel.svg) | Vercel | Intermedio |
-
-| ![CF Workers](./logos/cloudflare.svg) | Cloudflare Workers | Intermedio |
-
-| ![AWS Lambda](./logos/aws-lambda.svg) | AWS Lambda | Básico |
-
-| ![Cursor](./logos/cursor.svg) | Cursor | Avanzado |
-
-| ![Flowise](./logos/flowise.svg) | Flowise | Intermedio |
-
-| ![Vabel](./logos/vabel.svg) | Vabel | Intermedio |
-
-| ![V0](./logos/v0.svg) | V0 | Básico |
-
-| ![GPT-4o](./logos/gpt-4o.svg) | GPT-4o | Avanzado |
-
-| ![Claude](./logos/claude.svg) | Claude | Avanzado |
-
-### Skills Soft
-
-| Logo (32×32) | Habilidad | Nivel |
-
-|-------------------|-------------------|----------|
-
-| ![Storytelling](./logos/storytelling.svg) | Storytelling | Experto |
-
-| ![Revenue](./logos/revenue.svg) | Revenue Mgmt | Avanzado |
-
-| ![Growth](./logos/growth.svg) | Growth Hacking | Experto |
-
-| ![Signal](./logos/signal.svg) | Signal Mining | Avanzado |
+**6. Growth Hacking**
+- Signal Mining
+- A/B testing
 
 ---
 
 ### Diseño & Componentes
 
-- Contenedor `Grid` responsive:
-
-- `grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6`
-
-- Cada tile:
-
-- `Card` con logo arriba (32×32), nombre y nivel.
-
-- Tooltip breve `title`) describiendo uso/contexto.
-
-- Hover: `shadow-lg` + elevar.
-
-- Dark/Light: fondo `muted` y texto `foreground`.
+- Título `h2` para la sección.
+- Título `h3` para cada categoría.
+- Contenedor `Grid` responsive por categoría:
+  - `grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6`
+- Cada skill en un `SkillCard` (componente `Card` de shadcn):
+  - Logo `next/image` (32×32).
+  - Nombre de la habilidad (permite 2 líneas).
+  - Hover: `shadow-lg` + elevar.
+  - Dark/Light: fondo `muted/20` en dark mode.
+  - *(Nivel de dominio omitido)*.
+  - *(Tooltip omitido por ahora)*.
 
 ### Criterios de aceptación
 
 - Legible en 320 px, touch-friendly.
-
 - Logos lazy-load con `alt` descriptivo.
+- Accesible.
 
-- Máximo 20 ítems, extensible.
-
---
+---
 
 ## 5. Proyectos 🚀
 

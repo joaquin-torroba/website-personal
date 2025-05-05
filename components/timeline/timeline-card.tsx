@@ -33,28 +33,24 @@ export function TimelineCard({
 }: TimelineCardProps) {
   return (
     <div className={cn("relative flex flex-col gap-3 p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow", className)}> {/* Añadimos padding y estilo base */}
-      {/* Banderas SVG (arriba a la derecha) */}
+      {/* Banderas SVG (arriba a la derecha) - Revertido a versión anterior */}
       {flags && flags.length > 0 && (
-        <div className="absolute top-3 right-3 flex gap-2 items-center"> {/* Añadido items-center para alinear verticalmente */}
+        <div className="absolute top-3 right-3 flex gap-2 items-center"> 
           {flags.map((flag, index) => (
             <div 
               key={index} 
               className={cn(
                 "relative rounded overflow-hidden",
-                flag.alt === "Bandera Internacional" ? "h-6 w-6" : "h-4 w-6" // Aumentado tamaño globo a h-6 w-6
+                flag.alt === "Bandera Internacional" ? "h-12 w-12" : "h-8 w-8"
               )}
             >
               <Image
                 src={flag.src}
                 alt={flag.alt}
                 fill
-                sizes="(max-width: 768px) 16px, 24px" 
+                sizes={flag.alt === "Bandera Internacional" ? "(max-width: 768px) 48px, 48px" : "(max-width: 768px) 32px, 32px"}
                 className={cn(
-                  "object-contain", // Usar object-contain por defecto
-                  // flag.alt !== "Bandera Internacional" && "sm:object-cover" // Opcional: Volver a cover en pantallas grandes si se quiere
-                  // Ajuste: Probemos 'object-contain' para todas por simplicidad primero.
-                  // Si solo queremos contain para el globo: 
-                  // flag.alt === "Bandera Internacional" ? "object-contain" : "object-cover"
+                  "object-contain"
                 )}
                 title={flag.alt} 
               />

@@ -12,24 +12,17 @@ export default function AboutSection() {
       transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
     >
       <div className="prose lg:prose-lg dark:prose-invert max-w-3xl mx-auto pl-10 pr-4 space-y-4">
-        {/* Contenido de la sección Sobre mí */}
         <p className="text-lg">
-          Hola, soy <strong>Joaco</strong>. Desde <em>diciembre 2022</em> vivo y respiro
-          <strong> inteligencia artificial</strong>: diseño, construyo y lanzo
-          productos que mezclan negocio con vanguardia técnica.
+          Soy <strong>Joaquin</strong>. Trabajo en inteligencia artificial aplicada a negocios. Mi trayectoria combina experiencias sólidas en <em>empresas globales</em> y un intenso período en <em>startups digitales</em>. 
         </p>
         <p className="text-lg">
-          Arranqué en el mundo <em>enterprise</em> — PwC, Sinopec y Bacardí —
-          consolidando finanzas, revenue management y BI. Tras
-          <strong> 5 años en Europa</strong> (Dinamarca, Italia, España) di el salto
-          al ecosistema <em>startup</em>: growth, marketing digital y e-commerce.
+          Actualmente divido mi tiempo entre desarrollar productos de IA en <em>Launchable</em> - startup canadiense - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas. 
         </p>
         <p className="text-lg">
-          Hoy lidero <strong>Mis Copilotos</strong>, asesoro con IA en Launchable y
-          creo <em>Video Insight Pro</em> y <em>Framesynth</em>. Entiendo los
-          procesos de una corporación y la velocidad de una startup; traduzco los
-          retos de C-levels, founders, recruiters y managers en soluciones de IA
-          reales.
+          Me interesa especialmente identificar oportunidades claras en áreas que conozco como <em>marketing, ventas, revenue management, contabilidad, recursos humanos, impuestos y finanzas</em>. 
+        </p>
+        <p className="text-lg">
+          Busco colaborar con profesionales y empresas que compartan esta visión, con el fin de aprovechar al máximo las oportunidades que la IA tiene para ofrecernos.
         </p>
       </div>
     </motion.section>

@@ -6,12 +6,12 @@ export default function AboutSection() {
   return (
     <motion.section 
       id="about"
-      className="w-full mt-12"
+      className="w-full py-16"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
     >
-      <div className="prose lg:prose-lg dark:prose-invert mx-auto space-y-4">
+      <div className="prose lg:prose-lg dark:prose-invert max-w-3xl mx-auto pl-10 pr-4 space-y-4">
         {/* Contenido de la sección Sobre mí */}
         <p className="text-lg">
           Hola, soy <strong>Joaco</strong>. Desde <em>diciembre 2022</em> vivo y respiro

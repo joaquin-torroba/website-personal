@@ -4,11 +4,12 @@ import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about-section";
 import RecorridoSection from "@/components/recorrido-section";
 import SkillsSection from "@/components/skills-section";
+import ProjectsSection from "@/components/projects-section";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-8 max-w-3xl mx-auto gap-8 relative">
+    <main className="flex min-h-screen flex-col items-center gap-y-0 relative">
       <div className="fixed top-8 right-8 z-50">
         <ModeToggle ariaLabel="Cambiar tema" />
       </div>
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <RecorridoSection />
+      <ProjectsSection />
       <SkillsSection />
     </main>
   );

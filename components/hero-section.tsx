@@ -16,15 +16,18 @@ export default function HeroSection() {
     >
       {/* Contenedor interno para limitar ancho y añadir padding horizontal */}
       <div className="max-w-3xl mx-auto px-4 w-full flex flex-col items-center gap-4">
-        {/* Imagen Real */}
-        <Image
-          src="/PLYO_FOTO.png" // Ruta desde la carpeta public
-          alt="Retrato de Joaquín Torroba" // Texto alternativo según PRD
-          width={192} // Ancho para desktop según PRD
-          height={192} // Alto para desktop según PRD
-          priority // Priorizar carga de esta imagen (LCP)
-          className="rounded-full w-32 h-32 sm:w-48 sm:h-48 object-cover mb-4" // Clases para tamaño responsivo, redondeado y ajuste
-        />
+        {/* Contenedor para el gradiente y la sombra */}
+        <div className="rounded-full p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-xl">
+          {/* Imagen Real */}
+          <Image
+            src="/Avatar_Foto_New1.png" // Ruta desde la carpeta public
+            alt="Retrato de Joaquín Torroba" // Texto alternativo según PRD
+            width={192} // Ancho para desktop según PRD
+            height={192} // Alto para desktop según PRD
+            priority // Priorizar carga de esta imagen (LCP)
+            className="rounded-full w-32 h-32 sm:w-48 sm:h-48 object-cover bg-white" // Añadido bg-white
+          />
+        </div>
 
         {/* Nombre */}
         <h1 className="text-4xl sm:text-5xl font-bold text-center">Joaquín Torroba</h1>

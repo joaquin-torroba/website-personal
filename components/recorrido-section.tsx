@@ -12,7 +12,7 @@ export default function RecorridoSection() {
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Mi Recorrido Profesional</h2>
         <Timeline>
-          <TimelineItem period="2012–2020" color="slate" active>
+          <TimelineItem period="2012<br /><span class='font-normal'>a</span><br />2020" color="pink" active>
             <TimelineCard
               title="Etapa Corporativa (Latinoamérica)"
               tags={["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"]}
@@ -24,7 +24,7 @@ export default function RecorridoSection() {
                   href: "https://www.linkedin.com/company/price-waterhouse-cooper-pwc/"
                 },
                 {
-                  src: "/logos/sinopec_logo_new.png",
+                  src: "/logos/Sinopec_logo.svg",
                   alt: "Sinopec",
                   href: "https://www.linkedin.com/company/sinopec-international-petroleum-service-corporation/"
                 },
@@ -48,7 +48,7 @@ export default function RecorridoSection() {
             />
           </TimelineItem>
           
-          <TimelineItem period="2020–2023" color="slate" active>
+          <TimelineItem period="2020<br /><span class='font-normal'>a</span><br />2023" color="purple" active>
             <TimelineCard
               title="Etapa Startups (Europa)"
               tags={["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"]}
@@ -83,7 +83,7 @@ export default function RecorridoSection() {
             />
           </TimelineItem>
           
-          <TimelineItem period="2023–2025" color="slate" active>
+          <TimelineItem period="2023<br /><span class='font-normal'>a</span><br />2025" color="indigo" active>
             <TimelineCard
               title="Etapa Inteligencia Artificial (Remoto Global)"
               tags={["Ingeniería de IA", "Trabajo con Agentes", "Desarrollo de Apps (IA)", "Diseño Web con IA (IA)", "Automatizaciones (IA)"]}

@@ -10,7 +10,7 @@ interface TimelineItemProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   period: string;
   active?: boolean;
-  color?: 'slate' | 'sky' | 'purple' | 'indigo' | 'emerald' | 'teal';
+  color?: 'slate' | 'sky' | 'purple' | 'indigo' | 'emerald' | 'teal' | 'pink';
 }
 
 export function TimelineItem({
@@ -24,14 +24,15 @@ export function TimelineItem({
   // Mapeo de colores según el tipo
   const colorMap = {
     // Tono 500 para borde/texto, 200 para fondo claro, 800/50 para fondo oscuro
-    slate: { border: 'border-slate-500', text: 'text-slate-500', bg: 'bg-slate-200 dark:bg-slate-800/50' },
-    sky: { border: 'border-sky-500', text: 'text-sky-500', bg: 'bg-sky-200 dark:bg-sky-800/50' }, // Actualizado por si se usa
-    purple: { border: 'border-purple-500', text: 'text-purple-500', bg: 'bg-purple-200 dark:bg-purple-800/50' }, // Actualizado por si se usa
+    slate: { border: 'border-slate-500', text: 'text-slate-500', bg: 'bg-slate-100 dark:bg-slate-900/50' },
+    sky: { border: 'border-sky-500', text: 'text-sky-500', bg: 'bg-sky-100 dark:bg-sky-900/50' }, // Actualizado por si se usa
+    purple: { border: 'border-purple-800', text: 'text-purple-800', bg: 'bg-white dark:bg-neutral-900/50' }, // Fondo a white/neutral-900/50
     // Tono 800 para borde/texto, 200 para fondo claro, 800/50 para fondo oscuro
-    indigo: { border: 'border-indigo-800', text: 'text-indigo-800', bg: 'bg-indigo-200 dark:bg-indigo-800/50' }, 
+    indigo: { border: 'border-indigo-800', text: 'text-indigo-800', bg: 'bg-white dark:bg-neutral-900/50' }, // Fondo a white/neutral-900/50
     emerald: { border: 'border-emerald-500', text: 'text-emerald-500', bg: 'bg-emerald-200 dark:bg-emerald-800/50' }, // Actualizado por si se usa
     // Tono 600 para borde/texto, 200 (de emerald) para fondo claro, 800/50 para fondo oscuro
-    teal: { border: 'border-teal-600', text: 'text-teal-600', bg: 'bg-emerald-200 dark:bg-emerald-800/50' }, 
+    teal: { border: 'border-teal-600', text: 'text-teal-600', bg: 'bg-emerald-100 dark:bg-emerald-900/50' }, 
+    pink: { border: 'border-pink-800', text: 'text-pink-800', bg: 'bg-white dark:bg-neutral-900/50' } // Fondo a white/neutral-900/50
   };
 
   // Obtener las clases de color específicas
@@ -59,7 +60,7 @@ export function TimelineItem({
             currentColors.bg
           )}
         >
-          <span className="text-xs font-semibold leading-tight">{period}</span>
+          <span className="text-xs font-semibold leading-tight" dangerouslySetInnerHTML={{ __html: period }} />
         </div>
       </div>
 

@@ -8,7 +8,6 @@ import Image from 'next/image';
 // Tipo para las props de TimelineCard
 interface TimelineCardProps {
   title: string;
-  period: string;
   description: string;
   logos: {
     src: string;
@@ -23,7 +22,6 @@ interface TimelineCardProps {
 
 export function TimelineCard({
   title,
-  period,
   description,
   logos,
   flags, // Recibimos la prop flags
@@ -124,21 +122,6 @@ export function TimelineCard({
           ))}
         </div>
       )}
-
-      {/* Periodo (abajo a la derecha) */}
-      <div className="absolute bottom-3 right-3 mt-4">
-        <Badge 
-          variant="outline" 
-          className={cn(
-            "text-sm",
-            color === 'slate' && "bg-slate-100 text-slate-800 dark:bg-slate-800/50 dark:text-slate-300 border-slate-500",
-            color === 'teal' && "bg-emerald-100 text-teal-800 dark:bg-emerald-800/50 dark:text-emerald-300 border-teal-600",
-            color === 'indigo' && "bg-indigo-100 text-indigo-800 dark:bg-indigo-800/50 dark:text-indigo-300 border-indigo-800"
-          )}
-        >
-          {period}
-        </Badge>
-      </div>
     </div>
   );
 } 

@@ -8,14 +8,14 @@ import { Card } from '@/components/ui/card';
 // Definir props para TimelineItem
 interface TimelineItemProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
-  icon?: React.ReactNode;
+  period: string;
   active?: boolean;
-  color?: 'slate' | 'sky' | 'purple' | 'indigo' | 'emerald' | 'teal'; // Añadido teal
+  color?: 'slate' | 'sky' | 'purple' | 'indigo' | 'emerald' | 'teal';
 }
 
 export function TimelineItem({
   children,
-  icon,
+  period,
   active = false,
   color = 'slate',
   className,
@@ -49,28 +49,27 @@ export function TimelineItem({
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      {/* Punto de conexión en la línea de tiempo */}
-      <div className="absolute left-16 -ml-5">
+      {/* Punto de conexión ahora con el periodo */}
+      <div className="absolute left-16 -ml-5 z-10">
         <div 
           className={cn(
-            "h-10 w-10 rounded-full border-2 bg-background flex items-center justify-center z-10",
-            currentColors.border, // Clase de borde del map
-            currentColors.text,   // Clase de texto del map
-            currentColors.bg      // Clase de fondo del map
+            "h-auto min-h-10 w-auto min-w-10 max-w-[6rem] px-2 py-1 rounded-md border-2 bg-background flex items-center justify-center text-center",
+            currentColors.border,
+            currentColors.text,
+            currentColors.bg
           )}
         >
-          {icon}
+          <span className="text-xs font-semibold leading-tight">{period}</span>
         </div>
       </div>
 
       {/* Contenido del timeline item */}
-      <div className="pl-28 pr-8">
+      <div className="pl-28 pr-8 pt-5">
         {/* Card normal sin color de fondo */}
         <Card className={cn(
           "overflow-hidden transition-all hover:shadow-md w-full border",
           active ? "border-l-4" : "",
           active ? currentColors.border : ""
-          // Eliminadas todas las clases de color de fondo
         )}>
           {/* Div interior con padding */}
           <div className="p-4">

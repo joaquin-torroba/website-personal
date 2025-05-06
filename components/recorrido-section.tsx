@@ -8,14 +8,13 @@ import { TrendingUp, Rocket, Sparkles } from 'lucide-react';
 
 export default function RecorridoSection() {
   return (
-    <section className="w-full py-16 bg-slate-50 dark:bg-slate-900 border-t border-slate-200/50 dark:border-slate-700/50 shadow-sm">
+    <section className="w-full py-16 bg-slate-50 dark:bg-slate-900 border-t border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Mi Recorrido Profesional</h2>
         <Timeline>
-          <TimelineItem icon={<TrendingUp size={24} />} color="slate" active>
+          <TimelineItem period="2012–2020" color="slate" active>
             <TimelineCard
               title="Etapa Corporativa (Latinoamérica)"
-              period="2012–2020"
               tags={["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"]}
               description="A los 20 años comencé mi camino profesional en PWC en el área de <i>capital markets</i> y <i>auditoría</i>. Luego un breve paso por Sinopec en <i>finanzas</i>. Y finalmente, 5 hermosos años trabajando en Grupo Cepas (Bacardi) en core áreas como <i>revenue management</i>, <i>marketing</i>, <i>ventas</i> y <i>BI</i>."
               logos={[
@@ -49,10 +48,9 @@ export default function RecorridoSection() {
             />
           </TimelineItem>
           
-          <TimelineItem icon={<Rocket size={24} />} color="slate" active>
+          <TimelineItem period="2020–2023" color="slate" active>
             <TimelineCard
               title="Etapa Startups (Europa)"
-              period="2020–2023"
               tags={["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"]}
               description="A los 28 años me mudé a Europa y conocí el mundo digital trabajando en un <i>growth studio</i> danés llamado Plyo Labs. Durante 3 años participé de múltiples proyectos remotos en distintas startups (destaco Dimexon, Once y Cultions). Comencé como especialista en <i>marketing digital</i> y luego incorporando más herramientas digital-native como <i>diseño web</i>, <i>automatizaciones</i>, <i>e-commerce</i> y <i>growth hacking</i>."
               logos={[
@@ -85,10 +83,9 @@ export default function RecorridoSection() {
             />
           </TimelineItem>
           
-          <TimelineItem icon={<Sparkles size={24} />} color="slate" active>
+          <TimelineItem period="2023–2025" color="slate" active>
             <TimelineCard
               title="Etapa Inteligencia Artificial (Remoto Global)"
-              period="2023–2025"
               tags={["Ingeniería de IA", "Trabajo con Agentes", "Desarrollo de Apps (IA)", "Diseño Web con IA (IA)", "Automatizaciones (IA)"]}
               description="Productos IA full-stack: Video Insight Pro, Framesynth. Actualmente lidero Mis Copilotos, asesoro con IA en Launchable y desarrollo productos que aprovechan el potencial de la inteligencia artificial para resolver problemas reales."
               logos={[

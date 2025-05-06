@@ -12,7 +12,7 @@ export default function RecorridoSection() {
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Mi Recorrido Profesional</h2>
         <Timeline>
-          <TimelineItem period="2012<br /><span class='font-normal'>a</span><br />2020" color="pink" active>
+          <TimelineItem period="2012<br /><span class='font-normal'>a</span><br />2020" color="purple" active>
             <TimelineCard
               title="Etapa Corporativa (Latinoamérica)"
               tags={["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"]}
@@ -48,7 +48,7 @@ export default function RecorridoSection() {
             />
           </TimelineItem>
           
-          <TimelineItem period="2020<br /><span class='font-normal'>a</span><br />2023" color="purple" active>
+          <TimelineItem period="2020<br /><span class='font-normal'>a</span><br />2023" color="pink" active>
             <TimelineCard
               title="Etapa Startups (Europa)"
               tags={["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"]}

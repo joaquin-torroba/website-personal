@@ -18,15 +18,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <Card className="p-6 flex flex-col md:flex-row md:items-start gap-6 transition-shadow hover:shadow-lg h-full">
-      {/* Columna Izquierda: Logo, Nombre, Año/Estado */}
-      <div className="flex flex-col items-center md:items-center md:w-1/3 flex-shrink-0 gap-3">
+      {/* Columna Izquierda: Logo, Nombre, Tipo, Año/Estado */}
+      <div className="flex flex-col items-center md:items-center md:w-1/3 flex-shrink-0 gap-2 h-full">
         {project.logo && (
-          <div className="relative h-20 w-20 flex-shrink-0 mx-auto">
+          <div className="relative h-16 w-16 flex-shrink-0 mx-auto">
             <Image
               src={project.logo}
               alt={`${project.name} logo`}
               fill
-              sizes="80px"
+              sizes="64px"
               className="object-contain rounded-md"
             />
           </div>
@@ -36,11 +36,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         >
           {project.name}
         </h3>
+        {project.projectType && (
+          <p className="text-sm text-muted-foreground text-center md:text-center w-full px-1">
+            {project.projectType}
+          </p>
+        )}
         {(project.year || project.status) && (
-          <div className="flex items-center justify-center md:justify-center gap-2 text-sm text-muted-foreground w-full">
+          <div className="flex items-center justify-center md:justify-center gap-2 text-xs text-muted-foreground w-full mt-auto">
             {project.year && <span>{project.year}</span>}
             {project.year && project.status && <span className="hidden md:inline">•</span>}
-            {project.status && <Badge variant={statusVariant}>{project.status}</Badge>}
+            {project.status && <Badge variant={statusVariant} className="px-1.5 py-0.5 text-xs">{project.status}</Badge>}
           </div>
         )}
       </div>

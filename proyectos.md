@@ -77,3 +77,33 @@ Tagline en 4 palabras del tipo de proyecto: Plataforma de copilotos personalizad
 Descripción en 300 caracteres del proyecto: Mis Copilotos es una plataforma que desarrollé para crear y personalizar copilotos de IA enfocados en gestión de proyectos y tareas. Diseñé la arquitectura, la experiencia de usuario y la integración de chats inteligentes, combinando tecnología con casos de uso reales.
 
 Listado de herramientas utilizadas en el proyecto: Bubble, Flowise, Cursor, V0, ChatGPT, Claude, Pinecone
+
+# PROYECTO LAUNCHABLE
+
+Nombre del proyecto: Launchable
+
+Tagline en 4 palabras del tipo de proyecto: Agencia de inteligencia artificial
+
+Descripción en 300 caracteres del proyecto: Launchable es una agencia de Canadá de inteligencia artificial. Trabajo como freelancer en proyectos como Video Insight Pro y Framesynth. Aporto estrategia, desarrollo de producto, prototipado rápido, marketing digital y growth, aplicando lo más avanzado en AI.
+
+Listado de herramientas utilizadas en el proyecto: Bubble, Cursor, V0, ChatGPT, Claude, Replicate.
+
+# PROYECTO VIDEO INSIGHT PRO
+
+Nombre del proyecto: Video Insight Pro
+
+Tagline en 4 palabras del tipo de proyecto: Plataforma de análisis de videos con IA
+
+Descripción en 300 caracteres del proyecto: Video Insight Pro es una plataforma que permite subir videos y analizarlos con inteligencia artificial en minutos. Trabajo en desarrollo de producto, estrategia, prototipado rápido y growth, ayudando a transformar videos en insights claros y accionables.
+
+Listado de herramientas utilizadas en el proyecto: Bubble, Cursor, V0, ChatGPT, Claude, Replicate, AWS Lambda.
+
+# PROYECTO FRAMESYNTH
+
+Nombre del proyecto: Framesynth
+
+Tagline en 4 palabras del tipo de proyecto: Generador AI de videos musicales
+
+Descripción en 300 caracteres del proyecto: Framesynth es una plataforma que convierte música en videos generados por inteligencia artificial. Trabajo en desarrollo de producto, estrategia, prototipado rápido y marketing digital, creando experiencias audiovisuales innovadoras con lo último en AI.
+
+Listado de herramientas utilizadas en el proyecto: Bubble, Cursor, Vercel, ChatGPT, Claude, Replicate, AWS Lambda

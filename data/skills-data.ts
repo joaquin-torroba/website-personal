@@ -21,6 +21,7 @@ export const skillsData: SkillCategory[] = [
       { name: "Midjourney", logoSrc: "/logos_skills/midjourney.svg" },
       { name: "Gamma", logoSrc: "/logos_skills/Logo_gamma.svg" },
       { name: "Perplexity", logoSrc: "/logos_skills/logo_perplexity.svg" },
+      { name: "Mis Copilotos", logoSrc: "/logos/miscopilotos_logo_new.svg" }
     ],
   },
   // 2. Marketing Digital & Analytics
@@ -34,8 +35,11 @@ export const skillsData: SkillCategory[] = [
       { name: "Mixpanel", logoSrc: "/logos_skills/Mixpanel_full_logo_–_purple 1.svg" },
       { name: "LinkedIn Ads", logoSrc: '/logos_skills/logo linkedin.png' },
       { name: "Hubspot", logoSrc: '/logos_skills/logo_hubspot.png' },
-      { name: "Woodpecker", logoSrc: '/logos_skills/logo_woodpecker.png' }
-      // A/B testing y Signal Mining movidos a Growth Hacking
+      { name: "Woodpecker", logoSrc: '/logos_skills/logo_woodpecker.png' },
+      { name: "Copy AI", logoSrc: "/logos_skills/logo_copy_ai.svg" },
+      { name: "Taboola", logoSrc: "/logos_skills/logo_taboola.png" },
+      { name: "Outbrain", logoSrc: "/logos_skills/logo_outbrain.png" },
+      { name: "Stable Diffusion", logoSrc: "/logos_skills/logo_stablediffusion.png" }
     ],
   },
   // 3. BI & Data / Herramientas Corporativas
@@ -68,6 +72,9 @@ export const skillsData: SkillCategory[] = [
       { name: "Zapier", logoSrc: "/logos_skills/logo_zapier.svg" },
       { name: "Flowise", logoSrc: "/logos_skills/Logo_flowise.svg" },
       { name: "Cloudflare Workers", logoSrc: "/logos_skills/cloudflare-1.svg" },
+      { name: "Pinecone", logoSrc: "/logos_skills/logo_pinecone.png" },
+      { name: "Replicate", logoSrc: "/logos_skills/logo_replicate.png" },
+      { name: "AWS Lambda", logoSrc: "/logos_skills/logo_aws.png" }
     ],
   },
   // 6. Growth Hacking (Nueva categoría al final) - Eliminada

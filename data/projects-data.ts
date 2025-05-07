@@ -7,6 +7,7 @@ export interface Project {
   id: number;
   name: string;
   logo?: string;
+  projectUrl?: string;
   projectType?: string;
   year?: string;
   status?: string;
@@ -19,6 +20,7 @@ export const projectsData: Project[] = [
     id: 1,
     name: 'PLYO Labs',
     logo: '/logos/plyo_lab_logo.jpeg',
+    projectUrl: 'https://www.plyolab.com/',
     projectType: 'Growth studio digital danés',
     year: '2020 - 2023',
     description: 'PLYO Labs fue mi puerta de entrada al mundo digital. Como parte del equipo, trabajé en múltiples proyectos 100% remotos, liderando estrategias de marketing digital, diseño web, validación de negocios (MVP, Signal Mining) y automatizaciones. Fue mi escuela intensiva en startups y growth, junto a <a href="https://www.linkedin.com/in/kwadwoadu/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-700 hover:underline">Kwadwo</a>, su fundador y CEO (y un gran amigo).',
@@ -63,9 +65,10 @@ export const projectsData: Project[] = [
   { 
     id: 4, 
     name: 'Dimexon',
+    logo: '/logos/dimexon_logo.jpeg',
+    projectUrl: 'https://dimexon.com/',
     projectType: 'Marketplace B2B de diamantes',
     description: 'DIMEXON es un marketplace digital de diamantes B2B enfocado en joyeros tradicionales europeos. Lideré la validación ágil (Signal Mining), creación del MVP, y adquisición de clientes vía campañas multicanal. Logramos rápida tracción y validamos exitosamente el modelo.',
-    logo: '/logos/dimexon_logo.jpeg',
     year: '2021',
     status: 'Finalizado',
     tools: [
@@ -80,9 +83,10 @@ export const projectsData: Project[] = [
   { 
     id: 5, 
     name: 'Cultions',
+    logo: '/logos/cultions_logo.jpeg',
+    projectUrl: 'https://www.linkedin.com/company/cultions/',
     projectType: 'Comunidad online para artistas',
     description: 'CULTIONS es una plataforma digital para artistas. Implementé Signal Mining en 8 semanas, creando landing pages, campañas y creatividades para validar demanda. Logramos fuerte tracción inicial y excelentes métricas en campañas multicanal, validando el interés del mercado.',
-    logo: '/logos/cultions_logo.jpeg',
     year: '2021',
     status: 'Finalizado',
     tools: [
@@ -97,9 +101,10 @@ export const projectsData: Project[] = [
   { 
     id: 6, 
     name: 'CANNMED',
+    logo: '/logos/logo_cannmed.svg',
+    projectUrl: 'https://www.instagram.com/cannmed.es/',
     projectType: 'E-commerce de CBD medicinal',
     description: 'CANNMED fue un e-commerce de CBD en España, desarrollado como side project junto a mi socio y amigo <a href="https://www.linkedin.com/in/joselagamma/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-700 hover:underline">José</a>. Diseñé la tienda en WooCommerce y juntos lideramos estrategias de growth con Taboola y Outbrain. Logramos ventas iniciales, pero pausamos al detectar que los claims sobre beneficios de salud no contaban aún con evidencia científica sólida.',
-    logo: '/logos/logo_cannmed.svg',
     year: '2022',
     status: 'Finalizado',
     tools: [
@@ -114,6 +119,7 @@ export const projectsData: Project[] = [
     id: 7,
     name: 'Gray Matter',
     logo: '/logos/graymatterhq_logo.jpeg',
+    projectUrl: 'https://www.linkedin.com/company/graymatterhq/posts/?feedView=all',
     projectType: 'Startup studio de inteligencia artificial',
     year: '2023',
     status: 'Finalizado',
@@ -129,6 +135,7 @@ export const projectsData: Project[] = [
     id: 8, 
     name: 'Mis Copilotos',
     logo: '/logos/miscopilotos_logo_new.svg',
+    projectUrl: 'https://miscopilotos.com/',
     projectType: 'Plataforma de copilotos personalizados',
     year: '2024 - actualidad',
     status: 'En curso',
@@ -147,15 +154,56 @@ export const projectsData: Project[] = [
     id: 9,
     name: 'Launchable',
     logo: '/logos/launchable_logo_new.svg',
+    projectUrl: 'https://launchable.ai/',
+    projectType: 'Agencia de inteligencia artificial',
+    year: '2025',
+    status: 'En curso',
+    description: 'Launchable es una agencia de Canadá de inteligencia artificial. Trabajo como freelancer en proyectos como Video Insight Pro y Framesynth. Aporto estrategia, desarrollo de producto, prototipado rápido, marketing digital y growth, aplicando lo más avanzado en AI.',
+    tools: [
+      { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
+      { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
+      { name: 'V0', logoSrc: '/logos_skills/Logo_v0.svg' },
+      { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
+      { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
+      { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' }
+    ]
   },
   { 
     id: 10, 
     name: 'Video Insight Pro',
-    logo: '/logos/logo_vip_videoinsightpro.svg'
+    logo: '/logos/logo_vip_videoinsightpro.svg',
+    projectUrl: 'https://videoinsight.pro/',
+    projectType: 'Plataforma de análisis de videos con IA',
+    year: '2025',
+    status: 'En curso',
+    description: 'Video Insight Pro es una plataforma que permite subir videos y analizarlos con inteligencia artificial en minutos. Trabajo en desarrollo de producto, estrategia, prototipado rápido y growth, ayudando a transformar videos en insights claros y accionables.',
+    tools: [
+      { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
+      { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
+      { name: 'V0', logoSrc: '/logos_skills/Logo_v0.svg' },
+      { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
+      { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
+      { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
+      { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' }
+    ]
   },
   { 
     id: 11, 
     name: 'Framesynth',
-    logo: '/logos/logo_framesynth.svg'
+    logo: '/logos/logo_framesynth.svg',
+    projectUrl: 'https://framesynth.art/',
+    projectType: 'Generador AI de videos musicales',
+    year: '2025',
+    status: 'En curso',
+    description: 'Framesynth es una plataforma que convierte música en videos generados por inteligencia artificial. Trabajo en desarrollo de producto, estrategia, prototipado rápido y marketing digital, creando experiencias audiovisuales innovadoras con lo último en AI.',
+    tools: [
+      { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
+      { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
+      { name: 'Vercel', logoSrc: '/logos_skills/Logo_vercel.svg' },
+      { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
+      { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
+      { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
+      { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' }
+    ]
   },
 ]; 

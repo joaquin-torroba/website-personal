@@ -21,15 +21,33 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* Columna Izquierda: Logo, Nombre, Tipo, Año/Estado */}
       <div className="flex flex-col items-center md:items-center md:w-1/3 flex-shrink-0 gap-2 h-full">
         {project.logo && (
-          <div className="relative h-16 w-16 flex-shrink-0 mx-auto">
-            <Image
-              src={project.logo}
-              alt={`${project.name} logo`}
-              fill
-              sizes="64px"
-              className="object-contain rounded-md"
-            />
-          </div>
+          project.projectUrl ? (
+            <a 
+              href={project.projectUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label={`Visitar sitio de ${project.name}`}
+              className="block relative h-16 w-16 flex-shrink-0 mx-auto transition-opacity hover:opacity-80"
+            >
+              <Image
+                src={project.logo}
+                alt={`${project.name} logo`}
+                fill
+                sizes="64px"
+                className="object-contain rounded-md"
+              />
+            </a>
+          ) : (
+            <div className="relative h-16 w-16 flex-shrink-0 mx-auto">
+              <Image
+                src={project.logo}
+                alt={`${project.name} logo`}
+                fill
+                sizes="64px"
+                className="object-contain rounded-md"
+              />
+            </div>
+          )
         )}
         <h3 
           className="text-xl font-semibold text-center md:text-center w-full"

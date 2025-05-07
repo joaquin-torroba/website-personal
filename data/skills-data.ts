@@ -32,6 +32,9 @@ export const skillsData: SkillCategory[] = [
       { name: "Email Marketing", logoSrc: "/logos_skills/Logo_mailchimp.svg" },
       { name: "Google Analytics", logoSrc: "/logos_skills/google-analytics-4.svg" },
       { name: "Mixpanel", logoSrc: "/logos_skills/Mixpanel_full_logo_–_purple 1.svg" },
+      { name: "LinkedIn Ads", logoSrc: '/logos_skills/logo linkedin.png' },
+      { name: "Hubspot", logoSrc: '/logos_skills/logo_hubspot.png' },
+      { name: "Woodpecker", logoSrc: '/logos_skills/logo_woodpecker.png' }
       // A/B testing y Signal Mining movidos a Growth Hacking
     ],
   },
@@ -50,6 +53,7 @@ export const skillsData: SkillCategory[] = [
       { name: "Webflow", logoSrc: "/logos_skills/logo_webfow 1.svg" },
       { name: "WordPress", logoSrc: "/logos_skills/logo_wordpress.svg" },
       { name: "Shopify", logoSrc: "/logos_skills/Logo_shopify.svg" },
+      { name: "WooCommerce", logoSrc: "/logos_skills/logo_woocommerce.png" },
       { name: "Bubble", logoSrc: "/logos_skills/bubble-io.svg" },
       { name: "v0", logoSrc: "/logos_skills/Logo_v0.svg" },
       { name: "Cursor", logoSrc: "/logos_skills/cursor.svg" },

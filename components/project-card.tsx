@@ -53,9 +53,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* Columna Derecha: Descripción y Herramientas */}
       <div className="flex flex-col items-center md:items-start gap-3 flex-grow w-full md:w-2/3 mt-4 md:mt-0">
         {project.description && (
-          <p className="text-sm text-center md:text-left text-muted-foreground leading-relaxed">
-            {project.description}
-          </p>
+          <p 
+            className="text-sm text-center md:text-left text-muted-foreground leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: project.description }}
+          />
         )}
 
         {project.tools && project.tools.length > 0 && (

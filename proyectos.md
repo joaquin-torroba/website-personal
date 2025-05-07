@@ -54,3 +54,26 @@ Listado de herramientas utilizadas en el proyecto: Wordpress, WooCommerce, Taboo
 # PROYECTO CRYPTOBOARD
 - Pending.
 - Link: https://cryptoboard.webflow.io/
+
+# PROYECTO INTHEMIRROR
+- Pending.
+
+# PROYECTO GRAY MATTER
+
+Nombre del proyecto: Gray Matter
+
+Tagline en 4 palabras del tipo de proyecto: Startup studio de inteligencia artificial
+
+Descripción en 300 caracteres del proyecto: Gray Matter es un startup studio fundado por Koujo tras levantar capital. Me convocó como su primer empleado con equity. Trabajé seis meses en proyectos early stage, combinando growth y prototipado rápido con AI. Mi rol incluyó apoyar estrategia, hacer profundo research de casos y potenciales usos de AI. Luego me abrí como freelancer para explorar AI sin límites.
+
+Listado de herramientas utilizadas en el proyecto: ChatGPT, Stable Diffusion, Notion, Bubble.io.
+
+# PROYECTO MIS COPILOTOS
+
+Nombre del proyecto: Mis Copilotos
+
+Tagline en 4 palabras del tipo de proyecto: Plataforma de copilotos personalizados
+
+Descripción en 300 caracteres del proyecto: Mis Copilotos es una plataforma que desarrollé para crear y personalizar copilotos de IA enfocados en gestión de proyectos y tareas. Diseñé la arquitectura, la experiencia de usuario y la integración de chats inteligentes, combinando tecnología con casos de uso reales.
+
+Listado de herramientas utilizadas en el proyecto: Bubble, Flowise, Cursor, V0, ChatGPT, Claude, Pinecone

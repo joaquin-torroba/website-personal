@@ -21,7 +21,7 @@ export const projectsData: Project[] = [
     logo: '/logos/plyo_lab_logo.jpeg',
     projectType: 'Growth studio digital danés',
     year: '2020 - 2023',
-    description: 'PLYO Labs fue mi puerta de entrada al mundo digital. Como parte del equipo, trabajé en múltiples proyectos 100% remotos, liderando estrategias de marketing digital, diseño web, validación de negocios (MVP, Signal Mining) y automatizaciones. Fue mi escuela intensiva en startups y growth.',
+    description: 'PLYO Labs fue mi puerta de entrada al mundo digital. Como parte del equipo, trabajé en múltiples proyectos 100% remotos, liderando estrategias de marketing digital, diseño web, validación de negocios (MVP, Signal Mining) y automatizaciones. Fue mi escuela intensiva en startups y growth, junto a <a href="https://www.linkedin.com/in/kwadwoadu/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-700 hover:underline">Kwadwo</a>, su fundador y CEO (y un gran amigo).',
     tools: [
       { name: 'Marketing Digital', logoSrc: '' },
       { name: 'Growth Hacking', logoSrc: '' },
@@ -62,7 +62,7 @@ export const projectsData: Project[] = [
   },
   { 
     id: 4, 
-    name: 'DIMEXON',
+    name: 'Dimexon',
     projectType: 'Marketplace B2B de diamantes',
     description: 'DIMEXON es un marketplace digital de diamantes B2B enfocado en joyeros tradicionales europeos. Lideré la validación ágil (Signal Mining), creación del MVP, y adquisición de clientes vía campañas multicanal. Logramos rápida tracción y validamos exitosamente el modelo.',
     logo: '/logos/dimexon_logo.jpeg',
@@ -79,7 +79,7 @@ export const projectsData: Project[] = [
   },
   { 
     id: 5, 
-    name: 'CULTIONS',
+    name: 'Cultions',
     projectType: 'Comunidad online para artistas',
     description: 'CULTIONS es una plataforma digital para artistas. Implementé Signal Mining en 8 semanas, creando landing pages, campañas y creatividades para validar demanda. Logramos fuerte tracción inicial y excelentes métricas en campañas multicanal, validando el interés del mercado.',
     logo: '/logos/cultions_logo.jpeg',
@@ -110,18 +110,43 @@ export const projectsData: Project[] = [
       { name: 'Instagram orgánico', logoSrc: '/logos_skills/logo_instagram.png' }
     ]
   },
-  { id: 7, name: 'Crypto Job Board' },
   {
-    id: 8,
+    id: 7,
     name: 'Gray Matter',
-    description: 'Descripción de tu rol en Gray Matter.',
-    tools: []
+    logo: '/logos/graymatterhq_logo.jpeg',
+    projectType: 'Startup studio de inteligencia artificial',
+    year: '2023',
+    status: 'Finalizado',
+    description: 'Gray Matter es un startup studio fundado por <a href="https://www.linkedin.com/in/kwadwoadu/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-700 hover:underline">Kwadwo</a> tras levantar capital. Me convocó como su primer empleado con equity. Trabajé seis meses en proyectos early stage, combinando growth y prototipado rápido con AI. Mi rol incluyó apoyar estrategia, hacer profundo research de casos y potenciales usos de AI. Luego me abrí como freelancer para explorar AI sin límites.',
+    tools: [
+      { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
+      { name: 'Stable Diffusion', logoSrc: '/logos_skills/logo_stablediffusion.png' },
+      { name: 'Notion', logoSrc: '/logos_skills/logo_notion.png' },
+      { name: 'Bubble.io', logoSrc: '/logos_skills/bubble-io.svg' }
+    ]
   },
-  { id: 9, name: 'Mis Copilotos' },
-  { id: 10, name: 'Video Insight Pro' },
-  { id: 11, name: 'Framesynth' },
+  { 
+    id: 8, 
+    name: 'Mis Copilotos',
+    logo: '/logos/miscopilotos_logo_new.svg',
+    projectType: 'Plataforma de copilotos personalizados',
+    year: '2024 - actualidad',
+    status: 'En curso',
+    description: 'Mis Copilotos es una plataforma que desarrollé para crear y personalizar copilotos de IA enfocados en gestión de proyectos y tareas. Diseñé la arquitectura, la experiencia de usuario y la integración de chats inteligentes, combinando tecnología con casos de uso reales.',
+    tools: [
+      { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
+      { name: 'Flowise', logoSrc: '/logos_skills/Logo_flowise.svg' },
+      { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
+      { name: 'V0', logoSrc: '/logos_skills/Logo_v0.svg' },
+      { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
+      { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
+      { name: 'Pinecone', logoSrc: '/logos_skills/logo_pinecone.png' }
+    ]
+  },
+  { id: 9, name: 'Video Insight Pro' },
+  { id: 10, name: 'Framesynth' },
   {
-    id: 12,
+    id: 11,
     name: 'Almendra',
     description: 'Descripción del proyecto Almendra.',
     tools: []

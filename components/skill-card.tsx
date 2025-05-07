@@ -25,7 +25,7 @@ export default function SkillCard({ name, logoSrc }: SkillCardProps) {
           alt={`${name} logo`} 
           fill 
           sizes="48px" 
-          className="object-contain"
+          className="object-contain rounded-lg"
         />
       </div>
       <div className="h-10 flex items-center justify-center">

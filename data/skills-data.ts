@@ -66,16 +66,16 @@ export const skillsData: SkillCategory[] = [
     title: "Automatización y Cloud",
     skills: [
       { name: "Zapier", logoSrc: "/logos_skills/logo_zapier.svg" },
-      { name: "Flowise (langgraph)", logoSrc: "/logos_skills/Logo_flowise.svg" },
+      { name: "Flowise", logoSrc: "/logos_skills/Logo_flowise.svg" },
       { name: "Cloudflare Workers", logoSrc: "/logos_skills/cloudflare-1.svg" },
     ],
   },
-  // 6. Growth Hacking (Nueva categoría al final)
-  {
-    title: "Growth Hacking",
-    skills: [
-      { name: "Signal Mining", logoSrc: "/logos/signal-mining.svg" }, 
-      { name: "A/B testing", logoSrc: "/logos/ab-testing.svg" }, 
-    ],
-  },
+  // 6. Growth Hacking (Nueva categoría al final) - Eliminada
+  // {
+  //   title: "Growth Hacking",
+  //   skills: [
+  //     { name: "Signal Mining", logoSrc: "/logos/signal-mining.svg" }, 
+  //     { name: "A/B testing", logoSrc: "/logos/ab-testing.svg" }, 
+  //   ],
+  // },
 ]; 

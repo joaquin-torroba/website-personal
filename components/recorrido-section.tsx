@@ -72,6 +72,10 @@ export default function RecorridoSection() {
                 {
                   src: "/logos/once_logo.png",
                   alt: "ONCE"
+                },
+                {
+                  src: "/logos/logo_cannmed.svg",
+                  alt: "CANNMED"
                 }
               ]}
               flags={[
@@ -90,11 +94,6 @@ export default function RecorridoSection() {
               description="Productos IA full-stack: Video Insight Pro, Framesynth. Actualmente lidero Mis Copilotos, asesoro con IA en Launchable y desarrollo productos que aprovechan el potencial de la inteligencia artificial para resolver problemas reales."
               logos={[
                 {
-                  src: "/logos/launchable_logo_new.svg",
-                  alt: "Launchable",
-                  href: "https://launchable.ai/"
-                },
-                {
                   src: "/logos/graymatterhq_logo.jpeg",
                   alt: "Gray Matter",
                   href: "https://www.linkedin.com/company/graymatterhq/posts/?feedView=all"
@@ -105,9 +104,19 @@ export default function RecorridoSection() {
                   href: "https://miscopilotos.com/"
                 },
                 {
-                  src: "/logos/almendra_logo_new.svg",
-                  alt: "Almendra",
-                  href: "http://almendra.ai/"
+                  src: "/logos/launchable_logo_new.svg",
+                  alt: "Launchable",
+                  href: "https://launchable.ai/"
+                },
+                {
+                  src: "/logos/logo_vip_videoinsightpro.svg",
+                  alt: "Video Insight Pro",
+                  href: "https://videoinsight.pro/"
+                },
+                {
+                  src: "/logos/logo_framesynth.svg",
+                  alt: "Framesynth",
+                  href: "https://framesynth.art/"
                 }
               ]}
               flags={[

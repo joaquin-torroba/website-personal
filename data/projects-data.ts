@@ -143,12 +143,19 @@ export const projectsData: Project[] = [
       { name: 'Pinecone', logoSrc: '/logos_skills/logo_pinecone.png' }
     ]
   },
-  { id: 9, name: 'Video Insight Pro' },
-  { id: 10, name: 'Framesynth' },
   {
-    id: 11,
-    name: 'Almendra',
-    description: 'Descripción del proyecto Almendra.',
-    tools: []
-  }
+    id: 9,
+    name: 'Launchable',
+    logo: '/logos/launchable_logo_new.svg',
+  },
+  { 
+    id: 10, 
+    name: 'Video Insight Pro',
+    logo: '/logos/logo_vip_videoinsightpro.svg'
+  },
+  { 
+    id: 11, 
+    name: 'Framesynth',
+    logo: '/logos/logo_framesynth.svg'
+  },
 ]; 

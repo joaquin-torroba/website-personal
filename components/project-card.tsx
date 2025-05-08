@@ -56,8 +56,9 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
         )}
         <h3 
           className="text-xl font-semibold text-center md:text-center w-full"
+          dangerouslySetInnerHTML={{ __html: project.name }}
         >
-          {project.name}
+          {/* El contenido ahora se maneja con dangerouslySetInnerHTML */}
         </h3>
         {project.projectType && (
           <p className="text-sm text-muted-foreground text-center md:text-center w-full px-1 min-h-16">

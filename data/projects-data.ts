@@ -218,4 +218,61 @@ export const projectsData: Project[] = [
     ],
     category: 'ia',
   },
+  {
+    id: 12,
+    name: 'Price Waterhouse Coopers',
+    logo: '/logos/pwc_logo_new.svg',
+    projectUrl: 'https://www.linkedin.com/company/price-waterhouse-cooper-pwc/',
+    projectType: 'Auditoría, contabilidad e impuestos',
+    year: '2011 - 2014',
+    description: 'En PwC trabajé en las áreas de Capital Markets y Auditoría con clientes como Colgate, IRSA, Cresud y Adecoagro. En estos años aprendí de contabilidad, impuestos, finanzas y procesos corporativos, trabajando en las oficinas de estas compañías en Buenos Aires. Además, tuve la oportunidad de conocer de cerca sus operaciones mediante visitas a plantas industriales, como la de Colgate en San Luis, y a establecimientos agropecuarios, como los campos de Adecoagro en Corrientes y Santiago del Estero.',
+    tools: [
+      { name: 'Auditoría externa' }, 
+      { name: 'Contabilidad' }, 
+      { name: 'Impuestos' }, 
+      { name: 'Capital Markets' }, 
+      { name: 'IFRS' }, 
+      { name: 'US GAAP' }, 
+      { name: 'Excel avanzado' }
+    ],
+    category: 'corporate',
+  },
+  {
+    id: 13,
+    name: 'Sinopec<br />International',
+    logo: '/logos/Sinopec_logo.svg',
+    projectType: 'Finanzas corporativas en multinacional',
+    year: '2014 - 2015',
+    description: 'En Sinopec trabajé en Finanzas, realizando tareas de back office y gestión de facturas. Fue una experiencia que me permitió conocer de cerca el funcionamiento administrativo de una multinacional. Tras seis meses, busqué un desafío más ambicioso y tomé el proyecto de Jóvenes Profesionales en Bacardi.',
+    tools: [
+      { name: 'Finanzas' },
+      { name: 'Back office' },
+      { name: 'Gestión administrativa' },
+      { name: 'Procesos corporativos' },
+      { name: 'Excel' }
+    ],
+    category: 'corporate',
+  },
+  {
+    id: 14,
+    name: 'Bacardi<br />(Grupo Cepas)',
+    logo: '/logos/bacardi_logo_new.svg',
+    projectType: 'Revenue, marketing y ventas en consumo masivo',
+    year: '2015 - 2020',
+    description: 'En Bacardi (Grupo CEPAS) trabajé 5 años. Entré como Joven Profesional rotando por Revenue Management, Ventas y Business Intelligence. Crecí en Revenue Management hasta liderar la apertura del área en Chile y Uruguay. Cerré en el área de Marketing como Brand Manager de Terma, combinando análisis y estrategia de marca. Trabajé con marcas icónicas como Bacardi, Ganzia, Terma y Dr. Lemon.',
+    tools: [
+      { name: 'Revenue Management' },
+      { name: 'Ventas' },
+      { name: 'Business Intelligence' },
+      { name: 'Pricing' },
+      { name: 'Forecasting' },
+      { name: 'Marketing' },
+      { name: 'Brand Strategy' },
+      { name: 'SAP' },
+      { name: 'Excel' },
+      { name: 'Nielsen' },
+      { name: 'Ipsos' }
+    ],
+    category: 'corporate',
+  }
 ]; 

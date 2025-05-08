@@ -13,6 +13,7 @@ export interface Project {
   status?: string;
   description?: string;
   tools?: ProjectTool[];
+  category?: string;
 }
 
 export const projectsData: Project[] = [
@@ -29,7 +30,8 @@ export const projectsData: Project[] = [
       { name: 'Growth Hacking', logoSrc: '' },
       { name: 'Web Design', logoSrc: '' },
       { name: 'Digital Stack', logoSrc: '' }
-    ]
+    ],
+    category: 'digital',
   },
   {
     id: 2,
@@ -44,7 +46,8 @@ export const projectsData: Project[] = [
       { name: 'LinkedIn Scraping', logoSrc: '/logos_skills/logo linkedin.png' },
       { name: 'Woodpecker', logoSrc: '/logos_skills/logo_woodpecker.png' },
       { name: 'HubSpot', logoSrc: '/logos_skills/logo_hubspot.png' }
-    ]
+    ],
+    category: 'digital',
   },
   {
     id: 3,
@@ -60,7 +63,8 @@ export const projectsData: Project[] = [
       { name: 'Analytics', logoSrc: '/logos_skills/google-analytics-4.svg' },
       { name: 'Facebook Ads', logoSrc: '/logos_skills/Logo_meta-3.svg' },
       { name: 'Mixpanel', logoSrc: '/logos_skills/Mixpanel_full_logo_–_purple 1.svg' }
-    ]
+    ],
+    category: 'digital',
   },
   { 
     id: 4, 
@@ -78,7 +82,8 @@ export const projectsData: Project[] = [
       { name: 'Zapier', logoSrc: '/logos_skills/logo_zapier.svg' },
       { name: 'Hubspot', logoSrc: '/logos_skills/logo_hubspot.png' },
       { name: 'Shopify', logoSrc: '/logos_skills/Logo_shopify.svg' }
-    ]
+    ],
+    category: 'digital',
   },
   { 
     id: 5, 
@@ -96,7 +101,8 @@ export const projectsData: Project[] = [
       { name: 'Copy AI', logoSrc: '/logos_skills/logo_copy_ai.svg' },
       { name: 'Zapier', logoSrc: '/logos_skills/logo_zapier.svg' },
       { name: 'Google Analytics', logoSrc: '/logos_skills/google-analytics-4.svg' }
-    ]
+    ],
+    category: 'digital',
   },
   { 
     id: 6, 
@@ -113,7 +119,8 @@ export const projectsData: Project[] = [
       { name: 'Taboola', logoSrc: '/logos_skills/logo_taboola.png' },
       { name: 'Outbrain', logoSrc: '/logos_skills/logo_outbrain.png' },
       { name: 'Instagram orgánico', logoSrc: '/logos_skills/logo_instagram.png' }
-    ]
+    ],
+    category: 'digital',
   },
   {
     id: 7,
@@ -129,7 +136,8 @@ export const projectsData: Project[] = [
       { name: 'Stable Diffusion', logoSrc: '/logos_skills/logo_stablediffusion.png' },
       { name: 'Notion', logoSrc: '/logos_skills/logo_notion.png' },
       { name: 'Bubble.io', logoSrc: '/logos_skills/bubble-io.svg' }
-    ]
+    ],
+    category: 'ia',
   },
   { 
     id: 8, 
@@ -148,7 +156,8 @@ export const projectsData: Project[] = [
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Pinecone', logoSrc: '/logos_skills/logo_pinecone.png' }
-    ]
+    ],
+    category: 'ia',
   },
   {
     id: 9,
@@ -166,7 +175,8 @@ export const projectsData: Project[] = [
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' }
-    ]
+    ],
+    category: 'ia',
   },
   { 
     id: 10, 
@@ -185,7 +195,8 @@ export const projectsData: Project[] = [
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
       { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' }
-    ]
+    ],
+    category: 'ia',
   },
   { 
     id: 11, 
@@ -204,6 +215,7 @@ export const projectsData: Project[] = [
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
       { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' }
-    ]
+    ],
+    category: 'ia',
   },
 ]; 

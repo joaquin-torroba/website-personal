@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { projectsData } from '@/data/projects-data';
 import ProjectCard from './project-card';
 
-export default function ProjectsSection() {
+export default function DigitalProjectsSection() {
   const [isSimpleView, setIsSimpleView] = useState(true);
 
   const handleToggleView = () => {
@@ -12,7 +12,7 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="w-full py-16">
+    <section id="digital-projects" className="w-full py-16">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Proyectos Digitales</h2>
         <div className="flex justify-start items-center mb-8 space-x-3">
@@ -44,7 +44,9 @@ export default function ProjectsSection() {
             isSimpleView ? "grid-cols-2 md:grid-cols-3" : "grid-cols-1"
           } gap-6`}
         >
-          {projectsData.map((project) => (
+          {projectsData
+            .filter(project => project.category === 'digital')
+            .map((project) => (
             <ProjectCard 
               key={project.id} 
               project={project} 
@@ -55,4 +57,4 @@ export default function ProjectsSection() {
       </div>
     </section>
   );
-}
+} 

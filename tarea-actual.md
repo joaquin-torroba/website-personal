@@ -45,3 +45,25 @@ Ese toggle es para switchear entre 2 views de los proyectos.
     *   Asegurarse de que la web cargue sin errores.
     *   Verificar que ambas secciones ("Proyectos Digitales" y "Proyectos de IA") se muestren correctamente, cada una con su lista de proyectos filtrada y su respectivo título.
     *   Confirmar que los toggles de vista dentro de cada sección funcionen independientemente.
+
+## Fase 3: Crear Sección de Proyectos Corporativos
+
+1.  **Actualizar Datos de Proyectos (`data/projects-data.ts`):**
+    *   Verificar si los proyectos corporativos (PricewaterhouseCoopers, Sinopec, Bacardi Cepas) ya existen. Si no, añadirlos como nuevos objetos al array `projectsData`.
+    *   Para cada uno de estos tres proyectos, asignarles (o añadirles) el campo `category: 'corporate'`.
+    *   Asegurarse de que todos los proyectos tengan la información necesaria (id, name, projectType, year, description, logo opcional, etc.).
+2.  **Duplicar Componente Existente:**
+    *   Copiar `components/ai-projects-section.tsx` (o `digital-projects-section.tsx`) y nombrarlo `components/corporate-projects-section.tsx`.
+3.  **Modificar `corporate-projects-section.tsx`:**
+    *   Cambiar el nombre de la función del componente a `CorporateProjectsSection`.
+    *   Actualizar el `id` de la etiqueta `<section>` a `"corporate-projects"` (o similar).
+    *   Cambiar el título `<h2>` a "Proyectos Corporativos" (o el que prefieras).
+    *   Ajustar el `id` del input del toggle (ej: `id="corporateViewToggle"`) y el `htmlFor` de la `label` correspondiente para asegurar unicidad.
+    *   Modificar el filtro de datos para que muestre solo los proyectos con `category: 'corporate'`.
+4.  **Integrar en la Página Principal (`app/page.tsx`):**
+    *   Importar el nuevo componente: `import CorporateProjectsSection from '@/components/corporate-projects-section';`.
+    *   Añadir `<CorporateProjectsSection />` en el lugar deseado del layout de la página (por ejemplo, antes de "Proyectos Digitales" o donde consideres más apropiado).
+5.  **Verificación Fase 3:**
+    *   Asegurarse de que la web cargue sin errores.
+    *   Verificar que las tres secciones de proyectos ("Corporativos", "Digitales" y "IA") se muestren correctamente, cada una con su lista de proyectos filtrada y su respectivo título.
+    *   Confirmar que los toggles de vista dentro de cada una de las tres secciones funcionen independientemente.

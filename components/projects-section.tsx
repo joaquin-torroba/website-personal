@@ -1,10 +1,16 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { projectsData } from '@/data/projects-data';
 import ProjectCard from './project-card';
 
 export default function ProjectsSection() {
+  const [isSimpleView, setIsSimpleView] = useState(true);
+
+  const handleToggleView = () => {
+    setIsSimpleView(!isSimpleView);
+  };
+
   return (
     <section id="projects" className="w-full py-16">
       <div className="max-w-3xl mx-auto px-4">
@@ -15,20 +21,35 @@ export default function ProjectsSection() {
           {/* Interruptor Toggle */}
           <label htmlFor="viewToggle" className="flex items-center cursor-pointer">
             <div className="relative">
-              <input type="checkbox" id="viewToggle" className="sr-only peer" />
+              <input
+                type="checkbox"
+                id="viewToggle"
+                className="sr-only peer"
+                checked={!isSimpleView}
+                onChange={handleToggleView}
+              />
               {/* Línea del toggle */}
               <div className="block bg-gray-300 peer-checked:bg-emerald-700 w-12 h-7 rounded-full transition-colors"></div>
               {/* Punto del toggle */}
               <div className="dot absolute left-1 top-1 bg-white w-5 h-5 rounded-full transition-transform peer-checked:translate-x-full peer-checked:bg-white"></div>
             </div>
             <div className="ml-3 text-gray-700 text-sm font-medium">
-              Cambiar a Vista Simple {/* Este texto se volverá dinámico con JS */}
+              {/* Texto dinámico invertido */}
+              {isSimpleView ? "Ver Vista Completa" : "Ver Vista Simple"}
             </div>
           </label>
         </div>
-        <div className="grid grid-cols-1 gap-6">
+        <div 
+          className={`grid ${
+            isSimpleView ? "grid-cols-2 md:grid-cols-3" : "grid-cols-1"
+          } gap-6`}
+        >
           {projectsData.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard 
+              key={project.id} 
+              project={project} 
+              isSimpleView={isSimpleView}
+            />
           ))}
         </div>
       </div>

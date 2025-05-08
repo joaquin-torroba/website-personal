@@ -137,7 +137,7 @@ export const projectsData: Project[] = [
     logo: '/logos/miscopilotos_logo_new.svg',
     projectUrl: 'https://miscopilotos.com/',
     projectType: 'Plataforma de copilotos personalizados',
-    year: '2024 - actualidad',
+    year: '2024',
     status: 'En curso',
     description: 'Mis Copilotos es una plataforma que desarrollé para crear y personalizar copilotos de IA enfocados en gestión de proyectos y tareas. Diseñé la arquitectura, la experiencia de usuario y la integración de chats inteligentes, combinando tecnología con casos de uso reales.',
     tools: [

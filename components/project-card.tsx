@@ -8,9 +8,10 @@ import type { Project, ProjectTool } from '@/data/projects-data';
 
 interface ProjectCardProps {
   project: Project;
+  isSimpleView?: boolean;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project, isSimpleView }: ProjectCardProps) {
   const statusVariant =
     project.status === 'Finalizado' ? 'secondary' :
     project.status === 'En curso' ? 'default' :
@@ -19,7 +20,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="p-6 flex flex-col md:flex-row md:items-start gap-6 transition-shadow hover:shadow-lg h-full">
       {/* Columna Izquierda: Logo, Nombre, Tipo, Año/Estado */}
-      <div className="flex flex-col items-center md:items-center md:w-1/3 flex-shrink-0 gap-2 h-full">
+      <div 
+        className={`flex flex-col items-center md:items-center flex-shrink-0 gap-2 h-full ${
+          isSimpleView ? 'w-full' : 'md:w-1/3'
+        }`}
+      >
         {project.logo && (
           project.projectUrl ? (
             <a 
@@ -55,7 +60,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.name}
         </h3>
         {project.projectType && (
-          <p className="text-sm text-muted-foreground text-center md:text-center w-full px-1">
+          <p className="text-sm text-muted-foreground text-center md:text-center w-full px-1 min-h-16">
             {project.projectType}
           </p>
         )}
@@ -69,7 +74,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Columna Derecha: Descripción y Herramientas */}
-      <div className="flex flex-col items-center md:items-start gap-3 flex-grow w-full md:w-2/3 mt-4 md:mt-0">
+      <div 
+        className={`flex flex-col items-center md:items-start gap-3 flex-grow w-full md:w-2/3 mt-4 md:mt-0 project-details-column ${
+          isSimpleView ? 'hidden' : ''
+        }`}
+      >
         {project.description && (
           <p 
             className="text-sm text-center md:text-left text-muted-foreground leading-relaxed"

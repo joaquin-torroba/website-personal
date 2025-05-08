@@ -5,6 +5,7 @@ import AboutSection from "@/components/about-section";
 import RecorridoSection from "@/components/recorrido-section";
 import SkillsSection from "@/components/skills-section";
 import DigitalProjectsSection from "@/components/digital-projects-section";
+import AiProjectsSection from "@/components/ai-projects-section";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutSection />
       <RecorridoSection />
       <DigitalProjectsSection />
+      <AiProjectsSection />
       <SkillsSection />
     </main>
   );

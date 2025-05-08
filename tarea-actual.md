@@ -1,69 +1,46 @@
-Ahora vamos a trabajar en los proyectos.
+La sigueinte tarea se pospuso hasta que Joaco diga que lo hagamos.
 
-Quiero saber si podemos poner un toggle en "Proyectos Digitales".
+# Plan para Rediseñar el Timeline
 
-Ese toggle es para switchear entre 2 views de los proyectos.
+**Objetivo:** Implementar un diseño de timeline donde las cajas de período se muevan de la izquierda hacia una posición asociada con la tarjeta de contenido, y se agreguen líneas verticales centradas que conecten cada tarjeta con la siguiente.
 
-- Full View: como esta actualmente.
-- Simple View: mostrando unicamente la columna de la izquierda (logo-nombre-descripcion-periodo).
+**Fase 1: Preparación y Reestructuración Inicial**
 
-## Plan para Reestructurar Secciones de Proyectos (Digital y IA):
+1.  **Línea Principal Izquierda del Timeline:**
+    *   **Decisión Necesaria:** ¿Mantenemos la línea vertical gruesa que actualmente está a la izquierda del todo (`left-15` en `components/timeline/timeline.tsx`) como un elemento de fondo, o la eliminamos por completo? En tu nueva imagen, no parece ser el conector principal.
+    *   **Acción:** Modificar `components/timeline/timeline.tsx` según tu decisión.
 
-**Fase 1: Renombrar y Preparar Sección de Proyectos Digitales**
+2.  **Reubicación de las Cajas de Período (Ej: "2012 a 2020"):**
+    *   Estas cajas ya no estarán a la izquierda interceptadas por la línea principal. Necesitan una nueva posición. En tu imagen, parecen estar dentro de la tarjeta de contenido, abajo a la derecha.
+    *   **Decisión Necesaria:** ¿Cuál es la posición exacta deseada para estas cajas de período dentro o al lado de cada tarjeta (`TimelineCard`)? (Ej: Abajo a la derecha dentro de la card, arriba a la derecha, etc.)
+    *   **Acción:** Modificar el archivo `components/timeline/timeline-item.tsx` y, si es necesario, `components/timeline/timeline-card.tsx` para mover la caja de período. Esto implicará cambiar su HTML y CSS. La lógica de color y borde activo que tenían estas cajas también deberá revisarse.
 
-1.  **Renombrar Archivo de Componente:**
-    *   Cambiar `components/projects-section.tsx` a `components/digital-projects-section.tsx`.
-2.  **Actualizar Contenido del Componente Renombrado (`digital-projects-section.tsx`):**
-    *   Cambiar el nombre de la función del componente de `ProjectsSection` a `DigitalProjectsSection`.
-    *   Actualizar el `id` de la etiqueta `<section>` de `"projects"` a `"digital-projects"` (o similar).
-    *   Ajustar el título `<h2>` si es necesario (ej: "Proyectos Digitales").
-3.  **Actualizar Importaciones y Uso en la Página Principal (`app/page.tsx`):**
-    *   Cambiar la importación: `import ProjectsSection from ...` a `import DigitalProjectsSection from '@/components/digital-projects-section';`.
-    *   Actualizar el uso en JSX: de `<ProjectsSection />` a `<DigitalProjectsSection />`.
-4.  **Modificar Datos de Proyectos (`data/projects-data.ts`):**
-    *   Añadir un nuevo campo a cada objeto de proyecto, por ejemplo: `category: string`.
-    *   Asignar el valor correspondiente a cada proyecto (ej: `category: 'digital'` o `category: 'ia'`) según la lista que definimos.
-5.  **Implementar Filtro en `DigitalProjectsSection`:**
-    *   Dentro de `digital-projects-section.tsx`, antes del `.map()` sobre `projectsData`, filtrar la lista para que solo incluya proyectos con `category: 'digital'`.
-6.  **Verificación Fase 1:**
-    *   Asegurarse de que la web cargue sin errores.
-    *   Verificar que la sección renombrada ("Proyectos Digitales") se muestre correctamente y contenga solo los proyectos designados como 'digital'.
+3.  **Ajuste de Espaciado en `TimelineItem`:**
+    *   El componente `TimelineItem` actualmente tiene un `padding-left` (ej. `pl-28`) para hacer espacio a la línea y período a la izquierda.
+    *   **Acción:** Si los elementos de la izquierda se eliminan o mueven significativamente, este padding deberá reducirse o eliminarse en `components/timeline/timeline-item.tsx`.
 
-**Fase 2: Crear Sección de Proyectos de IA**
+**Fase 2: Implementar las Líneas Conectoras Centrales entre Tarjetas**
 
-1.  **Duplicar Componente:**
-    *   Copiar `components/digital-projects-section.tsx` y nombrarlo `components/ai-projects-section.tsx`.
-2.  **Modificar `ai-projects-section.tsx`:**
-    *   Cambiar el nombre de la función del componente a `AiProjectsSection`.
-    *   Actualizar el `id` de la etiqueta `<section>` a `"ai-projects"` (o similar).
-    *   Cambiar el título `<h2>` a "Proyectos de Inteligencia Artificial" (o el que prefieras).
-    *   Modificar el filtro de datos para que muestre solo los proyectos con `category: 'ia'`.
-3.  **Integrar en la Página Principal (`app/page.tsx`):**
-    *   Importar el nuevo componente: `import AiProjectsSection from '@/components/ai-projects-section';`.
-    *   Añadir `<AiProjectsSection />` en el lugar deseado del layout de la página.
-4.  **Verificación Fase 2:**
-    *   Asegurarse de que la web cargue sin errores.
-    *   Verificar que ambas secciones ("Proyectos Digitales" y "Proyectos de IA") se muestren correctamente, cada una con su lista de proyectos filtrada y su respectivo título.
-    *   Confirmar que los toggles de vista dentro de cada sección funcionen independientemente.
+1.  **Identificar el Último Ítem del Timeline:**
+    *   Para no dibujar una línea conectora debajo de la última tarjeta.
+    *   **Acción:** Modificar `components/recorrido-section.tsx` (donde se generan los `TimelineItem`) para que cada `TimelineItem` reciba una nueva propiedad, por ejemplo `isLastItem: boolean`.
+    *   **Acción:** Actualizar la definición de `TimelineItemProps` en `components/timeline/timeline-item.tsx` para aceptar `isLastItem`.
 
-## Fase 3: Crear Sección de Proyectos Corporativos
+2.  **Crear y Estilizar la Línea Conectora:**
+    *   **Acción:** Dentro de `components/timeline/timeline-item.tsx`, si `isLastItem` es `false`, se renderizará un nuevo `div` que actuará como la línea conectora.
+    *   Este `div` se posicionará de forma absoluta:
+        *   Horizontalmente centrado con la tarjeta (`left-1/2 -translate-x-1/2`).
+        *   Comenzando desde la parte inferior de la tarjeta actual.
+        *   Con una altura que cubra el espacio hasta la siguiente tarjeta (esto podría ser un valor fijo como `h-16` o similar, dependiendo del `space-y-16` actual en `components/timeline/timeline.tsx`).
+        *   Con el mismo grosor (`w-0.5`) y color (`bg-slate-200 dark:bg-slate-700`) que la línea principal actual.
 
-1.  **Actualizar Datos de Proyectos (`data/projects-data.ts`):**
-    *   Verificar si los proyectos corporativos (PricewaterhouseCoopers, Sinopec, Bacardi Cepas) ya existen. Si no, añadirlos como nuevos objetos al array `projectsData`.
-    *   Para cada uno de estos tres proyectos, asignarles (o añadirles) el campo `category: 'corporate'`.
-    *   Asegurarse de que todos los proyectos tengan la información necesaria (id, name, projectType, year, description, logo opcional, etc.).
-2.  **Duplicar Componente Existente:**
-    *   Copiar `components/ai-projects-section.tsx` (o `digital-projects-section.tsx`) y nombrarlo `components/corporate-projects-section.tsx`.
-3.  **Modificar `corporate-projects-section.tsx`:**
-    *   Cambiar el nombre de la función del componente a `CorporateProjectsSection`.
-    *   Actualizar el `id` de la etiqueta `<section>` a `"corporate-projects"` (o similar).
-    *   Cambiar el título `<h2>` a "Proyectos Corporativos" (o el que prefieras).
-    *   Ajustar el `id` del input del toggle (ej: `id="corporateViewToggle"`) y el `htmlFor` de la `label` correspondiente para asegurar unicidad.
-    *   Modificar el filtro de datos para que muestre solo los proyectos con `category: 'corporate'`.
-4.  **Integrar en la Página Principal (`app/page.tsx`):**
-    *   Importar el nuevo componente: `import CorporateProjectsSection from '@/components/corporate-projects-section';`.
-    *   Añadir `<CorporateProjectsSection />` en el lugar deseado del layout de la página (por ejemplo, antes de "Proyectos Digitales" o donde consideres más apropiado).
-5.  **Verificación Fase 3:**
-    *   Asegurarse de que la web cargue sin errores.
-    *   Verificar que las tres secciones de proyectos ("Corporativos", "Digitales" y "IA") se muestren correctamente, cada una con su lista de proyectos filtrada y su respectivo título.
-    *   Confirmar que los toggles de vista dentro de cada una de las tres secciones funcionen independientemente.
+**Fase 3: Refinamientos y Pruebas**
+
+1.  **Ajuste Fino de Posiciones y Alturas:**
+    *   **Acción:** Verificar que las líneas conectoras se alineen perfectamente y tengan la altura correcta. Ajustar clases de Tailwind CSS según sea necesario.
+
+2.  **Consistencia de Estilos:**
+    *   **Acción:** Asegurar que todos los elementos visuales (colores de borde activo, etc.) funcionen como se espera en el nuevo diseño.
+
+3.  **Pruebas de Responsividad:**
+    *   **Acción:** Revisar cómo se ve el timeline en diferentes tamaños de pantalla y aplicar ajustes si es necesario. 

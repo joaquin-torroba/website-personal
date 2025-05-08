@@ -62,7 +62,8 @@ export const projectsData: Project[] = [
       { name: 'Google Ads', logoSrc: '/logos_skills/Logo_Google_ads.svg' },
       { name: 'Analytics', logoSrc: '/logos_skills/google-analytics-4.svg' },
       { name: 'Facebook Ads', logoSrc: '/logos_skills/Logo_meta-3.svg' },
-      { name: 'Mixpanel', logoSrc: '/logos_skills/Mixpanel_full_logo_–_purple 1.svg' }
+      { name: 'Mixpanel', logoSrc: '/logos_skills/Mixpanel_full_logo_–_purple 1.svg' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'digital',
   },
@@ -81,7 +82,8 @@ export const projectsData: Project[] = [
       { name: 'LinkedIn Ads', logoSrc: '/logos_skills/logo linkedin.png' },
       { name: 'Zapier', logoSrc: '/logos_skills/logo_zapier.svg' },
       { name: 'Hubspot', logoSrc: '/logos_skills/logo_hubspot.png' },
-      { name: 'Shopify', logoSrc: '/logos_skills/Logo_shopify.svg' }
+      { name: 'Shopify', logoSrc: '/logos_skills/Logo_shopify.svg' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'digital',
   },
@@ -100,7 +102,8 @@ export const projectsData: Project[] = [
       { name: 'Facebook Ads', logoSrc: '/logos_skills/Logo_meta-3.svg' },
       { name: 'Copy AI', logoSrc: '/logos_skills/logo_copy_ai.svg' },
       { name: 'Zapier', logoSrc: '/logos_skills/logo_zapier.svg' },
-      { name: 'Google Analytics', logoSrc: '/logos_skills/google-analytics-4.svg' }
+      { name: 'Google Analytics', logoSrc: '/logos_skills/google-analytics-4.svg' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'digital',
   },
@@ -118,7 +121,8 @@ export const projectsData: Project[] = [
       { name: 'WooCommerce', logoSrc: '/logos_skills/logo_woocommerce.png' },
       { name: 'Taboola', logoSrc: '/logos_skills/logo_taboola.png' },
       { name: 'Outbrain', logoSrc: '/logos_skills/logo_outbrain.png' },
-      { name: 'Instagram orgánico', logoSrc: '/logos_skills/logo_instagram.png' }
+      { name: 'Instagram orgánico', logoSrc: '/logos_skills/logo_instagram.png' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'digital',
   },
@@ -155,7 +159,8 @@ export const projectsData: Project[] = [
       { name: 'V0', logoSrc: '/logos_skills/Logo_v0.svg' },
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
-      { name: 'Pinecone', logoSrc: '/logos_skills/logo_pinecone.png' }
+      { name: 'Pinecone', logoSrc: '/logos_skills/logo_pinecone.png' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'ia',
   },
@@ -174,7 +179,8 @@ export const projectsData: Project[] = [
       { name: 'V0', logoSrc: '/logos_skills/Logo_v0.svg' },
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
-      { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' }
+      { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'ia',
   },
@@ -194,7 +200,8 @@ export const projectsData: Project[] = [
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
-      { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' }
+      { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'ia',
   },
@@ -214,7 +221,8 @@ export const projectsData: Project[] = [
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
-      { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' }
+      { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' },
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
     ],
     category: 'ia',
   },

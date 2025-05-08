@@ -31,7 +31,7 @@ export default function CorporateProjectsSection() { // Nombre de función cambi
               <div className="dot absolute left-1 top-1 bg-white w-5 h-5 rounded-full transition-transform peer-checked:translate-x-full peer-checked:bg-white"></div>
             </div>
             <div className="ml-3 text-gray-700 text-sm font-medium">
-              {isSimpleView ? "Ver Vista Completa" : "Ver Vista Simple"}
+              {isSimpleView ? "Vista Completa" : "Vista Simple"}
             </div>
           </label>
         </div>

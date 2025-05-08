@@ -38,7 +38,7 @@ export default function DigitalProjectsSection() {
             </div>
             <div className="ml-3 text-gray-700 text-sm font-medium">
               {/* Texto dinámico invertido */}
-              {isSimpleView ? "Ver Vista Completa" : "Ver Vista Simple"}
+              {isSimpleView ? "Vista Completa" : "Vista Simple"}
             </div>
           </label>
         </div>

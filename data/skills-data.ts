@@ -59,6 +59,7 @@ export const skillsData: SkillCategory[] = [
       { name: "Shopify", logoSrc: "/logos_skills/Logo_shopify.svg" },
       { name: "WooCommerce", logoSrc: "/logos_skills/logo_woocommerce.png" },
       { name: "Bubble", logoSrc: "/logos_skills/bubble-io.svg" },
+      { name: "Figma", logoSrc: "/logos_skills/logo_figma.svg" },
       { name: "v0", logoSrc: "/logos_skills/Logo_v0.svg" },
       { name: "Cursor", logoSrc: "/logos_skills/cursor.svg" },
       { name: "Lovable", logoSrc: "/logos_skills/Logo_lovable.svg" },

@@ -51,7 +51,7 @@ export function TimelineItem({
       viewport={{ once: true }}
     >
       {/* Punto de conexión ahora con el periodo */}
-      <div className="absolute left-16 -ml-5 z-10">
+      <div className="absolute left-15 transform -translate-x-1/2 z-10">
         <div 
           className={cn(
             "h-auto min-h-10 w-auto min-w-10 max-w-[6rem] px-2 py-1 rounded-md border-2 bg-background flex items-center justify-center text-center",

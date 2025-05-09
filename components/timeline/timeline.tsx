@@ -29,7 +29,7 @@ export function Timeline({
       {/* Contenedor con línea vertical a la izquierda */}
       <div className="relative max-w-4xl mx-auto px-4">
         {/* Línea vertical a la izquierda - Color intermedio */}
-        <div className="absolute left-15 h-full w-0.5 bg-slate-200 dark:bg-slate-700" />
+        <div className="absolute left-6 md:left-15 h-full w-0.5 bg-slate-200 dark:bg-slate-700" />
         
         {/* Contenido del timeline */}
         <div className="relative z-10 space-y-16">

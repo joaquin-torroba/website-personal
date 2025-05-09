@@ -65,7 +65,7 @@ export function TimelineItem({
       </div>
 
       {/* Contenido del timeline item */}
-      <div className="pl-16 md:pl-28 pr-8 pt-5">
+      <div className="pl-10 pr-4 md:pl-28 md:pr-8 pt-5">
         {/* Card normal sin color de fondo */}
         <Card className={cn(
           "overflow-hidden transition-all hover:shadow-md w-full border",

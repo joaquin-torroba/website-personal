@@ -37,11 +37,11 @@ export default function Home() {
           >
             {navEmailCopied ? (
               <>
-                <Copy className="mr-1.5 h-4 w-4 text-green-500" /> Email Copiado
+                <Copy className="mr-1.5 h-4 w-4 text-green-500" /> <span className="hidden sm:inline">Email Copiado</span>
               </>
             ) : (
               <>
-                <Mail className="mr-1.5 h-4 w-4" /> Email
+                <Mail className="h-4 w-4 sm:mr-1.5" /> <span className="hidden sm:inline">Email</span>
               </>
             )}
           </Button>
@@ -55,7 +55,7 @@ export default function Home() {
               size="sm"
               className="border-slate-300 hover:bg-slate-100 text-slate-700"
             >
-              <Linkedin className="mr-1.5 h-4 w-4" /> LinkedIn
+              <Linkedin className="h-4 w-4 sm:mr-1.5" /> <span className="hidden sm:inline">LinkedIn</span>
             </Button>
           </a>
         </div>

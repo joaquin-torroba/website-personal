@@ -18,7 +18,7 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
     'outline';
 
   return (
-    <Card className="p-6 flex flex-col md:flex-row md:items-start gap-6 transition-shadow hover:shadow-lg h-full">
+    <Card className="p-6 flex flex-col md:flex-row md:items-start gap-6 transition-shadow hover:shadow-lg h-full overflow-hidden">
       {/* Columna Izquierda: Logo, Nombre, Tipo, Año/Estado */}
       <div 
         className={`flex flex-col items-center md:items-center flex-shrink-0 gap-2 h-full ${
@@ -89,7 +89,7 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
 
         {project.tools && project.tools.length > 0 && (
           <div className="mt-auto pt-3 w-full">
-            <ul className="flex flex-wrap justify-center md:justify-start gap-2">
+            <ul className="flex flex-wrap justify-center md:justify-start gap-1 sm:gap-2">
               {project.tools.map((tool: ProjectTool) => (
                 <li key={tool.name}>
                   <Badge variant="outline" className="flex items-center gap-1.5 pr-2.5 pl-2 py-0.5">

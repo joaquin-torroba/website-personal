@@ -21,8 +21,8 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
     <Card className="p-6 flex flex-col md:flex-row md:items-start gap-6 transition-shadow hover:shadow-lg h-full">
       {/* Columna Izquierda: Logo, Nombre, Tipo, Año/Estado */}
       <div 
-        className={`flex flex-col items-center md:items-center flex-shrink-0 gap-2 h-full ${
-          isSimpleView ? 'w-full' : 'md:w-1/3'
+        className={`flex flex-col items-center md:items-center flex-shrink-0 gap-2 ${
+          isSimpleView ? 'w-full h-full' : 'w-full md:w-1/3'
         }`}
       >
         {project.logo && (

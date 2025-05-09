@@ -37,7 +37,7 @@ export default function ContactSection() {
               </>
             ) : (
               <>
-                <Mail className="mr-2 h-5 w-5" /> Escribime por Email
+                <Mail className="mr-2 h-5 w-5" /> Mandame un email
               </>
             )}
           </Button>

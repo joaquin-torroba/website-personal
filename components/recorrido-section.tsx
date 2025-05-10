@@ -91,7 +91,7 @@ export default function RecorridoSection() {
             <TimelineCard
               title="Etapa Inteligencia Artificial (Remoto Global)"
               tags={["Ingeniería de IA", "Trabajo con Agentes", "Desarrollo de Apps (IA)", "Diseño Web con IA (IA)", "Automatizaciones (IA)"]}
-              description="Desde diciembre de 2022 me metí de lleno en la IA. Aprendo, pruebo y uso a diario herramientas como ChatGPT, Claude, Cursor y Flowise. Soy freelancer en Launchable creando productos de IA, y en paralelo armo apps propias como Mis Copilotos. También, exploro el potencial de la IA para empresas más tradicionales juntándome con expertos de dominio y con ingenieros de IA que trabajen en casos reales."
+              description="Desde diciembre de 2022 me metí de lleno en la IA generativa. Aprendo, pruebo y uso a diario herramientas como ChatGPT, Claude, Cursor y Flowise. Soy freelancer en Launchable creando productos de IA, y en paralelo armo apps propias como Mis Copilotos. También, exploro el potencial de la IA para empresas más tradicionales juntándome con expertos de dominio y con ingenieros de IA que trabajen en casos reales."
               logos={[
                 {
                   src: "/logos/graymatterhq_logo.jpeg",

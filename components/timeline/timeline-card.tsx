@@ -4,6 +4,7 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import { ChevronDown, ArrowDown } from 'lucide-react';
 
 // Tipo para las props de TimelineCard
 interface TimelineCardProps {
@@ -30,7 +31,7 @@ export function TimelineCard({
   color = 'slate', // Valor por defecto
 }: TimelineCardProps) {
   return (
-    <div className={cn("relative flex flex-col gap-3 p-3 md:p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow", className)}> {/* Ajuste de padding general */}
+    <div className={cn("relative flex flex-col gap-3 p-3 md:p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow", className)}> {/* Ajuste de padding general sin pb-14 */}
       {/* Banderas SVG (arriba a la derecha) */}
       {flags && flags.length > 0 && (
         <div className="absolute top-2 right-2 md:top-3 md:right-3 flex gap-1 md:gap-2 items-center">  {/* Ajuste de gap y posición */}
@@ -88,39 +89,50 @@ export function TimelineCard({
         dangerouslySetInnerHTML={{ __html: description }}
       ></p>
       
-      {/* Logos */}
-      {logos.length > 0 && (
-        <div className="flex flex-wrap gap-3 md:gap-5 mt-auto pt-3"> {/* mt-auto para empujar al fondo y gap responsivo */}
-          {logos.map((logo, index) => (
-            <div key={index} className="h-10 w-10 md:h-12 md:w-12 relative group border border-neutral-200 dark:border-neutral-700 rounded overflow-hidden"> {/* Tamaños responsivos para logos */}
-              {logo.href ? ( 
-                <a href={logo.href} target="_blank" rel="noopener noreferrer" aria-label={`Visitar ${logo.alt}`}>
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    fill
-                    sizes="(max-width: 767px) 40px, (min-width: 768px) 48px" // Sizes responsivos
-                    className="object-contain transition-all group-hover:scale-110"
-                    priority={false}
-                  />
-                </a>
-              ) : ( 
+      {/* Logos y botón en mobile: 2 filas, botón a la derecha */}
+      <div className="flex flex-wrap gap-2 md:gap-4 mt-auto pt-3"> {/* mt-auto para empujar al fondo y gap responsivo */}
+        {logos.map((logo, index) => (
+          <div key={index} className="h-12 w-12 md:h-16 md:w-16 relative group border border-neutral-200 dark:border-neutral-700 rounded overflow-hidden"> {/* Espaciado para wrap en mobile */}
+            {logo.href ? (
+              <a href={logo.href} target="_blank" rel="noopener noreferrer" aria-label={`Visitar ${logo.alt}`}> 
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   fill
-                  sizes="(max-width: 767px) 40px, (min-width: 768px) 48px" // Sizes responsivos
-                  className="object-contain"
+                  sizes="(max-width: 767px) 48px, (min-width: 768px) 64px"
+                  className="object-contain transition-all group-hover:scale-110"
                   priority={false}
                 />
-              )}
-              <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-background p-1 rounded shadow">
-                {logo.alt}
-              </span>
-            </div>
-          ))}
-        </div>
-      )}
+              </a>
+            ) : (
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                fill
+                sizes="(max-width: 767px) 48px, (min-width: 768px) 64px"
+                className="object-contain"
+                priority={false}
+              />
+            )}
+            <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-background p-1 rounded shadow">
+              {logo.alt}
+            </span>
+          </div>
+        ))}
+        <button
+          onClick={() => {
+            const section = document.getElementById('ai-projects');
+            if (section) {
+              section.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          className="hidden md:flex absolute bottom-3 right-3 items-center gap-0.5 text-xs text-slate-500 font-normal hover:font-bold hover:no-underline focus:outline-none transition-all"
+          style={{ background: 'none', border: 'none', padding: 0 }}
+        >
+          <ArrowDown size={13} className="mb-0.5" />
+          <span className="ml-1">Ver Proyectos</span>
+        </button>
+      </div>
     </div>
   );
 } 

@@ -19,9 +19,9 @@ export const skillsData: SkillCategory[] = [
       { name: "ChatGPT", logoSrc: "/logos_skills/Logo_ChatGPT.svg" },
       { name: "Claude", logoSrc: "/logos_skills/claude-color.svg" },
       { name: "Midjourney", logoSrc: "/logos_skills/midjourney.svg" },
-      { name: "Gamma", logoSrc: "/logos_skills/Logo_gamma.svg" },
       { name: "Perplexity", logoSrc: "/logos_skills/logo_perplexity.svg" },
-      { name: "Mis Copilotos", logoSrc: "/logos/miscopilotos_logo_new.svg" }
+      { name: "Mis Copilotos", logoSrc: "/logos/miscopilotos_logo_new.svg" },
+      { name: "Deep Research", logoSrc: "/logos_skills/Logo_ChatGPT.svg" }
     ],
   },
   // 2. Marketing Digital & Analytics
@@ -48,6 +48,7 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: "Excel", logoSrc: "/logos_skills/Logo_Microsoft_Office_Excel.svg" },
       { name: "PowerPoint", logoSrc: "/logos_skills/Logo_Microsoft_Office_PowerPoint.svg" },
+      { name: "Gamma", logoSrc: "/logos_skills/Logo_gamma.svg" }
     ],
   },
   // 4. Web Design and Development

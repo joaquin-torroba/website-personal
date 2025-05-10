@@ -52,7 +52,7 @@ export default function RecorridoSection() {
             <TimelineCard
               title="Etapa Startups (Europa)"
               tags={["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"]}
-              description="A los 28 años me mudé a Europa y conocí el mundo digital trabajando en un <i>growth studio</i> danés llamado Plyo Labs. Durante 3 años participé de múltiples proyectos remotos en distintas startups (destaco Dimexon, Once y Cultions). Comencé como especialista en <i>marketing digital</i> y luego incorporando más herramientas digital-native como <i>diseño web</i>, <i>automatizaciones</i>, <i>e-commerce</i> y <i>growth hacking</i>."
+              description="A los 28 años me mudé a Europa y conocí el mundo digital trabajando en un <i>growth studio</i> danés llamado Plyo Labs. Durante 3 años participé de múltiples proyectos remotos en distintas startups (destaco Dimexon, Once y Cultions). Comencé como especialista en <i>marketing digital</i> y luego incorporé más herramientas digital-native como <i>diseño web</i>, <i>automatizaciones</i>, <i>e-commerce</i> y <i>growth hacking</i>."
               logos={[
                 {
                   src: "/logos/plyo_lab_logo.jpeg",
@@ -91,12 +91,12 @@ export default function RecorridoSection() {
             <TimelineCard
               title="Etapa Inteligencia Artificial (Remoto Global)"
               tags={["Ingeniería de IA", "Trabajo con Agentes", "Desarrollo de Apps (IA)", "Diseño Web con IA (IA)", "Automatizaciones (IA)"]}
-              description="Desde diciembre de 2022 me metí de lleno en la IA. Aprendo, pruebo y uso a diario herramientas como ChatGPT, Claude, Cursor y Flowise. Soy freelancer en Launchable creando productos de IA, y en paralelo armo apps propias como Mis Copilotos. También, exploro el potencial de la IA para empresas más tradicionales juntándome con expertos de dominio y con ingenieros de IA que trabajen en casos reales."
+              description="Desde diciembre de 2022 me metí de lleno en la IA generativa. Aprendo, pruebo y uso a diario herramientas como ChatGPT, Claude, Cursor y Flowise. Soy freelancer en Launchable creando productos de IA, y en paralelo armo apps propias como Mis Copilotos. También, exploro el potencial de la IA para empresas más tradicionales juntándome con expertos de dominio y con ingenieros de IA que trabajen en casos reales."
               logos={[
                 {
                   src: "/logos/graymatterhq_logo.jpeg",
                   alt: "Gray Matter",
-                  href: "https://www.linkedin.com/company/graymatterhq/posts/?feedView=all"
+                  href: "https://www.graymatter.ai/"
                 },
                 {
                   src: "/logos/miscopilotos_logo_new.svg",

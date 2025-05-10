@@ -37,6 +37,7 @@ export const projectsData: Project[] = [
     id: 2,
     name: 'Signkit',
     logo: '/logos/logo_signkit.svg',
+    projectUrl: 'https://signkit.io/',
     projectType: 'SaaS de marketing vía firmas corporativas',
     year: '2020',
     status: 'Finalizado',
@@ -160,7 +161,8 @@ export const projectsData: Project[] = [
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Pinecone', logoSrc: '/logos_skills/logo_pinecone.png' },
-      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' },
+      { name: 'Deep Research', logoSrc: '/logos_skills/Logo_ChatGPT.svg' }
     ],
     category: 'ia',
   },
@@ -172,7 +174,7 @@ export const projectsData: Project[] = [
     projectType: 'Agencia de inteligencia artificial',
     year: '2025',
     status: 'En curso',
-    description: 'Launchable es una agencia de Canadá de inteligencia artificial. Trabajo como freelancer en proyectos como Video Insight Pro y Framesynth. Aporto estrategia, desarrollo de producto, prototipado rápido, marketing digital y growth, aplicando lo más avanzado en AI.',
+    description: 'Launchable es una startup de inteligencia artificial fundada en Canadá. Trabajo como freelancer en proyectos como Video Insight Pro y Framesynth. Aporto estrategia, desarrollo de producto, prototipado rápido, marketing digital y growth, aplicando lo más avanzado en AI.',
     tools: [
       { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
       { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
@@ -180,7 +182,8 @@ export const projectsData: Project[] = [
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
-      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' },
+      { name: 'Deep Research', logoSrc: '/logos_skills/Logo_ChatGPT.svg' }
     ],
     category: 'ia',
   },
@@ -201,7 +204,8 @@ export const projectsData: Project[] = [
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
       { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' },
-      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' },
+      { name: 'Deep Research', logoSrc: '/logos_skills/Logo_ChatGPT.svg' }
     ],
     category: 'ia',
   },
@@ -222,7 +226,8 @@ export const projectsData: Project[] = [
       { name: 'Claude', logoSrc: '/logos_skills/claude-color.svg' },
       { name: 'Replicate', logoSrc: '/logos_skills/logo_replicate.png' },
       { name: 'AWS Lambda', logoSrc: '/logos_skills/logo_aws.png' },
-      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' }
+      { name: 'Figma', logoSrc: '/logos_skills/logo_figma.svg' },
+      { name: 'Deep Research', logoSrc: '/logos_skills/Logo_ChatGPT.svg' }
     ],
     category: 'ia',
   },
@@ -267,7 +272,7 @@ export const projectsData: Project[] = [
     logo: '/logos/bacardi_logo_new.svg',
     projectType: 'Revenue, marketing y ventas en consumo masivo',
     year: '2015 - 2020',
-    description: 'En Bacardi (Grupo CEPAS) trabajé 5 años. Entré como Joven Profesional rotando por Revenue Management, Ventas y Business Intelligence. Crecí en Revenue Management hasta liderar la apertura del área en Chile y Uruguay. Cerré en el área de Marketing como Brand Manager de Terma, combinando análisis y estrategia de marca. Trabajé con marcas icónicas como Bacardi, Ganzia, Terma y Dr. Lemon.',
+    description: 'En Bacardi (Grupo CEPAS) trabajé 5 años. Entré como Joven Profesional rotando por Revenue Management, Ventas y Business Intelligence. Crecí en Revenue Management hasta liderar la apertura del área en Chile y Uruguay. Cerré en el área de Marketing como Brand Manager de Terma, combinando análisis y estrategia de marca. Trabajé con marcas icónicas como Bacardi, Gancia, Terma y Dr. Lemon.',
     tools: [
       { name: 'Revenue Management' },
       { name: 'Ventas' },
@@ -278,8 +283,7 @@ export const projectsData: Project[] = [
       { name: 'Brand Strategy' },
       { name: 'SAP' },
       { name: 'Excel' },
-      { name: 'Nielsen' },
-      { name: 'Ipsos' }
+      { name: 'Nielsen' }
     ],
     category: 'corporate',
   }

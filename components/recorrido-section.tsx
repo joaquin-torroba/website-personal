@@ -16,7 +16,7 @@ export default function RecorridoSection() {
             <TimelineCard
               title="Etapa Corporativa (Latinoamérica)"
               tags={["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"]}
-              description="A los 20 años comencé mi camino profesional en PWC en el área de <i>capital markets</i> y <i>auditoría</i>. Luego un breve paso por Sinopec en <i>finanzas</i>. Y finalmente, 5 hermosos años trabajando en Grupo Cepas (Bacardi) en core áreas como <i>revenue management</i>, <i>marketing</i>, <i>ventas</i> y <i>BI</i>."
+              description="A los 20 años comencé mi camino profesional en PWC en el área de <i>capital markets</i> y <i>auditoría</i>. Luego un breve paso por Sinopec en <i>finanzas</i>. Y finalmente, 5 grandes años trabajando en Grupo Cepas (Bacardi) en core áreas como <i>revenue management</i>, <i>marketing</i>, <i>ventas</i> y <i>BI</i>."
               logos={[
                 {
                   src: "/logos/pwc_logo_new.svg",

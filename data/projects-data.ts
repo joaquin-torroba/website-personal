@@ -267,7 +267,7 @@ export const projectsData: Project[] = [
     logo: '/logos/bacardi_logo_new.svg',
     projectType: 'Revenue, marketing y ventas en consumo masivo',
     year: '2015 - 2020',
-    description: 'En Bacardi (Grupo CEPAS) trabajé 5 años. Entré como Joven Profesional rotando por Revenue Management, Ventas y Business Intelligence. Crecí en Revenue Management hasta liderar la apertura del área en Chile y Uruguay. Cerré en el área de Marketing como Brand Manager de Terma, combinando análisis y estrategia de marca. Trabajé con marcas icónicas como Bacardi, Ganzia, Terma y Dr. Lemon.',
+    description: 'En Bacardi (Grupo CEPAS) trabajé 5 años. Entré como Joven Profesional rotando por Revenue Management, Ventas y Business Intelligence. Crecí en Revenue Management hasta liderar la apertura del área en Chile y Uruguay. Cerré en el área de Marketing como Brand Manager de Terma, combinando análisis y estrategia de marca. Trabajé con marcas icónicas como Bacardi, Gancia, Terma y Dr. Lemon.',
     tools: [
       { name: 'Revenue Management' },
       { name: 'Ventas' },
@@ -278,8 +278,7 @@ export const projectsData: Project[] = [
       { name: 'Brand Strategy' },
       { name: 'SAP' },
       { name: 'Excel' },
-      { name: 'Nielsen' },
-      { name: 'Ipsos' }
+      { name: 'Nielsen' }
     ],
     category: 'corporate',
   }

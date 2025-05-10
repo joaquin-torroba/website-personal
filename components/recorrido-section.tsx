@@ -96,7 +96,7 @@ export default function RecorridoSection() {
                 {
                   src: "/logos/graymatterhq_logo.jpeg",
                   alt: "Gray Matter",
-                  href: "https://www.linkedin.com/company/graymatterhq/posts/?feedView=all"
+                  href: "https://www.graymatter.ai/"
                 },
                 {
                   src: "/logos/miscopilotos_logo_new.svg",

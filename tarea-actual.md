@@ -8,13 +8,12 @@ Hecho:
 2. En las cards del timeline - en el vertice derecho inferior un boton que diga "ver proyectos" y que lleve al usuario a la seccion de proyectos correspondiente.
 El boton que sea minimalista y sin borde ni background. HECHO.
 3. En las cards del timeline - incrementar el tamaño de los logos de las empresas. Probar duplicando el tamaño - dsp te doy feedback. HECHO.
-
-
-Hacer:
 4. Detalle: el logo de graymatter que lleve al usuario a este link (https://www.graymatter.ai/). No al de linkedin.
 5. Detalle: Proyecto Bacardi.
 5. 1) La skill "ipso" quitarla de la seccion corporativa en el proyecto bacardi.
 5.2) Esta "ganzia" en vez de "Gancia".
+
+Hacer:
 6. En la card 2 del timeline "Startup", modificar este copy que queda raro:
 "Comencé como especialista en marketing digital y luego 
 incorporando más herramientas digital-native como diseño web, 

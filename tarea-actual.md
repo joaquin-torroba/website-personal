@@ -12,16 +12,14 @@ El boton que sea minimalista y sin borde ni background. HECHO.
 5. Detalle: Proyecto Bacardi.
 5. 1) La skill "ipso" quitarla de la seccion corporativa en el proyecto bacardi.
 5.2) Esta "ganzia" en vez de "Gancia".
-
-Hacer:
 6. En la card 2 del timeline "Startup", modificar este copy que queda raro:
 "Comencé como especialista en marketing digital y luego 
 incorporando más herramientas digital-native como diseño web, 
 automatizaciones, e-commerce y growth hacking".
 No me gusta como queda "luego incorporando".
-7. Signkit.
-7.1 Agregarlo en las cards del timeline de etapa startup.
-7.2 El link tiene que ser este: https://signkit.io/.
+7. Signkit: El link tiene que ser este: https://signkit.io/.
+
+Hacer:
 8. Agregar como herrramienta: deep research (logo openai)
 9. Copy de proyecto de Launchable (proyectos IA):
 NO: "Launchable es una agencia de Canadá de inteligencia artificial."

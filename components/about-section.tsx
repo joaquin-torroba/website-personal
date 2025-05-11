@@ -13,7 +13,7 @@ export default function AboutSection() {
     >
       <div className="prose lg:prose-lg dark:prose-invert max-w-3xl mx-auto pl-10 pr-4 space-y-4">
         <p className="text-lg">
-          Soy Joaquin. Mi foco hoy está puesto 100% en <em>inteligencia artificial generativa</em> aplicada a negocios. Me inicié profesionalmente en el mundo corporativo, después pasé varios años trabajando en startups digitales, y ahora combino ambos enfoques. 
+          Soy Joaquin. Me inicié profesionalmente en el mundo corporativo, después pasé varios años trabajando en startups digitales, y desde Diciembre 2022 mi foco está puesto 100% en inteligencia artificial generativa aplicada a negocios. 
         </p>
         <p className="text-lg">
           Actualmente divido mi tiempo entre desarrollar productos de IA en Launchable - <em>startup canadiense</em> - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas. 

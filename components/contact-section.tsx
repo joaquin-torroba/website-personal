@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Linkedin, Mail, Copy } from 'lucide-react';
+import { Linkedin, Mail, Copy, Download } from 'lucide-react';
 
 export default function ContactSection() {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -36,7 +36,7 @@ export default function ContactSection() {
               size="lg"
               className="w-full border-slate-300 hover:bg-slate-100 text-slate-700 transition-all duration-300 ease-in-out transform hover:scale-105"
             >
-              <Linkedin className="mr-2 h-5 w-5" /> Chat por Linkedin
+              <Linkedin className="mr-2 h-5 w-5" /> Hablar x Linkedin
             </Button>
           </a>
           <Button
@@ -51,10 +51,16 @@ export default function ContactSection() {
               </>
             ) : (
               <>
-                <Mail className="mr-2 h-5 w-5" /> Hablemos por Email
+                <Mail className="mr-2 h-5 w-5" /> Hablar x Email
               </>
             )}
           </Button>
+          <a href="/CV_Joaquin_Torroba.pdf" download className="w-full sm:w-auto">
+            <Button variant="default" size="lg" className="w-full bg-black text-white hover:bg-neutral-800 flex items-center gap-2">
+              <Download size={18} />
+              Descargar CV
+            </Button>
+          </a>
         </div>
         {/* Mensaje de email copiado debajo de los botones */}
         {emailCopied && (

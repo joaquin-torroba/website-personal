@@ -36,7 +36,7 @@ export default function ContactSection() {
               size="lg"
               className="w-full border-slate-300 hover:bg-slate-100 text-slate-700 transition-all duration-300 ease-in-out transform hover:scale-105"
             >
-              <Linkedin className="mr-2 h-5 w-5" /> Hablar x Linkedin
+              <Linkedin className="mr-2 h-5 w-5" /> Chat por Linkedin
             </Button>
           </a>
           <Button
@@ -51,7 +51,7 @@ export default function ContactSection() {
               </>
             ) : (
               <>
-                <Mail className="mr-2 h-5 w-5" /> Hablar x Email
+                <Mail className="mr-2 h-5 w-5" /> Hablar por Email
               </>
             )}
           </Button>

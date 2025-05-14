@@ -45,6 +45,7 @@ export default function RecorridoSection() {
                 { src: "/banderas/New_Flag_of_Uruguay1.svg", alt: "Bandera Uruguay" },
               ]}
               color="slate"
+              sectionId="corporate-projects"
             />
           </TimelineItem>
           
@@ -84,6 +85,7 @@ export default function RecorridoSection() {
                 { src: "/banderas/NEW_Flag_of_Spain.svg", alt: "Bandera España" },
               ]}
               color="slate"
+              sectionId="digital-projects"
             />
           </TimelineItem>
           
@@ -123,6 +125,7 @@ export default function RecorridoSection() {
                 { src: "/banderas/NEW_Flag_internacional.svg", alt: "Bandera Internacional" },
               ]}
               color="slate"
+              sectionId="ai-projects"
             />
           </TimelineItem>
         </Timeline>

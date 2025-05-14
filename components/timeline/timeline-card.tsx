@@ -19,6 +19,7 @@ interface TimelineCardProps {
   tags?: string[]; // Prop opcional para los tags
   className?: string;
   color?: 'slate' | 'teal' | 'indigo'; // Añadida prop color
+  sectionId?: string; // Nueva prop para el ID de la sección
 }
 
 export function TimelineCard({
@@ -29,6 +30,7 @@ export function TimelineCard({
   tags, // Recibir prop tags
   className,
   color = 'slate', // Valor por defecto
+  sectionId = 'ai-projects', // Valor por defecto
 }: TimelineCardProps) {
   return (
     <div className={cn("relative flex flex-col gap-3 p-3 md:p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow", className)}> {/* Ajuste de padding general sin pb-14 */}
@@ -121,7 +123,7 @@ export function TimelineCard({
         ))}
         <button
           onClick={() => {
-            const section = document.getElementById('ai-projects');
+            const section = document.getElementById(sectionId);
             if (section) {
               section.scrollIntoView({ behavior: 'smooth' });
             }

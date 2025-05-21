@@ -84,13 +84,13 @@ export default function Home() {
       </div>
 
       {/* <HeroSection /> */}
-      <AboutSection />
+      {/* <AboutSection /> */}
       {/* <RecorridoSection /> */}
-      <CorporateProjectsSection />
-      <DigitalProjectsSection />
-      <AiProjectsSection />
-      <SkillsSection />
-      <ContactSection />
+      {/* <CorporateProjectsSection /> */}
+      {/* <DigitalProjectsSection /> */}
+      {/* <AiProjectsSection /> */}
+      {/* <SkillsSection /> */}
+      {/* <ContactSection /> */}
     </main>
   );
 } 

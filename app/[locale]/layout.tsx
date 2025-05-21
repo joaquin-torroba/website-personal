@@ -32,7 +32,8 @@ async function getMessages(locale: string) {
 }
 
 // Generamos metadatos sin destructurar params
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params: paramsPromise }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await paramsPromise;
   const locale = params.locale;
   
   if (!locales.includes(locale as any)) {
@@ -65,7 +66,8 @@ export function generateStaticParams() {
 }
 
 // Root layout sin destructurar params.locale
-export default async function RootLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
+export default async function RootLayout({ children, params: paramsPromise }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
+  const params = await paramsPromise;
   const locale = params.locale;
   
   // Verificamos si el locale es válido

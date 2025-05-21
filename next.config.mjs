@@ -9,8 +9,6 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Asegurar que las carpetas públicas no usen el prefijo de idioma
-  assetPrefix: '',
 };
 
 export default withNextIntl(nextConfig); 

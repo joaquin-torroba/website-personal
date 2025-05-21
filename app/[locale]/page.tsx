@@ -86,10 +86,10 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <RecorridoSection />
-      <CorporateProjectsSection />
-      <DigitalProjectsSection />
-      <AiProjectsSection />
-      <SkillsSection />
+      {/* <CorporateProjectsSection /> */}
+      {/* <DigitalProjectsSection /> */}
+      {/* <AiProjectsSection /> */}
+      {/* <SkillsSection /> */}
       <ContactSection />
     </main>
   );

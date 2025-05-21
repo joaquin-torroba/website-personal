@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about-section";
 import RecorridoSection from "@/components/recorrido-section";
@@ -12,11 +12,11 @@ import AiProjectsSection from "@/components/ai-projects-section";
 import ContactSection from "@/components/contact-section";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Mail, Copy } from "lucide-react";
-import LanguageSwitcher from "@/components/language-switcher";
+// import LanguageSwitcher from "@/components/language-switcher";
 
 export default function Home() {
   // Usamos el hook useTranslations para acceder a las traducciones
-  const t = useTranslations('HomePage');
+  // const t = useTranslations('HomePage');
   
   const [navEmailCopied, setNavEmailCopied] = useState(false);
   const email = 'joaquintorroba@gmail.com';
@@ -48,11 +48,11 @@ export default function Home() {
           >
             {navEmailCopied ? (
               <>
-                <Copy className="mr-1.5 h-4 w-4 text-green-500" /> <span className="hidden sm:inline">{t('emailCopiedButton')}</span>
+                <Copy className="mr-1.5 h-4 w-4 text-green-500" /> <span className="hidden sm:inline">Copiado!</span>
               </>
             ) : (
               <>
-                <Mail className="h-4 w-4 sm:mr-1.5" /> <span className="hidden sm:inline">{t('emailButton')}</span>
+                <Mail className="h-4 w-4 sm:mr-1.5" /> <span className="hidden sm:inline">Email</span>
               </>
             )}
           </Button>
@@ -67,7 +67,7 @@ export default function Home() {
               size="sm"
               className="border-slate-300 hover:bg-slate-100 text-slate-700"
             >
-              <Linkedin className="h-4 w-4 sm:mr-1.5" /> <span className="hidden sm:inline">{t('linkedInButton')}</span>
+              <Linkedin className="h-4 w-4 sm:mr-1.5" /> <span className="hidden sm:inline">LinkedIn</span>
             </Button>
           </a>
         </div>
@@ -79,9 +79,9 @@ export default function Home() {
       </div>
 
       {/* Contenedor para LanguageSwitcher a la derecha */}
-      <div className="fixed top-3 right-4 md:top-5 md:right-8 z-50">
+      {/* <div className="fixed top-3 right-4 md:top-5 md:right-8 z-50">
         <LanguageSwitcher />
-      </div>
+      </div> */}
 
       {/* <HeroSection /> */}
       {/* <AboutSection /> */}

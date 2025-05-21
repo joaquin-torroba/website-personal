@@ -19,3 +19,7 @@
 - Realizar un **commit inicial** antes de comenzar.
 
 - Hacer siguientes commits únicamente si escribo **"go"**.
+
+4. Notas que debes recordar:
+    - Debes recordar ir anotando en las cursor rules los aprendizajes o los problemas importantes para que dsp no te olvides lo que hiciste. Solo cuando algo verdaderamente problematico sea resuelto. Porque dsp nosn olvidamos y no sabemos como solucionarlo.
+    - Cuando implementemos el plan de `tarea-actual.md`, cada vez que se complete una tarea, debes actualizarme con todo el listado de tareas y sus iconos de "estado" correspondientes.

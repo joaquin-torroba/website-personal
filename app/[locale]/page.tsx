@@ -22,12 +22,16 @@ export default function Home() {
   const email = 'joaquintorroba@gmail.com';
 
   const handleNavCopyEmail = () => {
-    navigator.clipboard.writeText(email).then(() => {
-      setNavEmailCopied(true);
-      setTimeout(() => {
-        setNavEmailCopied(false);
-      }, 2000);
-    });
+    if (typeof window !== "undefined" && navigator.clipboard) {
+      navigator.clipboard.writeText(email).then(() => {
+        setNavEmailCopied(true);
+        setTimeout(() => {
+          setNavEmailCopied(false);
+        }, 2000);
+      }).catch(err => {
+        console.error('Error al copiar el email: ', err);
+      });
+    }
   };
 
   return (

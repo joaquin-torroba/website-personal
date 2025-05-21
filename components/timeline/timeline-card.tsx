@@ -9,7 +9,7 @@ import { ChevronDown, ArrowDown } from 'lucide-react';
 // Tipo para las props de TimelineCard
 interface TimelineCardProps {
   title: string;
-  description: string;
+  description: React.ReactNode;
   logos: {
     src: string;
     alt: string;
@@ -33,7 +33,7 @@ export function TimelineCard({
   sectionId = 'ai-projects', // Valor por defecto
 }: TimelineCardProps) {
   return (
-    <div className={cn("relative flex flex-col gap-3 p-3 md:p-4 border rounded-lg shadow-sm hover:shadow-md transition-shadow", className)}> {/* Ajuste de padding general sin pb-14 */}
+    <div className={cn("relative flex flex-col gap-3 p-3 md:p-4 border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white", className)}> {/* Añadido bg-white y border-slate-200 */}
       {/* Banderas SVG (arriba a la derecha) */}
       {flags && flags.length > 0 && (
         <div className="absolute top-2 right-2 md:top-3 md:right-3 flex gap-1 md:gap-2 items-center">  {/* Ajuste de gap y posición */}
@@ -65,7 +65,7 @@ export function TimelineCard({
         {title.includes('(') && title.includes(')') ? (
           <>
             {title.substring(0, title.indexOf('(')).trim()} 
-            <span className="text-sm text-muted-foreground ml-1">
+            <span className="text-sm ml-1 text-slate-500"> {/* Re-añadimos text-sm, mantenemos ml-1 y agregamos text-slate-500 */}
               {title.substring(title.indexOf('('), title.indexOf(')') + 1)}
             </span>
           </>
@@ -78,7 +78,7 @@ export function TimelineCard({
       {tags && tags.length > 0 && (
         <div className="flex flex-wrap gap-1 mt-2 mb-3"> 
           {tags.map((tag, index) => (
-            <Badge key={index} variant="outline" className="text-xs text-gray-500">
+            <Badge key={index} variant="outline" className="text-xs text-gray-500 border border-slate-300">
               {tag}
             </Badge>
           ))}
@@ -88,8 +88,9 @@ export function TimelineCard({
       {/* Descripción */}
       <p 
         className="text-sm md:text-base mb-8 md:mb-10" /* Tamaño responsivo y ajuste de margen inferior */
-        dangerouslySetInnerHTML={{ __html: description }}
-      ></p>
+      >
+        {description}
+      </p>
       
       {/* Logos y botón en mobile: 2 filas, botón a la derecha */}
       <div className="flex flex-wrap gap-2 md:gap-4 mt-auto pt-3"> {/* mt-auto para empujar al fondo y gap responsivo */}

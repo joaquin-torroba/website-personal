@@ -2,11 +2,17 @@
 
 import Image from 'next/image'; // Importar Image
 import { motion } from "framer-motion"; // Importar motion
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 // import { ModeToggle } from "@/components/mode-toggle"; // No se usa aquí
 // import { Button } from "@/components/ui/button"; // No se usa aquí
 
 export default function HeroSection() {
+  // Usar el hook useTranslations para obtener las traducciones
+  const t = useTranslations('HeroSection');
+
   return (
     <motion.section 
       className="w-full flex flex-col items-center pt-16"
@@ -21,7 +27,7 @@ export default function HeroSection() {
         {/* Imagen Real */}
         <Image
             src="/Avatar_Foto_New1.png" // Ruta desde la carpeta public
-          alt="Retrato de Joaquín Torroba" // Texto alternativo según PRD
+          alt={t('portrait')} // Usar traducción para el texto alternativo
           width={192} // Ancho para desktop según PRD
           height={192} // Alto para desktop según PRD
           priority // Priorizar carga de esta imagen (LCP)
@@ -30,16 +36,13 @@ export default function HeroSection() {
         </div>
 
         {/* Nombre */}
-        <h1 className="text-4xl sm:text-5xl font-bold text-center">Joaquín Torroba</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold text-center">{t('name')}</h1>
 
         {/* Tagline en dos líneas */}
-        <div className="text-lg text-muted-foreground text-center max-w-md">
-          <p>AI Freelancer.</p>
-          <p>Enfocado en Startups y Empresas.</p>
+        <div className="text-lg text-slate-500 text-center max-w-md">
+          <p>{t('tagline1')}</p>
+          <p>{t('tagline2')}</p>
         </div>
-
-        {/* Placeholder para CTA */}
-        <div className="sr-only" aria-label="CTA próximamente"></div>
       </div>
     </motion.section>
   );

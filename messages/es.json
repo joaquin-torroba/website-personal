@@ -1,0 +1,73 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "Languages": {
+    "spanish": "Español",
+    "english": "Inglés",
+    "switchTo": "Cambiar a {language}"
+  },
+  "HomePage": {
+    "title": "Joaquin Torroba - Sitio Web",
+    "description": "Sitio web personal de Joaquin Torroba",
+    "greeting": "Hola, soy Joaquin",
+    "welcome": "Bienvenido a mi sitio web",
+    "emailButton": "Email",
+    "emailCopiedButton": "Email Copiado",
+    "linkedInButton": "LinkedIn"
+  },
+  "HeroSection": {
+    "name": "Joaquín Torroba",
+    "tagline1": "AI Freelancer.",
+    "tagline2": "Enfocado en Startups y Empresas.",
+    "portrait": "Retrato de Joaquín Torroba"
+  },
+  "AboutSection": {
+    "paragraph1": "Soy Joaquin. Me inicié profesionalmente en el mundo corporativo, después pasé varios años trabajando en startups digitales, y desde Diciembre 2022 mi foco está puesto 100% en inteligencia artificial generativa aplicada a negocios.",
+    "paragraph2": "Actualmente divido mi tiempo entre desarrollar productos de IA en Launchable - startup canadiense - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas.",
+    "paragraph3": "Me interesa explorar oportunidades de IA en áreas que conozco bien como marketing, ventas, revenue management, contabilidad, recursos humanos, impuestos y finanzas.",
+    "paragraph4": "Si sos un profesional, una startup o una empresa con esta misma curiosidad por la IA, hablemos. Estaría bueno explorar ideas juntos."
+  },
+  "RecorridoSection": {
+    "title": "Mi Recorrido Profesional",
+    "corporateTitle": "Etapa Corporativa (Latinoamérica)",
+    "corporateTags": ["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"],
+    "corporateDescription": "A los 20 años comencé mi camino profesional en PWC en el área de <i>capital markets</i> y <i>auditoría</i>. Luego un breve paso por Sinopec en <i>finanzas</i>. Y finalmente, 5 grandes años trabajando en Grupo Cepas (Bacardi) en core áreas como <i>revenue management</i>, <i>marketing</i>, <i>ventas</i> y <i>BI</i>.",
+    "startupsTitle": "Etapa Startups (Europa)",
+    "startupsTags": ["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"],
+    "startupsDescription": "A los 28 años me mudé a Europa y conocí el mundo digital trabajando en un <i>growth studio</i> danés llamado Plyo Labs. Durante 3 años participé de múltiples proyectos remotos en distintas startups (destaco Dimexon, Once y Cultions). Comencé como especialista en <i>marketing digital</i> y luego incorporé más herramientas digital-native como <i>diseño web</i>, <i>automatizaciones</i>, <i>e-commerce</i> y <i>growth hacking</i>.",
+    "aiTitle": "Etapa Inteligencia Artificial (Remoto Global)",
+    "aiTags": ["Ingeniería de IA", "Trabajo con Agentes", "Desarrollo de Apps (IA)", "Diseño Web con IA (IA)", "Automatizaciones (IA)"],
+    "aiDescription": "Desde diciembre de 2022 me metí de lleno en la IA generativa. Aprendo, pruebo y uso a diario herramientas como ChatGPT, Claude, Cursor y Flowise. Soy freelancer en Launchable creando productos de IA, y en paralelo armo apps propias como Mis Copilotos. También, exploro el potencial de la IA para empresas más tradicionales juntándome con expertos de dominio y con ingenieros de IA que trabajen en casos reales.",
+    "periodConnector": "a"
+  },
+  "CorporateProjectsSection": {
+    "title": "Proyectos Corporativos",
+    "simpleView": "Vista Simple",
+    "detailedView": "Vista Detallada"
+  },
+  "ProjectsSection": {
+    "title": "Proyectos Destacados",
+    "labelCorporate": "Corporativo",
+    "labelDigital": "Digital",
+    "labelAI": "IA",
+    "tooltipProjectLink": "Ver proyecto",
+    "statusInProgress": "En curso",
+    "statusCompleted": "Finalizado"
+  },
+  "SkillsSection": {
+    "title": "Mi Stack Tecnológico"
+  },
+  "ContactSection": {
+    "title": "Conectemos",
+    "subtitle": "Si sos un profesional, startup o empresa y tenés consultas, ideas o proyectos relacionados con inteligencia artificial, hablemos!",
+    "linkedinButton": "Chat por Linkedin",
+    "emailButton": "Hablar por Email",
+    "emailCopiedButton": "Email Copiado",
+    "cvButton": "Descargar CV",
+    "emailAddressCopied": "joaquintorroba@gmail.com"
+  }
+} 

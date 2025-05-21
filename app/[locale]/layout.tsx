@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "next-themes";
 import { cn } from "@/lib/utils";
-import { Analytics } from '@vercel/analytics/next';
+// import { Analytics } from '@vercel/analytics/next';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
@@ -89,7 +89,7 @@ export default async function RootLayout({ children, params: paramsPromise }: { 
     >
       <NextIntlClientProvider locale={locale} messages={messages}>
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </NextIntlClientProvider>
     </ThemeProvider>
   );

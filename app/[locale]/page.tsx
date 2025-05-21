@@ -12,7 +12,7 @@ import AiProjectsSection from "@/components/ai-projects-section";
 import ContactSection from "@/components/contact-section";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Mail, Copy } from "lucide-react";
-// import LanguageSwitcher from "@/components/language-switcher";
+import LanguageSwitcher from "@/components/language-switcher";
 
 export default function Home() {
   // Usamos el hook useTranslations para acceder a las traducciones
@@ -79,17 +79,17 @@ export default function Home() {
       </div>
 
       {/* Contenedor para LanguageSwitcher a la derecha */}
-      {/* <div className="fixed top-3 right-4 md:top-5 md:right-8 z-50">
+      <div className="fixed top-3 right-4 md:top-5 md:right-8 z-50">
         <LanguageSwitcher />
-      </div> */}
+      </div>
 
-      <HeroSection />
+      {/* <HeroSection /> */}
       <AboutSection />
-      <RecorridoSection />
-      {/* <CorporateProjectsSection /> */}
-      {/* <DigitalProjectsSection /> */}
-      {/* <AiProjectsSection /> */}
-      {/* <SkillsSection /> */}
+      {/* <RecorridoSection /> */}
+      <CorporateProjectsSection />
+      <DigitalProjectsSection />
+      <AiProjectsSection />
+      <SkillsSection />
       <ContactSection />
     </main>
   );

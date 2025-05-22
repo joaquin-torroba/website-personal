@@ -55,6 +55,8 @@ export default function ProjectCard({ project, isSimpleView, tGlobal, tSpecific 
   const projectDescription = project.descriptionKey
     ? tSpecific.rich(finalDescriptionKey as any, {
         i: (chunks) => <i>{chunks}</i>,
+        linkKwadwo: (chunks) => <a href="https://www.linkedin.com/in/kwadwoadu/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{chunks}</a>,
+        linkJose: (chunks) => <a href="https://www.linkedin.com/in/joselagamma/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{chunks}</a>,
       })
     : '';
 
@@ -111,7 +113,13 @@ export default function ProjectCard({ project, isSimpleView, tGlobal, tSpecific 
         <h3 
           className="text-xl font-semibold text-center md:text-center w-full"
         >
-          {projectName}
+          {project.name === 'CorporateProjectsSection.sinopec_name' ? (
+            <>
+              Sinopec<br />International
+            </>
+          ) : (
+            projectName
+          )}
         </h3>
         {projectType && (
           <p className="text-sm text-muted-foreground font-medium text-center md:text-center w-full px-1 min-h-16">

@@ -259,9 +259,11 @@ export const projectsData: Project[] = [
     year: '2014',
     descriptionKey: 'CorporateProjectsSection.sinopec_description',
     tools: [
-      { name: 'Back-office' }, 
-      { name: 'Gestión de Facturas' }, 
-      { name: 'SAP' }
+      { name: 'Finanzas' }, 
+      { name: 'Back office' }, 
+      { name: 'Gestión administrativa' }, 
+      { name: 'Procesos corporativos' }, 
+      { name: 'Excel' }
     ],
     category: 'corporate',
   },
@@ -275,11 +277,15 @@ export const projectsData: Project[] = [
     descriptionKey: 'CorporateProjectsSection.bacardi_description',
     tools: [
       { name: 'Revenue Management' }, 
-      { name: 'Marketing Estratégico' }, 
-      { name: 'Business Intelligence (BI)' }, 
+      { name: 'Ventas' }, 
+      { name: 'Business Intelligence' }, 
+      { name: 'Pricing' }, 
+      { name: 'Forecasting' }, 
+      { name: 'Marketing' }, 
+      { name: 'Brand Strategy' }, 
       { name: 'SAP' }, 
-      { name: 'Tableau' }, 
-      { name: 'Excel Avanzado' }
+      { name: 'Excel' }, 
+      { name: 'Nielsen' }
     ],
     category: 'corporate',
   }

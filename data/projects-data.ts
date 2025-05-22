@@ -253,8 +253,8 @@ export const projectsData: Project[] = [
   {
     id: 13,
     name: 'CorporateProjectsSection.sinopec_name',
-    logo: '/logos/sinopec_logo_new.svg',
-    projectUrl: 'https://www.linkedin.com/company/sinopec/',
+    logo: '/logos/Sinopec_logo.svg',
+    projectUrl: 'https://www.linkedin.com/company/sinopec-international-petroleum-service-corporation/',
     projectTypeKey: 'CorporateProjectsSection.sinopec_projectType',
     year: '2014',
     descriptionKey: 'CorporateProjectsSection.sinopec_description',

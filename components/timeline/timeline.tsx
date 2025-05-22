@@ -27,7 +27,7 @@ export function Timeline({
       {...props}
     >
       {/* Contenedor con línea vertical a la izquierda */}
-      <div className="relative max-w-4xl mx-auto px-4">
+      <div className="relative max-w-3xl mx-auto px-4">
         {/* Línea vertical a la izquierda - Color intermedio */}
         <div className="absolute left-6 md:left-15 h-full w-0.5 bg-slate-200 dark:bg-slate-700" />
         

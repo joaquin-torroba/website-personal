@@ -114,7 +114,7 @@ export default function ProjectCard({ project, isSimpleView, tGlobal, tSpecific 
           {projectName}
         </h3>
         {projectType && (
-          <p className="text-sm text-muted-foreground text-center md:text-center w-full px-1 min-h-16">
+          <p className="text-sm text-muted-foreground font-medium text-center md:text-center w-full px-1 min-h-16">
             {projectType}
           </p>
         )}

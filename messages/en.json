@@ -6,7 +6,11 @@
   },
   "HomePage": {
     "title": "Joaquin Torroba - Website",
-    "description": "Personal website for Joaquin Torroba"
+    "description": "Personal website for Joaquin Torroba",
+    "emailButton": "Email",
+    "emailCopiedButton": "Email Copied",
+    "linkedInButton": "LinkedIn",
+    "greeting": "Hi, I'm Joaquin"
   },
   "Page": {
     "testTitle": "Translation Test in English",
@@ -16,5 +20,14 @@
     "spanish": "Spanish",
     "english": "English",
     "switchTo": "Switch to {language}"
+  },
+  "ContactSection": {
+    "title": "Let's Connect",
+    "subtitle": "Whether you're a professional, startup, or established company - if you have questions, ideas, or projects related to artificial intelligence, let's talk!",
+    "linkedinButton": "Chat on LinkedIn",
+    "emailButton": "Chat via Email",
+    "emailCopiedButton": "Email Copied",
+    "cvButton": "Download CV",
+    "emailAddressCopied": "joaquintorroba@gmail.com"
   }
 } 

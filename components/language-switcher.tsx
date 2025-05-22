@@ -14,15 +14,28 @@ export default function LanguageSwitcher() {
 
   // Función para cambiar el idioma
   const switchLanguage = (newLocale: string) => {
+    // Si ya estamos en el idioma seleccionado, no hacemos nada
+    if (locale === newLocale) return;
+    
     // Construimos la URL con el nuevo idioma
-    // Reemplazamos /es/ o /en/ con el nuevo idioma
-    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.push(newPath);
+    let newPath;
+    
+    // Verifica si el pathname contiene el locale actual
+    if (pathname.includes(`/${locale}`)) {
+      newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+    } else {
+      // Si no lo contiene, simplemente añade el nuevo locale al inicio
+      newPath = `/${newLocale}${pathname === '/' ? '' : pathname}`;
+    }
+    
+    // Añadimos { scroll: false } para evitar scroll al cambiar idioma
+    console.log(`Cambiando de ${locale} a ${newLocale}, nueva ruta: ${newPath}`);
+    router.push(newPath, { scroll: false });
   };
 
-  // Rutas de las banderas (actualizar cuando tengas la inglesa)
-  const flagEsPath = '/banderas/NEW_Flag_of_Spain.svg'; // Cambiado a bandera de España
-  const flagEnPath = '/banderas/Logo_bandera_england.svg'; // Asumiendo .svg, cambiar si es otro formato
+  // Rutas de las banderas
+  const flagEsPath = '/banderas/NEW_Flag_of_Spain.svg';
+  const flagEnPath = '/banderas/Logo_bandera_england.png'; // Actualizado para usar la bandera de Inglaterra correcta
 
   return (
     <div className="flex items-center h-8 rounded-md overflow-hidden border border-slate-300">

@@ -68,7 +68,7 @@
     "labelDigital": "Digitales",
     "labelAI": "IA",
     "tooltipProjectLink": "Ver proyecto",
-    "statusInProgress": "En progreso",
+    "statusInProgress": "En curso",
     "statusCompleted": "Completado"
   },
   "CorporateProjectsSection": {
@@ -131,8 +131,8 @@
   "ContactSection": {
     "title": "Conectemos",
     "subtitle": "Si sos un profesional, startup o empresa y tenés consultas, ideas o proyectos relacionados con inteligencia artificial, hablemos!",
-    "linkedinButton": "Chatear por LinkedIn",
-    "emailButton": "Chatear por Correo",
+    "linkedinButton": "LinkedIn",
+    "emailButton": "Email",
     "emailCopiedButton": "Correo Copiado",
     "cvButton": "Descargar CV",
     "emailAddressCopied": "joaquintorroba@gmail.com"

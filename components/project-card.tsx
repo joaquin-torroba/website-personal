@@ -117,6 +117,10 @@ export default function ProjectCard({ project, isSimpleView, tGlobal, tSpecific 
             <>
               Sinopec<br />International
             </>
+          ) : project.name === 'CorporateProjectsSection.bacardi_name' ? (
+            <>
+              Bacardi<br />(Grupo Cepas)
+            </>
           ) : (
             projectName
           )}

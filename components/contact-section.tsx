@@ -38,17 +38,15 @@ export default function ContactSection() {
           >
             <Button
               variant="outline"
-              size="lg"
-              className="w-full border-slate-300 hover:bg-slate-100 text-slate-700 transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="w-full border-slate-300 hover:bg-slate-100 text-slate-700 transition-all duration-300 ease-in-out transform hover:scale-105 px-6 py-3"
             >
               <Linkedin className="mr-2 h-5 w-5" /> {t('linkedinButton')}
             </Button>
           </a>
           <Button
             variant="outline"
-            size="lg"
             onClick={handleEmailButtonClick}
-            className="w-full sm:w-auto border-slate-300 hover:bg-slate-100 text-slate-700 transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="w-full sm:w-auto border-slate-300 hover:bg-slate-100 text-slate-700 transition-all duration-300 ease-in-out transform hover:scale-105 px-6 py-3"
           >
             {emailCopied ? (
               <>

@@ -21,6 +21,13 @@
     "english": "English",
     "switchTo": "Switch to {language}"
   },
+  "HeroSection": {
+    "name": "Joaquin Torroba",
+    "tagline1": "AI Freelancer.",
+    "tagline2": "Focused on Startups and Enterprise.",
+    "portrait": "Portrait of Joaquin Torroba",
+    "cta": "Coming soon"
+  },
   "ContactSection": {
     "title": "Let's Connect",
     "subtitle": "Whether you're a professional, startup, or established company - if you have questions, ideas, or projects related to artificial intelligence, let's talk!",

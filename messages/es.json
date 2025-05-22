@@ -21,6 +21,13 @@
     "english": "Inglés",
     "switchTo": "Cambiar a {language}"
   },
+  "HeroSection": {
+    "name": "Joaquín Torroba",
+    "tagline1": "AI Freelancer.",
+    "tagline2": "Enfocado en Startups y Empresas.",
+    "portrait": "Retrato de Joaquín Torroba",
+    "cta": "Próximamente"
+  },
   "ContactSection": {
     "title": "Conectemos",
     "subtitle": "Si sos un profesional, startup o empresa y tenés consultas, ideas o proyectos relacionados con inteligencia artificial, hablemos!",

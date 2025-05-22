@@ -34,7 +34,7 @@ Este documento detalla el plan para ejecutar el **Paso 7** del documento `tarea-
 - ✅ 1. Metadatos Globales
 - ✅ 2. LanguageSwitcher
 - ✅ 3. Navegación Fija
-- ⚪ 4. HeroSection
+- ✅ 4. HeroSection
 - ⚪ 5. AboutSection
 - ⚪ 6. RecorridoSection
 - ⚪ 7. Proyectos

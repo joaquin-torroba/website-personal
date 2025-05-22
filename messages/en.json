@@ -1,11 +1,20 @@
 {
   "testKey": "Test Value EN",
   "Metadata": {
-    "title": "Joaquín Torroba - Personal Website",
-    "description": "Welcome to my personal website. I'm Joaquín Torroba, developer and entrepreneur."
+    "title": "Joaquin Torroba - Website",
+    "description": "Personal website for Joaquin Torroba"
+  },
+  "HomePage": {
+    "title": "Joaquin Torroba - Website",
+    "description": "Personal website for Joaquin Torroba"
   },
   "Page": {
     "testTitle": "Translation Test in English",
     "testMessage": "If you can see this message, translations are working correctly."
+  },
+  "Languages": {
+    "spanish": "Spanish",
+    "english": "English",
+    "switchTo": "Switch to {language}"
   }
 } 

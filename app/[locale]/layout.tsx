@@ -40,12 +40,13 @@ export async function generateMetadata({
   const params = await paramsPromise;
   const locale = params.locale;
   
-  // Obtener traducciones
+  // Obtener traducciones desde Metadata (compatibilidad) y HomePage (nuevo)
   const t = await getTranslations({locale, namespace: 'Metadata'});
+  const tHome = await getTranslations({locale, namespace: 'HomePage'});
   
   return {
-    title: t('title'),
-    description: t('description'),
+    title: tHome('title') || t('title'),
+    description: tHome('description') || t('description'),
   };
 }
 

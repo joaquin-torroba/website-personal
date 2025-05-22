@@ -22,10 +22,10 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <RecorridoSection />
-      <SkillsSection />
       <CorporateProjectsSection />
       <DigitalProjectsSection />
       <AiProjectsSection />
+      <SkillsSection />
       <ContactSection />
     </main>
   );

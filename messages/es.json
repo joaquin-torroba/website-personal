@@ -28,6 +28,13 @@
     "portrait": "Retrato de Joaquín Torroba",
     "cta": "Próximamente"
   },
+  "AboutSection": {
+    "title": "Sobre Mí",
+    "paragraph1": "Soy Joaquin. Me inicié profesionalmente en el mundo corporativo, después pasé varios años trabajando en startups digitales, y desde Diciembre 2022 mi foco está puesto 100% en inteligencia artificial generativa aplicada a negocios.",
+    "paragraph2": "Actualmente divido mi tiempo entre desarrollar productos de IA en Launchable - startup canadiense - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas.",
+    "paragraph3": "Me interesa explorar oportunidades de IA en áreas que conozco bien como marketing, ventas, revenue management, contabilidad, recursos humanos, impuestos y finanzas.",
+    "paragraph4": "Si sos un profesional, una startup o una empresa con esta misma curiosidad por la IA, hablemos. Estaría bueno explorar ideas juntos."
+  },
   "ContactSection": {
     "title": "Conectemos",
     "subtitle": "Si sos un profesional, startup o empresa y tenés consultas, ideas o proyectos relacionados con inteligencia artificial, hablemos!",

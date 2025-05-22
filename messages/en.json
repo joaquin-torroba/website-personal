@@ -28,6 +28,13 @@
     "portrait": "Portrait of Joaquin Torroba",
     "cta": "Coming soon"
   },
+  "AboutSection": {
+    "title": "About Me",
+    "paragraph1": "I'm Joaquin. I started my professional journey in the corporate world, then spent several years working with digital startups, and since December 2022 my focus has been entirely on generative artificial intelligence applied to business.",
+    "paragraph2": "Currently, I split my time between developing AI products at Launchable—a Canadian startup—and exploring practical use cases to integrate AI into enterprises.",
+    "paragraph3": "I'm particularly interested in AI opportunities within fields I know well: marketing, sales, revenue management, accounting, human resources, taxes, and finance.",
+    "paragraph4": "If you're a professional, startup, or enterprise sharing this curiosity for AI, let's talk. It would be great to explore ideas together."
+  },
   "ContactSection": {
     "title": "Let's Connect",
     "subtitle": "Whether you're a professional, startup, or established company - if you have questions, ideas, or projects related to artificial intelligence, let's talk!",

@@ -1,8 +1,11 @@
 'use client';
 
 import { motion } from "framer-motion";
+import { useTranslations } from 'next-intl';
 
 export default function AboutSection() {
+  const t = useTranslations('AboutSection');
+  
   return (
     <motion.section 
       id="about"
@@ -13,16 +16,16 @@ export default function AboutSection() {
     >
       <div className="prose lg:prose-lg dark:prose-invert max-w-3xl mx-auto pl-10 pr-4 space-y-4">
         <p className="text-lg">
-          Soy Joaquin. Me inicié profesionalmente en el mundo corporativo, después pasé varios años trabajando en startups digitales, y desde Diciembre 2022 mi foco está puesto 100% en inteligencia artificial generativa aplicada a negocios. 
+          {t('paragraph1')}
         </p>
         <p className="text-lg">
-          Actualmente divido mi tiempo entre desarrollar productos de IA en Launchable - <em>startup canadiense</em> - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas. 
+          Actualmente divido mi tiempo entre desarrollar productos de IA en Launchable - <em>startup canadiense</em> - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas.
         </p>
         <p className="text-lg">
           Me interesa explorar oportunidades de IA en áreas que conozco bien como <em>marketing, ventas, revenue management, contabilidad, recursos humanos, impuestos y finanzas</em>.
         </p>
         <p className="text-lg">
-          Si sos un profesional, una startup o una empresa con esta misma curiosidad por la IA, hablemos. Estaría bueno explorar ideas juntos.
+          {t('paragraph4')}
         </p>
       </div>
     </motion.section>

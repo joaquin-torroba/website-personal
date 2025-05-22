@@ -19,10 +19,14 @@ export default function AboutSection() {
           {t('paragraph1')}
         </p>
         <p className="text-lg">
-          Actualmente divido mi tiempo entre desarrollar productos de IA en Launchable - <em>startup canadiense</em> - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas.
+          {t.rich('paragraph2', {
+            i: (chunks) => <i>{chunks}</i>,
+          })}
         </p>
         <p className="text-lg">
-          Me interesa explorar oportunidades de IA en áreas que conozco bien como <em>marketing, ventas, revenue management, contabilidad, recursos humanos, impuestos y finanzas</em>.
+          {t.rich('paragraph3', {
+            i: (chunks) => <i>{chunks}</i>,
+          })}
         </p>
         <p className="text-lg">
           {t('paragraph4')}

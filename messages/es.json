@@ -49,6 +49,14 @@
     "aiDescription": "Desde diciembre de 2022, me he sumergido completamente en la <i>IA generativa</i>. Todos los días aprendo, experimento y utilizo herramientas como <i>ChatGPT</i>, <i>Claude</i>, <i>Cursor</i> y <i>Flowise</i>. Trabajo como freelancer en Launchable, creando productos basados en IA, y en paralelo construyo mis propias apps, como <i>Mis Copilotos</i>. Además, exploro el potencial de la IA para empresas más tradicionales, colaborando con expertos de dominio e ingenieros de IA en casos de uso reales.",
     "present": "Presente"
   },
+  "SkillsSection": {
+    "title": "Mi Stack Tecnológico",
+    "category1_title": "Herramientas IA de Uso Diario",
+    "category2_title": "Marketing Digital & Analytics",
+    "category3_title": "BI & Data / Herramientas Corporativas",
+    "category4_title": "Diseño y Desarrollo Web",
+    "category5_title": "Automatización y Cloud"
+  },
   "ProjectsSection": {
     "title": "Proyectos Destacados",
     "labelCorporate": "Corporativos",

@@ -19,7 +19,12 @@
   "Languages": {
     "spanish": "Spanish",
     "english": "English",
-    "switchTo": "Switch to {language}"
+    "switchTo": "Switch to"
+  },
+  "FixedHeaderButtons": {
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "emailCopied": "Copied!"
   },
   "HeroSection": {
     "name": "Joaquin Torroba",

@@ -8,10 +8,10 @@ export interface Project {
   name: string;
   logo?: string;
   projectUrl?: string;
-  projectType?: string;
+  projectTypeKey: string;
   year?: string;
-  status?: string;
-  description?: string;
+  statusKey?: string;
+  descriptionKey: string;
   tools?: ProjectTool[];
   category?: string;
 }
@@ -22,9 +22,9 @@ export const projectsData: Project[] = [
     name: 'PLYO Labs',
     logo: '/logos/plyo_lab_logo.jpeg',
     projectUrl: 'https://www.plyolab.com/',
-    projectType: 'Growth studio digital danés',
+    projectTypeKey: 'DigitalProjectsSection.plyoLabs_projectType',
     year: '2020 - 2023',
-    description: 'PLYO Labs fue mi puerta de entrada al mundo digital. Como parte del equipo, trabajé en múltiples proyectos 100% remotos, liderando estrategias de marketing digital, diseño web, validación de negocios (MVP, Signal Mining) y automatizaciones. Fue mi escuela intensiva en startups y growth, junto a <a href="https://www.linkedin.com/in/kwadwoadu/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-700 hover:underline">Kwadwo</a>, su fundador y CEO (y un gran amigo).',
+    descriptionKey: 'DigitalProjectsSection.plyoLabs_description',
     tools: [
       { name: 'Marketing Digital', logoSrc: '' },
       { name: 'Growth Hacking', logoSrc: '' },
@@ -38,10 +38,10 @@ export const projectsData: Project[] = [
     name: 'Signkit',
     logo: '/logos/logo_signkit.svg',
     projectUrl: 'https://signkit.io/',
-    projectType: 'SaaS de marketing vía firmas corporativas',
+    projectTypeKey: 'DigitalProjectsSection.signkit_projectType',
     year: '2020',
-    status: 'Finalizado',
-    description: 'Signkit fue mi primer proyecto en PLYO Labs. Es un SaaS que convierte firmas de email corporativas en un canal de marketing. Lideré ventas iniciales con scraping, personalized email outreach y LinkedIn outreach, logrando rápida validación y primeras cuentas activas.',
+    statusKey: 'ProjectsSection.statusCompleted',
+    descriptionKey: 'DigitalProjectsSection.signkit_description',
     tools: [
       { name: 'LinkedIn', logoSrc: '/logos_skills/logo linkedin.png' },
       { name: 'LinkedIn Scraping', logoSrc: '/logos_skills/logo linkedin.png' },
@@ -54,10 +54,10 @@ export const projectsData: Project[] = [
     id: 3,
     name: 'ONCE',
     logo: '/logos/once_logo.png',
-    projectType: 'Joyería de lujo e-commerce',
+    projectTypeKey: 'DigitalProjectsSection.once_projectType',
     year: '2020',
-    status: 'Finalizado',
-    description: 'ONCE surgió en PLYO Labs como un audaz intento de fusionar joyería de lujo y e-commerce, al estilo de Net-a-Porter y Farfetch. Como Growth Marketer, dirigí campañas en Google y Facebook Ads, más otros canales. Implementé también tácticas de growth hacking para validar la demanda, con foco en A/B testing.',
+    statusKey: 'ProjectsSection.statusCompleted',
+    descriptionKey: 'DigitalProjectsSection.once_description',
     tools: [
       { name: 'Webflow', logoSrc: '/logos_skills/logo_webfow 1.svg' },
       { name: 'Google Ads', logoSrc: '/logos_skills/Logo_Google_ads.svg' },
@@ -73,10 +73,10 @@ export const projectsData: Project[] = [
     name: 'Dimexon',
     logo: '/logos/dimexon_logo.jpeg',
     projectUrl: 'https://dimexon.com/',
-    projectType: 'Marketplace B2B de diamantes',
-    description: 'DIMEXON es un marketplace digital de diamantes B2B enfocado en joyeros tradicionales europeos. Lideré la validación ágil (Signal Mining), creación del MVP, y adquisición de clientes vía campañas multicanal. Logramos rápida tracción y validamos exitosamente el modelo.',
+    projectTypeKey: 'DigitalProjectsSection.dimexon_projectType',
+    descriptionKey: 'DigitalProjectsSection.dimexon_description',
     year: '2021',
-    status: 'Finalizado',
+    statusKey: 'ProjectsSection.statusCompleted',
     tools: [
       { name: 'Google Ads', logoSrc: '/logos_skills/Logo_Google_ads.svg' },
       { name: 'Facebook Ads', logoSrc: '/logos_skills/Logo_meta-3.svg' },
@@ -93,10 +93,10 @@ export const projectsData: Project[] = [
     name: 'Cultions',
     logo: '/logos/cultions_logo.jpeg',
     projectUrl: 'https://www.linkedin.com/company/cultions/',
-    projectType: 'Comunidad online para artistas',
-    description: 'CULTIONS es una plataforma digital para artistas. Implementé Signal Mining en 8 semanas, creando landing pages, campañas y creatividades para validar demanda. Logramos fuerte tracción inicial y excelentes métricas en campañas multicanal, validando el interés del mercado.',
+    projectTypeKey: 'DigitalProjectsSection.cultions_projectType',
+    descriptionKey: 'DigitalProjectsSection.cultions_description',
     year: '2021',
-    status: 'Finalizado',
+    statusKey: 'ProjectsSection.statusCompleted',
     tools: [
       { name: 'Webflow', logoSrc: '/logos_skills/logo_webfow 1.svg' },
       { name: 'Google Ads', logoSrc: '/logos_skills/Logo_Google_ads.svg' },
@@ -113,10 +113,10 @@ export const projectsData: Project[] = [
     name: 'CANNMED',
     logo: '/logos/logo_cannmed.svg',
     projectUrl: 'https://www.instagram.com/cannmed.es/',
-    projectType: 'E-commerce de CBD medicinal',
-    description: 'CANNMED fue un e-commerce de CBD en España, desarrollado como side project junto a mi socio y amigo <a href="https://www.linkedin.com/in/joselagamma/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-700 hover:underline">José</a>. Diseñé la tienda en WooCommerce y juntos lideramos estrategias de growth con Taboola y Outbrain. Logramos ventas iniciales, pero pausamos al detectar que los claims sobre beneficios de salud no contaban aún con evidencia científica sólida.',
+    projectTypeKey: 'DigitalProjectsSection.cannmed_projectType',
+    descriptionKey: 'DigitalProjectsSection.cannmed_description',
     year: '2022',
-    status: 'Finalizado',
+    statusKey: 'ProjectsSection.statusCompleted',
     tools: [
       { name: 'Wordpress', logoSrc: '/logos_skills/logo_wordpress.svg' },
       { name: 'WooCommerce', logoSrc: '/logos_skills/logo_woocommerce.png' },
@@ -132,10 +132,10 @@ export const projectsData: Project[] = [
     name: 'Gray Matter',
     logo: '/logos/graymatterhq_logo.jpeg',
     projectUrl: 'https://www.linkedin.com/company/graymatterhq/posts/?feedView=all',
-    projectType: 'Startup studio de inteligencia artificial',
+    projectTypeKey: 'AiProjectsSection.grayMatter_projectType',
     year: '2023',
-    status: 'Finalizado',
-    description: 'Gray Matter es un startup studio fundado por <a href="https://www.linkedin.com/in/kwadwoadu/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:text-sky-700 hover:underline">Kwadwo</a> tras levantar capital. Me convocó como su primer empleado con equity. Trabajé seis meses en proyectos early stage, combinando growth y prototipado rápido con AI. Mi rol incluyó apoyar estrategia, hacer profundo research de casos y potenciales usos de AI. Luego me abrí como freelancer para explorar AI sin límites.',
+    statusKey: 'ProjectsSection.statusCompleted',
+    descriptionKey: 'AiProjectsSection.grayMatter_description',
     tools: [
       { name: 'ChatGPT', logoSrc: '/logos_skills/Logo_ChatGPT.svg' },
       { name: 'Stable Diffusion', logoSrc: '/logos_skills/logo_stablediffusion.png' },
@@ -149,10 +149,10 @@ export const projectsData: Project[] = [
     name: 'Mis Copilotos',
     logo: '/logos/miscopilotos_logo_new.svg',
     projectUrl: 'https://miscopilotos.com/',
-    projectType: 'Plataforma de copilotos personalizados',
+    projectTypeKey: 'AiProjectsSection.misCopilotos_projectType',
     year: '2024',
-    status: 'En curso',
-    description: 'Mis Copilotos es una plataforma que desarrollé para crear y personalizar copilotos de IA enfocados en gestión de proyectos y tareas. Diseñé la arquitectura, la experiencia de usuario y la integración de chats inteligentes, combinando tecnología con casos de uso reales.',
+    statusKey: 'ProjectsSection.statusInProgress',
+    descriptionKey: 'AiProjectsSection.misCopilotos_description',
     tools: [
       { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
       { name: 'Flowise', logoSrc: '/logos_skills/Logo_flowise.svg' },
@@ -171,10 +171,10 @@ export const projectsData: Project[] = [
     name: 'Launchable',
     logo: '/logos/launchable_logo_new.svg',
     projectUrl: 'https://launchable.ai/',
-    projectType: 'Agencia de inteligencia artificial',
+    projectTypeKey: 'AiProjectsSection.launchable_projectType',
     year: '2025',
-    status: 'En curso',
-    description: 'Launchable es una startup de inteligencia artificial fundada en Canadá. Trabajo como freelancer en proyectos como Video Insight Pro y Framesynth. Aporto estrategia, desarrollo de producto, prototipado rápido, marketing digital y growth, aplicando lo más avanzado en AI.',
+    statusKey: 'ProjectsSection.statusInProgress',
+    descriptionKey: 'AiProjectsSection.launchable_description',
     tools: [
       { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
       { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
@@ -192,10 +192,10 @@ export const projectsData: Project[] = [
     name: 'Video Insight Pro',
     logo: '/logos/logo_vip_videoinsightpro.svg',
     projectUrl: 'https://videoinsight.pro/',
-    projectType: 'Plataforma de análisis de videos con IA',
+    projectTypeKey: 'AiProjectsSection.videoInsightPro_projectType',
     year: '2025',
-    status: 'En curso',
-    description: 'Video Insight Pro es una plataforma que permite subir videos y analizarlos con inteligencia artificial en minutos. Trabajo en desarrollo de producto, estrategia, prototipado rápido y growth, ayudando a transformar videos en insights claros y accionables.',
+    statusKey: 'ProjectsSection.statusInProgress',
+    descriptionKey: 'AiProjectsSection.videoInsightPro_description',
     tools: [
       { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
       { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
@@ -214,10 +214,10 @@ export const projectsData: Project[] = [
     name: 'Framesynth',
     logo: '/logos/logo_framesynth.svg',
     projectUrl: 'https://framesynth.art/',
-    projectType: 'Generador AI de videos musicales',
+    projectTypeKey: 'AiProjectsSection.framesynth_projectType',
     year: '2025',
-    status: 'En curso',
-    description: 'Framesynth es una plataforma que convierte música en videos generados por inteligencia artificial. Trabajo en desarrollo de producto, estrategia, prototipado rápido y marketing digital, creando experiencias audiovisuales innovadoras con lo último en AI.',
+    statusKey: 'ProjectsSection.statusInProgress',
+    descriptionKey: 'AiProjectsSection.framesynth_description',
     tools: [
       { name: 'Bubble', logoSrc: '/logos_skills/bubble-io.svg' },
       { name: 'Cursor', logoSrc: '/logos_skills/cursor.svg' },
@@ -233,12 +233,12 @@ export const projectsData: Project[] = [
   },
   {
     id: 12,
-    name: 'Price Waterhouse Coopers',
+    name: 'CorporateProjectsSection.priceWaterhouseCoopers_name',
     logo: '/logos/pwc_logo_new.svg',
     projectUrl: 'https://www.linkedin.com/company/price-waterhouse-cooper-pwc/',
-    projectType: 'Auditoría, contabilidad e impuestos',
+    projectTypeKey: 'CorporateProjectsSection.priceWaterhouseCoopers_projectType',
     year: '2011 - 2014',
-    description: 'En PwC trabajé en las áreas de Capital Markets y Auditoría con clientes como Colgate, IRSA, Cresud y Adecoagro. En estos años aprendí de contabilidad, impuestos, finanzas y procesos corporativos, trabajando en las oficinas de estas compañías en Buenos Aires. Además, tuve la oportunidad de conocer de cerca sus operaciones mediante visitas a plantas industriales, como la de Colgate en San Luis, y a establecimientos agropecuarios, como los campos de Adecoagro en Corrientes y Santiago del Estero.',
+    descriptionKey: 'CorporateProjectsSection.priceWaterhouseCoopers_description',
     tools: [
       { name: 'Auditoría externa' }, 
       { name: 'Contabilidad' }, 
@@ -252,38 +252,34 @@ export const projectsData: Project[] = [
   },
   {
     id: 13,
-    name: 'Sinopec<br />International',
-    logo: '/logos/Sinopec_logo.svg',
-    projectType: 'Finanzas corporativas en multinacional',
-    year: '2014 - 2015',
-    description: 'En Sinopec trabajé en Finanzas, realizando tareas de back office y gestión de facturas. Fue una experiencia que me permitió conocer de cerca el funcionamiento administrativo de una multinacional. Tras seis meses, busqué un desafío más ambicioso y tomé el proyecto de Jóvenes Profesionales en Bacardi.',
+    name: 'CorporateProjectsSection.sinopec_name',
+    logo: '/logos/sinopec_logo_new.svg',
+    projectUrl: 'https://www.linkedin.com/company/sinopec/',
+    projectTypeKey: 'CorporateProjectsSection.sinopec_projectType',
+    year: '2014',
+    descriptionKey: 'CorporateProjectsSection.sinopec_description',
     tools: [
-      { name: 'Finanzas' },
-      { name: 'Back office' },
-      { name: 'Gestión administrativa' },
-      { name: 'Procesos corporativos' },
-      { name: 'Excel' }
+      { name: 'Back-office' }, 
+      { name: 'Gestión de Facturas' }, 
+      { name: 'SAP' }
     ],
     category: 'corporate',
   },
   {
     id: 14,
-    name: 'Bacardi<br />(Grupo Cepas)',
+    name: 'CorporateProjectsSection.bacardi_name',
     logo: '/logos/bacardi_logo_new.svg',
-    projectType: 'Revenue, marketing y ventas en consumo masivo',
-    year: '2015 - 2020',
-    description: 'En Bacardi (Grupo CEPAS) trabajé 5 años. Entré como Joven Profesional rotando por Revenue Management, Ventas y Business Intelligence. Crecí en Revenue Management hasta liderar la apertura del área en Chile y Uruguay. Cerré en el área de Marketing como Brand Manager de Terma, combinando análisis y estrategia de marca. Trabajé con marcas icónicas como Bacardi, Gancia, Terma y Dr. Lemon.',
+    projectUrl: 'https://www.linkedin.com/company/bacardi/',
+    projectTypeKey: 'CorporateProjectsSection.bacardi_projectType',
+    year: '2015 - 2019',
+    descriptionKey: 'CorporateProjectsSection.bacardi_description',
     tools: [
-      { name: 'Revenue Management' },
-      { name: 'Ventas' },
-      { name: 'Business Intelligence' },
-      { name: 'Pricing' },
-      { name: 'Forecasting' },
-      { name: 'Marketing' },
-      { name: 'Brand Strategy' },
-      { name: 'SAP' },
-      { name: 'Excel' },
-      { name: 'Nielsen' }
+      { name: 'Revenue Management' }, 
+      { name: 'Marketing Estratégico' }, 
+      { name: 'Business Intelligence (BI)' }, 
+      { name: 'SAP' }, 
+      { name: 'Tableau' }, 
+      { name: 'Excel Avanzado' }
     ],
     category: 'corporate',
   }

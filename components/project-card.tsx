@@ -5,16 +5,70 @@ import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import type { Project, ProjectTool } from '@/data/projects-data';
+import { useTranslations, type Messages } from 'next-intl';
+
+type TranslationFunction = ReturnType<typeof useTranslations<keyof Messages>>;
 
 interface ProjectCardProps {
   project: Project;
   isSimpleView?: boolean;
+  tGlobal: TranslationFunction;
+  tSpecific: TranslationFunction;
 }
 
-export default function ProjectCard({ project, isSimpleView }: ProjectCardProps) {
+export default function ProjectCard({ project, isSimpleView, tGlobal, tSpecific }: ProjectCardProps) {
+  let finalNameKey = project.name;
+  if (project.name.startsWith('CorporateProjectsSection.')) {
+    finalNameKey = project.name.substring('CorporateProjectsSection.'.length);
+  } else if (project.name.startsWith('DigitalProjectsSection.')) {
+    finalNameKey = project.name.substring('DigitalProjectsSection.'.length);
+  } else if (project.name.startsWith('AiProjectsSection.')) {
+    finalNameKey = project.name.substring('AiProjectsSection.'.length);
+  }
+
+  const projectName = (project.name.startsWith('CorporateProjectsSection.') || project.name.startsWith('DigitalProjectsSection.') || project.name.startsWith('AiProjectsSection.'))
+    ? tSpecific(finalNameKey as any)
+    : project.name;
+
+  let finalTypeKey = project.projectTypeKey || '';
+  if (project.projectTypeKey?.startsWith('CorporateProjectsSection.')) {
+    finalTypeKey = project.projectTypeKey.substring('CorporateProjectsSection.'.length);
+  } else if (project.projectTypeKey?.startsWith('DigitalProjectsSection.')) {
+    finalTypeKey = project.projectTypeKey.substring('DigitalProjectsSection.'.length);
+  } else if (project.projectTypeKey?.startsWith('AiProjectsSection.')) {
+    finalTypeKey = project.projectTypeKey.substring('AiProjectsSection.'.length);
+  }
+  
+  const projectType = project.projectTypeKey 
+    ? tSpecific(finalTypeKey as any) 
+    : '';
+
+  let finalDescriptionKey = project.descriptionKey || '';
+  if (project.descriptionKey?.startsWith('CorporateProjectsSection.')) {
+    finalDescriptionKey = project.descriptionKey.substring('CorporateProjectsSection.'.length);
+  } else if (project.descriptionKey?.startsWith('DigitalProjectsSection.')) {
+    finalDescriptionKey = project.descriptionKey.substring('DigitalProjectsSection.'.length);
+  } else if (project.descriptionKey?.startsWith('AiProjectsSection.')) {
+    finalDescriptionKey = project.descriptionKey.substring('AiProjectsSection.'.length);
+  }
+
+  const projectDescription = project.descriptionKey
+    ? tSpecific.rich(finalDescriptionKey as any, {
+        i: (chunks) => <i>{chunks}</i>,
+      })
+    : '';
+
+  let finalStatusKey = project.statusKey || '';
+  if (project.statusKey?.startsWith('ProjectsSection.')) {
+    finalStatusKey = project.statusKey.substring('ProjectsSection.'.length);
+  }
+
+  const projectStatus = project.statusKey 
+    ? tGlobal(finalStatusKey as any) 
+    : '';
+
   const statusVariant =
-    project.status === 'Finalizado' ? 'secondary' :
-    project.status === 'En curso' ? 'default' :
+    projectStatus === tGlobal(finalStatusKey.endsWith('Completed') ? 'statusCompleted' : 'statusInProgress' as any) ? (finalStatusKey.endsWith('Completed') ? 'secondary' : 'default') :
     'outline';
 
   return (
@@ -31,12 +85,12 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
               href={project.projectUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              aria-label={`Visitar sitio de ${project.name}`}
+              aria-label={`Visitar sitio de ${projectName}`}
               className="block relative h-16 w-16 flex-shrink-0 mx-auto transition-opacity hover:opacity-80"
             >
               <Image
                 src={project.logo}
-                alt={`${project.name} logo`}
+                alt={`${projectName} logo`}
                 fill
                 sizes="64px"
                 className="object-contain rounded-md"
@@ -46,7 +100,7 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
             <div className="relative h-16 w-16 flex-shrink-0 mx-auto">
               <Image
                 src={project.logo}
-                alt={`${project.name} logo`}
+                alt={`${projectName} logo`}
                 fill
                 sizes="64px"
                 className="object-contain rounded-md"
@@ -56,20 +110,19 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
         )}
         <h3 
           className="text-xl font-semibold text-center md:text-center w-full"
-          dangerouslySetInnerHTML={{ __html: project.name }}
         >
-          {/* El contenido ahora se maneja con dangerouslySetInnerHTML */}
+          {projectName}
         </h3>
-        {project.projectType && (
+        {projectType && (
           <p className="text-sm text-muted-foreground text-center md:text-center w-full px-1 min-h-16">
-            {project.projectType}
+            {projectType}
           </p>
         )}
-        {(project.year || project.status) && (
+        {(project.year || projectStatus) && (
           <div className="flex items-center justify-center md:justify-center gap-2 text-xs text-muted-foreground w-full mt-auto">
             {project.year && <span>{project.year}</span>}
-            {project.year && project.status && <span className="hidden md:inline">•</span>}
-            {project.status && <Badge variant={statusVariant} className="px-1.5 py-0.5 text-xs">{project.status}</Badge>}
+            {project.year && projectStatus && <span className="hidden md:inline">•</span>}
+            {projectStatus && <Badge variant={statusVariant} className="px-1.5 py-0.5 text-xs">{projectStatus}</Badge>}
           </div>
         )}
       </div>
@@ -80,11 +133,12 @@ export default function ProjectCard({ project, isSimpleView }: ProjectCardProps)
           isSimpleView ? 'hidden' : ''
         }`}
       >
-        {project.description && (
+        {projectDescription && (
           <p 
             className="text-sm text-center md:text-left text-muted-foreground leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: project.description }}
-          />
+          >
+            {projectDescription}
+          </p>
         )}
 
         {project.tools && project.tools.length > 0 && (

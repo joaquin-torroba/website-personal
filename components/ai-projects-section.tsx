@@ -3,9 +3,12 @@
 import React, { useState } from 'react';
 import { projectsData } from '@/data/projects-data';
 import ProjectCard from './project-card';
+import { useTranslations } from 'next-intl';
 
 export default function AiProjectsSection() { // Nombre de función cambiado
   const [isSimpleView, setIsSimpleView] = useState(true);
+  const tGlobal = useTranslations('ProjectsSection'); // Inicializar tGlobal
+  const tSpecific = useTranslations('AiProjectsSection'); // Inicializar tSpecific
 
   const handleToggleView = () => {
     setIsSimpleView(!isSimpleView);
@@ -52,6 +55,8 @@ export default function AiProjectsSection() { // Nombre de función cambiado
               key={project.id} 
               project={project} 
               isSimpleView={isSimpleView}
+              tGlobal={tGlobal}
+              tSpecific={tSpecific}
             />
           ))}
         </div>

@@ -3,9 +3,12 @@
 import React, { useState } from 'react';
 import { projectsData } from '@/data/projects-data';
 import ProjectCard from './project-card';
+import { useTranslations } from 'next-intl';
 
 export default function DigitalProjectsSection() {
   const [isSimpleView, setIsSimpleView] = useState(true);
+  const tGlobal = useTranslations('ProjectsSection');
+  const tSpecific = useTranslations('DigitalProjectsSection');
 
   const handleToggleView = () => {
     setIsSimpleView(!isSimpleView);
@@ -54,6 +57,8 @@ export default function DigitalProjectsSection() {
               key={project.id} 
               project={project} 
               isSimpleView={isSimpleView}
+              tGlobal={tGlobal}
+              tSpecific={tSpecific}
             />
           ))}
         </div>

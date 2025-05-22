@@ -3,8 +3,11 @@
 import React, { useState } from 'react';
 import { projectsData } from '@/data/projects-data';
 import ProjectCard from './project-card';
+import { useTranslations } from 'next-intl';
 
-export default function CorporateProjectsSection() { // Nombre de función cambiado
+export default function CorporateProjectsSection() {
+  const t = useTranslations('CorporateProjectsSection');
+  const tProjects = useTranslations('ProjectsSection'); // Para claves comunes como status
   const [isSimpleView, setIsSimpleView] = useState(true);
 
   const handleToggleView = () => {
@@ -12,26 +15,24 @@ export default function CorporateProjectsSection() { // Nombre de función cambi
   };
 
   return (
-    <section id="corporate-projects" className="w-full py-16"> {/* ID cambiado */}
+    <section id="corporate-projects" className="w-full py-16">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-12">Proyectos Corporativos</h2> {/* Título cambiado */}
+        <h2 className="text-2xl font-bold text-center mb-12">{t('title')}</h2>
         <div className="flex justify-start items-center mb-8 space-x-3">
-          <label htmlFor="corporateViewToggle" className="flex items-center cursor-pointer"> {/* htmlFor cambiado */}
+          <label htmlFor="corporateViewToggle" className="flex items-center cursor-pointer">
             <div className="relative">
               <input
                 type="checkbox"
-                id="corporateViewToggle" // ID del input cambiado
+                id="corporateViewToggle"
                 className="sr-only peer"
                 checked={!isSimpleView}
                 onChange={handleToggleView}
               />
-              {/* Línea del toggle */}
               <div className="block bg-gray-300 peer-checked:bg-emerald-700 w-12 h-7 rounded-full transition-colors"></div>
-              {/* Punto del toggle */}
               <div className="dot absolute left-1 top-1 bg-white w-5 h-5 rounded-full transition-transform peer-checked:translate-x-full peer-checked:bg-white"></div>
             </div>
             <div className="ml-3 text-gray-700 text-sm font-medium">
-              {isSimpleView ? "Vista Simple" : "Vista Completa"}
+              {isSimpleView ? t('simpleView') : t('detailedView')}
             </div>
           </label>
         </div>
@@ -41,12 +42,14 @@ export default function CorporateProjectsSection() { // Nombre de función cambi
           } gap-6`}
         >
           {projectsData
-            .filter(project => project.category === 'corporate') // Filtro cambiado a 'corporate'
+            .filter(project => project.category === 'corporate')
             .map((project) => (
             <ProjectCard 
               key={project.id} 
               project={project} 
               isSimpleView={isSimpleView}
+              tGlobal={tProjects} // Para status, tooltips, etc.
+              tSpecific={t}      // Para name, description, projectType de este grupo
             />
           ))}
         </div>

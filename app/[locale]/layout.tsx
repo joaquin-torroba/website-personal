@@ -7,8 +7,18 @@ import { Analytics } from '@vercel/analytics/next';
 
 // next-intl imports
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import {notFound} from 'next/navigation';
 import {locales} from '../../i18n'; // Assuming i18n.ts is in the root and exports 'locales'
+
+// Función para cargar mensajes
+async function getMessages(locale: string) {
+  try {
+    return (await import(`../../messages/${locale}.json`)).default;
+  } catch (error) {
+    console.error('Error cargando mensajes:', error);
+    return {};
+  }
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +47,14 @@ export default async function RootLayout({
   params: Promise<{locale: string}>; // Type params as a Promise
 }) {
   const { locale } = await params; // Await params and destructure locale
-  const messages = await getMessages();
+  
+  // Verificamos si el locale es válido
+  if (!locales.includes(locale as any)) {
+    notFound();
+  }
+  
+  // Cargamos los mensajes
+  const messages = await getMessages(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>

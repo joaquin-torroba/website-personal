@@ -15,7 +15,10 @@ export default function AiProjectsSection() { // Nombre de función cambiado
   };
 
   return (
-    <section id="ai-projects" className="w-full py-16"> {/* ID cambiado */}
+    <section 
+      id="ai-projects" 
+      className="w-full py-16 md:py-24 bg-white border-t border-b border-slate-200"
+    >
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Proyectos de Inteligencia Artificial</h2> {/* Título cambiado */}
         <div className="flex justify-start items-center mb-8 space-x-3">

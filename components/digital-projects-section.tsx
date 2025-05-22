@@ -17,7 +17,7 @@ export default function DigitalProjectsSection() {
   return (
     <section 
       id="digital-projects" 
-      className="w-full py-16 bg-slate-50 dark:bg-slate-900 border-t border-b border-slate-200 dark:border-slate-800"
+      className="w-full py-16 md:py-24 bg-[#F7FAFC] border-t border-b border-slate-200"
     >
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">Proyectos Digitales</h2>

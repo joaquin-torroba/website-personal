@@ -14,9 +14,9 @@ import FixedHeaderButtons from '@/components/FixedHeaderButtons';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-50">
+    <main className="flex flex-col items-center justify-center text-slate-900">
       {/* Cabecera Fija con botones y selector de idioma */}
-      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-3 bg-slate-100/80 dark:bg-slate-950/80 backdrop-blur-md h-14">
+      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-3 backdrop-blur-md h-14">
         <FixedHeaderButtons />
         <LanguageSwitcher />
       </div>

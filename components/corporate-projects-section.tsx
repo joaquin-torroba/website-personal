@@ -9,13 +9,18 @@ export default function CorporateProjectsSection() {
   const t = useTranslations('CorporateProjectsSection');
   const tProjects = useTranslations('ProjectsSection'); // Para claves comunes como status
   const [isSimpleView, setIsSimpleView] = useState(true);
+  const tGlobal = useTranslations('ProjectsSection');
+  const tSpecific = useTranslations('CorporateProjectsSection');
 
   const handleToggleView = () => {
     setIsSimpleView(!isSimpleView);
   };
 
   return (
-    <section id="corporate-projects" className="w-full py-16">
+    <section 
+      id="corporate-projects" 
+      className="w-full py-16 md:py-24 bg-white border-t border-b border-slate-200"
+    >
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">{t('title')}</h2>
         <div className="flex justify-start items-center mb-8 space-x-3">
@@ -48,8 +53,8 @@ export default function CorporateProjectsSection() {
               key={project.id} 
               project={project} 
               isSimpleView={isSimpleView}
-              tGlobal={tProjects} // Para status, tooltips, etc.
-              tSpecific={t}      // Para name, description, projectType de este grupo
+              tGlobal={tGlobal} // Para status, tooltips, etc.
+              tSpecific={tSpecific}      // Para name, description, projectType de este grupo
             />
           ))}
         </div>

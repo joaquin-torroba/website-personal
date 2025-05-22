@@ -9,12 +9,12 @@ export default function AboutSection() {
   return (
     <motion.section 
       id="about"
-      className="w-full py-16"
+      className="w-full bg-white pb-16 md:pb-24"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
     >
-      <div className="prose lg:prose-lg dark:prose-invert max-w-3xl mx-auto pl-10 pr-4 space-y-4">
+      <div className="prose lg:prose-lg max-w-3xl mx-auto pl-10 pr-4 space-y-4">
         <p className="text-lg">
           {t('paragraph1')}
         </p>

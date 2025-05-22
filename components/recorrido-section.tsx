@@ -37,8 +37,11 @@ export default function RecorridoSection() {
   ];
 
   return (
-    <section className="w-full py-16 bg-slate-50 dark:bg-slate-900 border-t border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm">
-      <div className="max-w-3xl mx-auto px-4">
+    <section 
+      id="recorrido" 
+      className="w-full py-16 md:py-24 bg-[#F7FAFC] border-t border-b border-slate-200"
+    >
+      <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-2xl font-bold text-center mb-12">{t('title')}</h2>
         <Timeline>
           <TimelineItem 

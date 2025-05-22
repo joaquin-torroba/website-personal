@@ -9,7 +9,10 @@ export default function SkillsSection() {
   const t = useTranslations('SkillsSection'); // Inicializar useTranslations para SkillsSection
 
   return (
-    <section id="skills" className="w-full py-16 bg-slate-50 dark:bg-slate-900 border-t border-b border-slate-200 dark:border-slate-800">
+    <section 
+      id="skills" 
+      className="w-full py-16 md:py-24 bg-[#F7FAFC] border-t border-b border-slate-200"
+    >
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">{t('title')}</h2>
         <div className="space-y-12">

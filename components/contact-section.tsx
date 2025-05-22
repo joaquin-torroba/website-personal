@@ -20,7 +20,10 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="w-full py-16 md:py-24 bg-white border-t border-slate-200 dark:border-slate-800">
+    <section 
+      id="contact" 
+      className="w-full py-16 md:py-24 bg-white border-t border-slate-200"
+    >
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">{t('title')}</h2>
         <p className="text-lg text-muted-foreground mb-10 md:mb-12">

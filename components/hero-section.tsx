@@ -13,7 +13,8 @@ export default function HeroSection() {
 
   return (
     <motion.section 
-      className="w-full flex flex-col items-center pt-16"
+      id="hero"
+      className="w-full flex flex-col justify-center items-center text-center p-4 md:p-8 bg-white pt-20 pb-10 md:pb-16"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}

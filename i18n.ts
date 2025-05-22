@@ -1,28 +1,35 @@
 import {notFound} from 'next/navigation';
 import {getRequestConfig} from 'next-intl/server';
 
-// Can be imported from a shared config
-const locales = ['en', 'es'];
-const defaultLocale = 'es';
+// Definimos los locales disponibles
+export const locales = ['es', 'en'] as const;
+export const defaultLocale = 'es';
 
+// Función para obtener la configuración de request para next-intl
 export default getRequestConfig(async ({locale}) => {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) {
-    notFound();
-  }
+  // Validar que el locale entrante sea válido
+  const resolvedLocale = locale && typeof locale === 'string' && locales.includes(locale as any)
+    ? locale
+    : defaultLocale;
 
-  // Type assertion after validation
-  const validLocale = locale as typeof locales[number];
-
+  // Cargar los mensajes de traducción según el locale
   let messages;
   try {
-    messages = (await import(`./messages/${validLocale}.json`)).default;
+    messages = (await import(`./messages/${resolvedLocale}.json`)).default;
+    // If messages loaded as {} and that's an issue, this check could be useful
+    if (Object.keys(messages).length === 0 && JSON.stringify(messages) === '{}') {
+      // console.warn(`Messages for ${resolvedLocale} loaded as empty object {}.`); // Optional debugging
+      // Potentially force a minimal structure if {} is problematic for next-intl
+      // messages = { common: { test: 'Fallback loaded' } };
+    }
   } catch (error) {
-    notFound();
+    console.error('Error cargando mensajes:', error);
+    messages = {}; // Revert to empty object
   }
 
   return {
-    locale: validLocale,
-    messages
+    messages,
+    locale: resolvedLocale,
+    timeZone: 'America/Buenos_Aires'
   };
 }); 

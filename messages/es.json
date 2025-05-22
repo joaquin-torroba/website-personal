@@ -1,1 +1,11 @@
-{} 
+{
+  "testKey": "Test Value ES",
+  "Metadata": {
+    "title": "Joaquín Torroba - Sitio Web Personal",
+    "description": "Bienvenido a mi sitio web personal. Soy Joaquín Torroba, desarrollador y emprendedor."
+  },
+  "Page": {
+    "testTitle": "Prueba de Traducción en Español",
+    "testMessage": "Si puedes ver este mensaje, las traducciones están funcionando correctamente."
+  }
+} 

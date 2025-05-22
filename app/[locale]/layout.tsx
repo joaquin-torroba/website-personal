@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/next';
 // next-intl imports
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
+import {getTranslations} from 'next-intl/server';
 import {locales} from '../../i18n'; // Assuming i18n.ts is in the root and exports 'locales'
 
 // Función para cargar mensajes
@@ -30,10 +31,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Joaquin Torroba - Website",
-  description: "Personal website for Joaquin Torroba",
-};
+// Generar metadatos de forma dinámica según el locale
+export async function generateMetadata({ 
+  params: paramsPromise 
+}: { 
+  params: Promise<{ locale: string }> 
+}): Promise<Metadata> {
+  const params = await paramsPromise;
+  const locale = params.locale;
+  
+  // Obtener traducciones
+  const t = await getTranslations({locale, namespace: 'Metadata'});
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export function generateStaticParams() {
   return locales.map((locale: string) => ({locale}));

@@ -2,14 +2,19 @@
 
 import Image from 'next/image'; // Importar Image
 import { motion } from "framer-motion"; // Importar motion
+import { useTranslations } from 'next-intl';
 
 // import { ModeToggle } from "@/components/mode-toggle"; // No se usa aquí
 // import { Button } from "@/components/ui/button"; // No se usa aquí
 
 export default function HeroSection() {
+  const t = useTranslations('HeroSection');
+  const tHome = useTranslations('HomePage');
+
   return (
     <motion.section 
-      className="w-full flex flex-col items-center pt-16"
+      id="hero"
+      className="w-full flex flex-col justify-center items-center text-center p-4 md:p-8 bg-white pt-20 pb-10 md:pb-16"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -21,7 +26,7 @@ export default function HeroSection() {
         {/* Imagen Real */}
         <Image
             src="/Avatar_Foto_New1.png" // Ruta desde la carpeta public
-          alt="Retrato de Joaquín Torroba" // Texto alternativo según PRD
+          alt={t('portrait')} // Texto alternativo traducido
           width={192} // Ancho para desktop según PRD
           height={192} // Alto para desktop según PRD
           priority // Priorizar carga de esta imagen (LCP)
@@ -30,16 +35,16 @@ export default function HeroSection() {
         </div>
 
         {/* Nombre */}
-        <h1 className="text-4xl sm:text-5xl font-bold text-center">Joaquín Torroba</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold text-center">{t('name')}</h1>
 
         {/* Tagline en dos líneas */}
         <div className="text-lg text-muted-foreground text-center max-w-md">
-          <p>AI Freelancer.</p>
-          <p>Enfocado en Startups y Empresas.</p>
+          <p>{t('tagline1')}</p>
+          <p>{t('tagline2')}</p>
         </div>
 
         {/* Placeholder para CTA */}
-        <div className="sr-only" aria-label="CTA próximamente"></div>
+        <div className="sr-only" aria-label={t('cta')}></div>
       </div>
     </motion.section>
   );

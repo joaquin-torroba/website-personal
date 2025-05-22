@@ -14,7 +14,7 @@ interface SkillCategory {
 export const skillsData: SkillCategory[] = [
   // 1. Daily AI Tools
   {
-    title: "Daily AI Tools",
+    title: "SkillsSection.category1_title",
     skills: [
       { name: "ChatGPT", logoSrc: "/logos_skills/Logo_ChatGPT.svg" },
       { name: "Claude", logoSrc: "/logos_skills/claude-color.svg" },
@@ -26,7 +26,7 @@ export const skillsData: SkillCategory[] = [
   },
   // 2. Marketing Digital & Analytics
   {
-    title: "Marketing Digital & Analytics",
+    title: "SkillsSection.category2_title",
     skills: [
       { name: "Google Ads", logoSrc: "/logos_skills/Logo_Google_ads.svg" },
       { name: "Facebook Ads", logoSrc: "/logos_skills/Logo_meta-3.svg" },
@@ -44,7 +44,7 @@ export const skillsData: SkillCategory[] = [
   },
   // 3. BI & Data / Herramientas Corporativas
   {
-    title: "BI & Data / Herramientas Corporativas",
+    title: "SkillsSection.category3_title",
     skills: [
       { name: "Excel", logoSrc: "/logos_skills/Logo_Microsoft_Office_Excel.svg" },
       { name: "PowerPoint", logoSrc: "/logos_skills/Logo_Microsoft_Office_PowerPoint.svg" },
@@ -53,7 +53,7 @@ export const skillsData: SkillCategory[] = [
   },
   // 4. Web Design and Development
   {
-    title: "Web Design and Development",
+    title: "SkillsSection.category4_title",
     skills: [
       { name: "Webflow", logoSrc: "/logos_skills/logo_webfow 1.svg" },
       { name: "WordPress", logoSrc: "/logos_skills/logo_wordpress.svg" },
@@ -69,7 +69,7 @@ export const skillsData: SkillCategory[] = [
   },
   // 5. Automatización y Cloud
   {
-    title: "Automatización y Cloud",
+    title: "SkillsSection.category5_title",
     skills: [
       { name: "Zapier", logoSrc: "/logos_skills/logo_zapier.svg" },
       { name: "Flowise", logoSrc: "/logos_skills/Logo_flowise.svg" },

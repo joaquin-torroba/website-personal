@@ -29,7 +29,7 @@ export default function SkillCard({ name, logoSrc }: SkillCardProps) {
         />
       </div>
       <div className="h-10 flex items-center justify-center">
-        <p className="text-sm font-medium text-center px-1 break-words">
+        <p className="text-sm font-medium text-muted-foreground text-center px-1 break-words">
           {name}
         </p>
       </div>

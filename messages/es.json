@@ -1,0 +1,140 @@
+{
+  "testKey": "Test Value ES",
+  "Metadata": {
+    "title": "Joaquín Torroba - Sitio Web",
+    "description": "Sitio web personal de Joaquín Torroba"
+  },
+  "HomePage": {
+    "title": "Joaquín Torroba - Sitio Web",
+    "description": "Sitio web personal de Joaquín Torroba",
+    "emailButton": "Correo",
+    "emailCopiedButton": "Correo Copiado",
+    "linkedInButton": "LinkedIn",
+    "greeting": "Hola, soy Joaquín"
+  },
+  "Page": {
+    "testTitle": "Prueba de Traducción en Español",
+    "testMessage": "Si puedes ver este mensaje, las traducciones están funcionando correctamente."
+  },
+  "Languages": {
+    "spanish": "Español",
+    "english": "Inglés",
+    "switchTo": "Cambiar a"
+  },
+  "FixedHeaderButtons": {
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "emailCopied": "¡Copiado!"
+  },
+  "HeroSection": {
+    "name": "Joaquín Torroba",
+    "tagline1": "AI Freelancer.",
+    "tagline2": "Enfocado en Startups y Empresas.",
+    "portrait": "Retrato de Joaquín Torroba",
+    "cta": "Próximamente"
+  },
+  "AboutSection": {
+    "title": "Sobre Mí",
+    "paragraph1": "Soy Joaquin. Me inicié profesionalmente en el mundo corporativo, después pasé varios años trabajando en startups digitales, y desde Diciembre 2022 mi foco está puesto 100% en inteligencia artificial generativa aplicada a negocios.",
+    "paragraph2": "Actualmente divido mi tiempo entre desarrollar productos de IA en Launchable - <i>startup canadiense</i> - y explorar casos prácticos para integrar la inteligencia artificial en grandes empresas.",
+    "paragraph3": "Me interesa explorar oportunidades de IA en áreas que conozco bien como <i>marketing, ventas, revenue management, contabilidad, recursos humanos, impuestos y finanzas</i>.",
+    "paragraph4": "Si sos un profesional, una startup o una empresa con esta misma curiosidad por la IA, hablemos. Estaría bueno explorar ideas juntos."
+  },
+  "RecorridoSection": {
+    "title": "Mi Recorrido Profesional",
+    "periodConnector": "a",
+    "corporateTitle": "Etapa Corporativa (Latinoamérica)",
+    "corporateTags": ["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"],
+    "corporateDescription": "A los 20 años comencé mi camino profesional en PWC en el área de <i>capital markets</i> y <i>auditoría</i>. Luego un breve paso por Sinopec en <i>finanzas</i>. Y finalmente, 5 grandes años trabajando en Grupo Cepas (Bacardi) en core áreas como <i>revenue management</i>, <i>marketing</i>, <i>ventas</i> y <i>BI</i>.",
+    "startupsTitle": "Etapa Startups (Europa)",
+    "startupsTags": ["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"],
+    "startupsDescription": "A los 28 años me mudé a Europa y conocí el mundo digital trabajando en un <i>growth studio</i> danés llamado Plyo Labs. Durante 3 años participé de múltiples proyectos remotos en distintas startups (destaco Dimexon, Once y Cultions). Comencé como especialista en <i>marketing digital</i> y luego incorporé más herramientas digital-native como <i>diseño web</i>, <i>automatizaciones</i>, <i>e-commerce</i> y <i>growth hacking</i>.",
+    "aiTitle": "Etapa Inteligencia Artificial (Global Remoto)",
+    "aiTags": ["AI Engineering", "Agentic Workflows", "AI App Development", "AI Web Design", "AI Automations"],
+    "aiDescription": "Desde diciembre de 2022 me metí de lleno en la <i>IA generativa</i>. Aprendo, pruebo y uso a diario herramientas como <i>ChatGPT</i>, <i>Claude</i>, <i>Cursor</i> y <i>Flowise</i>. Soy freelancer en Launchable creando productos de IA, y en paralelo armo apps propias como <i>Mis Copilotos</i>. También, exploro el potencial de la IA para empresas más tradicionales juntándome con expertos de dominio y con ingenieros de IA que trabajen en casos reales.",
+    "present": "Presente"
+  },
+  "SkillsSection": {
+    "title": "Mi Stack Tecnológico",
+    "category1_title": "Herramientas IA de Uso Diario",
+    "category2_title": "Marketing Digital & Analytics",
+    "category3_title": "BI & Data / Herramientas Corporativas",
+    "category4_title": "Diseño y Desarrollo Web",
+    "category5_title": "Automatización y Cloud"
+  },
+  "ProjectsSection": {
+    "title": "Proyectos Destacados",
+    "labelCorporate": "Corporativos",
+    "labelDigital": "Digitales",
+    "labelAI": "IA",
+    "tooltipProjectLink": "Ver proyecto",
+    "statusInProgress": "En curso",
+    "statusCompleted": "Completado"
+  },
+  "CorporateProjectsSection": {
+    "title": "Proyectos Corporativos",
+    "simpleView": "Vista Simple",
+    "detailedView": "Vista Detallada",
+    "priceWaterhouseCoopers_name": "Price Waterhouse Coopers",
+    "priceWaterhouseCoopers_projectType": "Auditoría, contabilidad e impuestos",
+    "priceWaterhouseCoopers_description": "En PwC trabajé en las áreas de Capital Markets y Auditoría con clientes como Colgate, IRSA, Cresud y Adecoagro. En estos años aprendí de contabilidad, impuestos, finanzas y procesos corporativos, trabajando en las oficinas de estas compañías en Buenos Aires. Además, tuve la oportunidad de conocer de cerca sus operaciones mediante visitas a plantas industriales, como la de Colgate en San Luis, y a establecimientos agropecuarios, como los campos de Adecoagro en Corrientes y Santiago del Estero.",
+    "sinopec_name": "Sinopec International",
+    "sinopec_projectType": "Finanzas corporativas en multinacional",
+    "sinopec_description": "En Sinopec trabajé en Finanzas, realizando tareas de back office y gestión de facturas. Fue una experiencia que me permitió conocer de cerca el funcionamiento administrativo de una multinacional. Tras seis meses, busqué un desafío más ambicioso y tomé el proyecto de Jóvenes Profesionales en Bacardi.",
+    "bacardi_name": "Bacardi (Grupo Cepas)",
+    "bacardi_projectType": "Revenue, marketing y ventas en consumo masivo",
+    "bacardi_description": "En Bacardi (Grupo CEPAS) trabajé 5 años. Entré como Joven Profesional rotando por Revenue Management, Ventas y Business Intelligence. Crecí en Revenue Management hasta liderar la apertura del área en Chile y Uruguay. Cerré en el área de Marketing como Brand Manager de Terma, combinando análisis y estrategia de marca. Trabajé con marcas icónicas como Bacardi, Gancia, Terma y Dr. Lemon."
+  },
+  "DigitalProjectsSection": {
+    "title": "Proyectos Digitales",
+    "simpleView": "Vista Simple",
+    "detailedView": "Vista Detallada",
+    "plyoLabs_name": "PLYO Labs",
+    "plyoLabs_projectType": "Growth studio digital danés",
+    "plyoLabs_description": "PLYO Labs fue mi puerta de entrada al mundo digital. Como parte del equipo, trabajé en múltiples proyectos 100% remotos, liderando estrategias de marketing digital, diseño web, validación de negocios (MVP, Signal Mining) y automatizaciones. Fue mi escuela intensiva en startups y growth, junto a <linkKwadwo>Kwadwo</linkKwadwo>, su fundador y CEO (y un gran amigo).",
+    "signkit_name": "Signkit",
+    "signkit_projectType": "SaaS de marketing vía firmas corporativas",
+    "signkit_description": "Signkit fue mi primer proyecto en PLYO Labs. Es un SaaS que convierte firmas de email corporativas en un canal de marketing. Lideré ventas iniciales con scraping, personalized email outreach y LinkedIn outreach, logrando rápida validación y primeras cuentas activas.",
+    "once_name": "ONCE",
+    "once_projectType": "Joyería de lujo e-commerce",
+    "once_description": "ONCE surgió en PLYO Labs como un audaz intento de fusionar joyería de lujo y e-commerce, al estilo de Net-a-Porter y Farfetch. Como Growth Marketer, dirigí campañas en Google y Facebook Ads, más otros canales. Implementé también tácticas de growth hacking para validar la demanda, con foco en A/B testing.",
+    "dimexon_name": "Dimexon",
+    "dimexon_projectType": "Marketplace B2B de diamantes",
+    "dimexon_description": "DIMEXON es un marketplace digital de diamantes B2B enfocado en joyeros tradicionales europeos. Lideré la validación ágil (Signal Mining), creación del MVP, y adquisición de clientes vía campañas multicanal. Logramos rápida tracción y validamos exitosamente el modelo.",
+    "cultions_name": "Cultions",
+    "cultions_projectType": "Comunidad online para artistas",
+    "cultions_description": "CULTIONS es una plataforma digital para artistas. Implementé Signal Mining en 8 semanas, creando landing pages, campañas y creatividades para validar demanda. Logramos fuerte tracción inicial y excelentes métricas en campañas multicanal, validando el interés del mercado.",
+    "cannmed_name": "CANNMED",
+    "cannmed_projectType": "E-commerce de CBD medicinal",
+    "cannmed_description": "CANNMED fue un e-commerce de CBD en España, desarrollado como side project junto a mi socio y amigo <linkJose>José</linkJose>. Diseñé la tienda en WooCommerce y juntos lideramos estrategias de growth con Taboola y Outbrain. Logramos ventas iniciales, pero pausamos al detectar que los claims sobre beneficios de salud no contaban aún con evidencia científica sólida."
+  },
+  "AiProjectsSection": {
+    "title": "Proyectos de IA",
+    "simpleView": "Vista Simple",
+    "detailedView": "Vista Detallada",
+    "grayMatter_name": "Gray Matter",
+    "grayMatter_projectType": "Estudio de startups de inteligencia artificial",
+    "grayMatter_description": "Gray Matter es un startup studio fundado por <linkKwadwo>Kwadwo</linkKwadwo> tras levantar capital. Me convocó como su primer empleado con equity. Trabajé seis meses en proyectos early stage, combinando growth y prototipado rápido con AI. Mi rol incluyó apoyar estrategia, hacer profundo research de casos y potenciales usos de AI. Luego me abrí como freelancer para explorar AI sin límites.",
+    "misCopilotos_name": "Mis Copilotos",
+    "misCopilotos_projectType": "Plataforma de copilotos personalizados",
+    "misCopilotos_description": "Mis Copilotos es una plataforma que desarrollé para crear y personalizar copilotos de IA enfocados en gestión de proyectos y tareas. Diseñé la arquitectura, la experiencia de usuario y la integración de chats inteligentes, combinando tecnología con casos de uso reales.",
+    "launchable_name": "Launchable",
+    "launchable_projectType": "Agencia de inteligencia artificial",
+    "launchable_description": "Launchable es una startup de inteligencia artificial fundada en Canadá. Trabajo como freelancer en proyectos como Video Insight Pro y Framesynth. Aporto estrategia, desarrollo de producto, prototipado rápido, marketing digital y growth, aplicando lo más avanzado en AI.",
+    "videoInsightPro_name": "Video Insight Pro",
+    "videoInsightPro_projectType": "Plataforma de análisis de videos con IA",
+    "videoInsightPro_description": "Video Insight Pro es una plataforma que permite subir videos y analizarlos con inteligencia artificial en minutos. Trabajo en desarrollo de producto, estrategia, prototipado rápido y growth, ayudando a transformar videos en insights claros y accionables.",
+    "framesynth_name": "Framesynth",
+    "framesynth_projectType": "Generador AI de videos musicales",
+    "framesynth_description": "Framesynth es una plataforma que convierte música en videos generados por inteligencia artificial. Trabajo en desarrollo de producto, estrategia, prototipado rápido y marketing digital, creando experiencias audiovisuales innovadoras con lo último en AI."
+  },
+  "ContactSection": {
+    "title": "Conectemos",
+    "subtitle": "Si sos un profesional, startup o empresa y tenés consultas, ideas o proyectos relacionados con inteligencia artificial, hablemos!",
+    "linkedinButton": "LinkedIn",
+    "emailButton": "Email",
+    "emailCopiedButton": "Correo Copiado",
+    "cvButton": "Descargar CV",
+    "emailAddressCopied": "joaquintorroba@gmail.com"
+  }
+} 

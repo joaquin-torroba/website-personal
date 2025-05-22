@@ -9,7 +9,7 @@ import { ChevronDown, ArrowDown } from 'lucide-react';
 // Tipo para las props de TimelineCard
 interface TimelineCardProps {
   title: string;
-  description: string;
+  description: React.ReactNode;
   logos: {
     src: string;
     alt: string;
@@ -88,8 +88,10 @@ export function TimelineCard({
       {/* Descripción */}
       <p 
         className="text-sm md:text-base mb-8 md:mb-10" /* Tamaño responsivo y ajuste de margen inferior */
-        dangerouslySetInnerHTML={{ __html: description }}
-      ></p>
+        // dangerouslySetInnerHTML={{ __html: description }} // Comentado o eliminado
+      >
+        {description} {/* Renderizar directamente como ReactNode */}
+      </p>
       
       {/* Logos y botón en mobile: 2 filas, botón a la derecha */}
       <div className="flex flex-wrap gap-2 md:gap-4 mt-auto pt-3"> {/* mt-auto para empujar al fondo y gap responsivo */}

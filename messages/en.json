@@ -35,6 +35,20 @@
     "paragraph3": "I'm particularly interested in AI opportunities within fields I know well: marketing, sales, revenue management, accounting, human resources, taxes, and finance.",
     "paragraph4": "If you're a professional, startup, or enterprise sharing this curiosity for AI, let's talk. It would be great to explore ideas together."
   },
+  "RecorridoSection": {
+    "title": "My Professional Journey",
+    "periodConnector": "to",
+    "corporateTitle": "Corporate Phase (Latin America)",
+    "corporateTags": ["Audit", "Accounting", "Finance", "Revenue Management", "Marketing", "Business Intelligence", "Sales"],
+    "corporateDescription": "At the age of 20, I kicked off my professional journey at PWC, working in the <i>Capital Markets</i> and <i>Audit</i> department. After a brief experience in finance at Sinopec, I finally spent 5 great years at Bacardi (Grupo Cepas), in core departments such as <i>Revenue Management</i>, <i>Marketing</i>, <i>Sales</i>, and <i>Business Intelligence</i>.",
+    "startupsTitle": "Startup Phase (Europe)",
+    "startupsTags": ["Growth Hacking", "Digital Marketing", "Web Design", "Web Automations", "E-commerce"],
+    "startupsDescription": "When I was 28, I moved to Europe and entered the digital world while working at a Danish <i>growth studio</i> called Plyo Labs. For 3 years, I took part remotely in multiple startup projects (notably Dimexon, Once, and Cultions). I started as a <i>digital marketing</i> specialist and gradually adopted more digitally-native skills, including <i>web design</i>, <i>automation</i>, <i>e-commerce</i>, and <i>growth hacking</i>.",
+    "aiTitle": "Artificial Intelligence Phase (Global Remote)",
+    "aiTags": ["AI Engineering", "Agentic Workflows", "AI App Development", "AI Web Design", "AI Automations"],
+    "aiDescription": "Since December 2022, I've fully immersed myself in <i>generative AI</i>. Every day I learn about, experiment with, and use tools such as <i>ChatGPT</i>, <i>Claude</i>, <i>Cursor</i>, and <i>Flowise</i>. I work as a freelancer at Launchable, creating AI-based products, while also building my own apps in parallel, like <i>Mis Copilotos</i>. Additionally, I explore the potential of AI for more traditional companies by collaborating with domain experts and AI engineers working on real-life use cases.",
+    "present": "Present"
+  },
   "ContactSection": {
     "title": "Let's Connect",
     "subtitle": "Whether you're a professional, startup, or established company - if you have questions, ideas, or projects related to artificial intelligence, let's talk!",

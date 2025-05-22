@@ -5,18 +5,53 @@ import { Timeline } from './timeline/timeline';
 import { TimelineItem } from './timeline/timeline-item';
 import { TimelineCard } from './timeline/timeline-card';
 import { TrendingUp, Rocket, Sparkles } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function RecorridoSection() {
+  const t = useTranslations('RecorridoSection');
+
+  const corporateTagsArray = [
+    t('corporateTags.0'), 
+    t('corporateTags.1'), 
+    t('corporateTags.2'), 
+    t('corporateTags.3'), 
+    t('corporateTags.4'), 
+    t('corporateTags.5'), 
+    t('corporateTags.6')
+  ];
+
+  const startupsTagsArray = [
+    t('startupsTags.0'),
+    t('startupsTags.1'),
+    t('startupsTags.2'),
+    t('startupsTags.3'),
+    t('startupsTags.4')
+  ];
+
+  const aiTagsArray = [
+    t('aiTags.0'),
+    t('aiTags.1'),
+    t('aiTags.2'),
+    t('aiTags.3'),
+    t('aiTags.4')
+  ];
+
   return (
     <section className="w-full py-16 bg-slate-50 dark:bg-slate-900 border-t border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-12">Mi Recorrido Profesional</h2>
+        <h2 className="text-2xl font-bold text-center mb-12">{t('title')}</h2>
         <Timeline>
-          <TimelineItem period="2012<br /><span class='font-normal'>a</span><br />2020" color="purple" active>
+          <TimelineItem 
+            period={`2012<br /><span class='font-normal'>${t('periodConnector')}</span><br />2020`} 
+            color="purple" 
+            active
+          >
             <TimelineCard
-              title="Etapa Corporativa (Latinoamérica)"
-              tags={["Auditoría", "Contabilidad", "Finanzas", "Revenue Management", "Marketing", "Business Intelligence", "Ventas"]}
-              description="A los 20 años comencé mi camino profesional en PWC en el área de <i>capital markets</i> y <i>auditoría</i>. Luego un breve paso por Sinopec en <i>finanzas</i>. Y finalmente, 5 grandes años trabajando en Grupo Cepas (Bacardi) en core áreas como <i>revenue management</i>, <i>marketing</i>, <i>ventas</i> y <i>BI</i>."
+              title={t('corporateTitle')}
+              tags={corporateTagsArray}
+              description={t.rich('corporateDescription', {
+                i: (chunks) => <i>{chunks}</i>
+              })}
               logos={[
                 {
                   src: "/logos/pwc_logo_new.svg",
@@ -49,11 +84,17 @@ export default function RecorridoSection() {
             />
           </TimelineItem>
           
-          <TimelineItem period="2020<br /><span class='font-normal'>a</span><br />2023" color="pink" active>
+          <TimelineItem 
+            period={`2020<br /><span class='font-normal'>${t('periodConnector')}</span><br />2023`} 
+            color="pink" 
+            active
+          >
             <TimelineCard
-              title="Etapa Startups (Europa)"
-              tags={["Growth Hacking", "Marketing Digital", "Diseño Web", "Automatizaciones Web", "E-commerce"]}
-              description="A los 28 años me mudé a Europa y conocí el mundo digital trabajando en un <i>growth studio</i> danés llamado Plyo Labs. Durante 3 años participé de múltiples proyectos remotos en distintas startups (destaco Dimexon, Once y Cultions). Comencé como especialista en <i>marketing digital</i> y luego incorporé más herramientas digital-native como <i>diseño web</i>, <i>automatizaciones</i>, <i>e-commerce</i> y <i>growth hacking</i>."
+              title={t('startupsTitle')}
+              tags={startupsTagsArray}
+              description={t.rich('startupsDescription', {
+                i: (chunks) => <i>{chunks}</i>
+              })}
               logos={[
                 {
                   src: "/logos/plyo_lab_logo.jpeg",
@@ -89,11 +130,17 @@ export default function RecorridoSection() {
             />
           </TimelineItem>
           
-          <TimelineItem period="2023<br /><span class='font-normal'>a</span><br />2025" color="indigo" active>
+          <TimelineItem 
+            period={`2023<br /><span class='font-normal'>${t('periodConnector')}</span><br />${t('present')}`} 
+            color="indigo" 
+            active
+          >
             <TimelineCard
-              title="Etapa Inteligencia Artificial (Remoto Global)"
-              tags={["Ingeniería de IA", "Trabajo con Agentes", "Desarrollo de Apps (IA)", "Diseño Web con IA (IA)", "Automatizaciones (IA)"]}
-              description="Desde diciembre de 2022 me metí de lleno en la IA generativa. Aprendo, pruebo y uso a diario herramientas como ChatGPT, Claude, Cursor y Flowise. Soy freelancer en Launchable creando productos de IA, y en paralelo armo apps propias como Mis Copilotos. También, exploro el potencial de la IA para empresas más tradicionales juntándome con expertos de dominio y con ingenieros de IA que trabajen en casos reales."
+              title={t('aiTitle')}
+              tags={aiTagsArray}
+              description={t.rich('aiDescription', {
+                i: (chunks) => <i>{chunks}</i>
+              })}
               logos={[
                 {
                   src: "/logos/graymatterhq_logo.jpeg",

@@ -14,7 +14,7 @@ import ContactSection from '@/components/contact-section';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <div className="absolute top-4 right-4 z-50">
+      <div className="fixed top-4 right-4 z-50">
         <LanguageSwitcher />
       </div>
       

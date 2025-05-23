@@ -40,7 +40,7 @@ export default function ContactSection() {
               variant="outline"
               className="w-full border-slate-300 hover:bg-slate-100 text-slate-700 transition-all duration-300 ease-in-out transform hover:scale-105 px-6 py-3"
             >
-              <Linkedin className="mr-2 h-5 w-5" /> {t('linkedinButton')}
+              <Linkedin className="mr-1 h-5 w-5" /> {t('linkedinButton')}
             </Button>
           </a>
           <Button
@@ -50,11 +50,11 @@ export default function ContactSection() {
           >
             {emailCopied ? (
               <>
-                <Copy className="mr-2 h-5 w-5 text-green-500" /> {t('emailCopiedButton')}
+                <Copy className="mr-1 h-5 w-5 text-green-500" /> {t('emailCopiedButton')}
               </>
             ) : (
               <>
-                <Mail className="mr-2 h-5 w-5" /> {t('emailButton')}
+                <Mail className="mr-1 h-5 w-5" /> {t('emailButton')}
               </>
             )}
           </Button>
